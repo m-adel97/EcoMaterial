@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Classification</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Classification or Filter (Phase One)</h2>
+        <form>
+            <label for="classification">Classification of material</label>
+            <select id="classification" name="classification">
+                <option value="material1">Material 1</option>
+                <option value="material2">Material 2</option>
+            </select>
+
+            <label for="name">Name of material</label>
+            <input type="text" id="name" name="name">
+
+            <h3>Result:</h3>
+            <p>1- Name of manufacture</p>
+            <input type="text" id="manufacture" name="manufacture">
+
+            <p>2- Image for life cycle indicator:</p>
+            <table>
+                <tr>
+                    <th>Indicator</th>
+                    <th>Unit</th>
+                    <th>A1 - A3</th>
+                </tr>
+                <tr>
+                    <td>Indicator 1</td>
+                    <td>Unit 1</td>
+                    <td>A1</td>
+                </tr>
+                <tr>
+                    <td>Indicator 2</td>
+                    <td>Unit 2</td>
+                    <td>A2</td>
+                </tr>
+            </table>
+
+            <p>3- Image for environmental impact indicator:</p>
+            <table>
+                <tr>
+                    <th>Indicator</th>
+                    <th>Unit</th>
+                    <th>A1 - A3</th>
+                </tr>
+                <tr>
+                    <td>Indicator 1</td>
+                    <td>Unit 1</td>
+                    <td>A1</td>
+                </tr>
+                <tr>
+                    <td>Indicator 2</td>
+                    <td>Unit 2</td>
+                    <td>A2</td>
+                </tr>
+            </table>
+        </form>
+
+        <h2>Phase Two</h2>
+        <form>
+            <h3>1- Floor</h3>
+            <label for="material-floor">Name of material</label>
+            <select id="material-floor" name="material-floor">
+                <option value="floor1">Material 1</option>
+                <option value="floor2">Material 2</option>
+            </select>
+
+            <input type="text" id="unit-floor" name="unit-floor" placeholder="Unit">
+            <input type="text" id="quantity-floor" name="quantity-floor" placeholder="Quantity">
+            <input type="text" id="from-floor" name="from-floor" placeholder="From">
+            <input type="text" id="to-floor" name="to-floor" placeholder="To">
+            <input type="text" id="global-warning-result" name="global-warning-result" placeholder="Global Warning Result">
+
+            <!-- Same format for Wall, Beam/Column -->
+        </form>
+
+        <h2>Phase Three</h2>
+        <div class="charts">
+            <div class="chart" id="chart1">
+                <!-- Placeholder for chart 1 -->
+            </div>
+            <div class="chart" id="chart2">
+                <!-- Placeholder for chart 2 -->
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
