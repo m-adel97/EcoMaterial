@@ -8,22 +8,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="container">
         <h2>Classification or Filter (Phase One)</h2>
         <form>
             <label for="classification">Classification of material</label>
-            <select id="classification" name="classification">
-                <option value="material1">Material 1</option>
-                <option value="material2">Material 2</option>
+            <select id="classification" name="classification" onchange="updateMaterialOptions()">
+                <option>Classification of material</option>
+                <option value="concrete">Concrete</option>
+                <option value="bricks">Bricks</option>
+                <option value="plaster">Plaster</option>
             </select>
 
             <label for="name">Name of material</label>
-            <input type="text" id="name" name="name">
+            <select id="name" name="name"></select>
 
             <h3>Result:</h3>
             <p>1- Name of manufacture</p>
-            <input type="text" id="manufacture" name="manufacture">
+            <input type="text" id="manufacture" name="manufacture" readonly>
 
             <p>2- Image for life cycle indicator:</p>
             <table>
