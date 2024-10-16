@@ -12,7 +12,7 @@ function updateMaterialOptions() {
     // Define options for each material classification
     if (classification === 'concrete') {
         options = [
-            { name: 'Select name of material'},
+            { name: 'Select name of material' },
             { name: 'Reinforced horizontal concrete for slabs and beams grade C40 ready mix concrete', manufacturer: 'Alfalah Ready Mix LLC' },
             { name: 'Reinforced Structure elements of substructure grade c40 Raft Foundation (Ready-mix concrete)', manufacturer: 'Alfalah Ready Mix LLC' },
             { name: 'Vertical elements superstructure (Columns) Grade C50 (Ready-mix Concrete)', manufacturer: 'Alfalah Ready Mix LLC' },
@@ -25,14 +25,19 @@ function updateMaterialOptions() {
         ];
     } else if (classification === 'bricks') {
         options = [
-            { name: 'Select name of material', manufacturer: ''},
+            { name: 'Select name of material' },
             { name: 'Marmox Thermoblock 14/10', manufacturer: 'Marmox Egypt - CMB' }
         ];
     } else if (classification === 'plaster') {
         options = [
-            { name: 'Select name of material', manufacturer: '' },
+            { name: 'Select name of material' },
             { name: 'Standard Plaster', manufacturer: 'Generic Plaster Co.' },
             { name: 'High-Strength Plaster', manufacturer: 'Premium Plaster Ltd.' }
+        ];
+    } else if (classification === 'insulation') {
+        options = [
+            { name: 'Select name of material' },
+            { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', manufacturer: 'Marmox Egypt - CMB' }
         ];
     }
 
