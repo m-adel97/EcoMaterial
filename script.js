@@ -30,9 +30,7 @@ function updateMaterialOptions() {
         ];
     } else if (classification === 'plaster') {
         options = [
-            { name: 'Select name of material' },
-            { name: 'Standard Plaster', manufacturer: 'Generic Plaster Co.' },
-            { name: 'High-Strength Plaster', manufacturer: 'Premium Plaster Ltd.' }
+            { name: 'Select name of material' }
         ];
     } else if (classification === 'insulation') {
         options = [
