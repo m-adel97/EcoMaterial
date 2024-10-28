@@ -6,58 +6,6 @@
     <title>Material Classification</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="style.css">
-<style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            transition: transform 0.2s ease; /* Smooth transition for zoom effect */
-            cursor: pointer; /* Change cursor to pointer */
-        }
-        img:hover {
-            transform: scale(1.1); /* Slightly increase size on hover */
-        }
-        /* Modal styles */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1000; /* Sit on top */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgba(0, 0, 0, 0.8); /* Black with opacity */
-        }
-        .modal-content {
-            margin: 15% auto; /* 15% from the top and centered */
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%; /* Could be more or less, depending on screen size */
-            text-align: center;
-        }
-        .close {
-            color: white;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .close:hover,
-        .close:focus {
-            color: #bbb;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        .zoomed {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
@@ -65,47 +13,90 @@
         <form>
             <label for="classification">Classification of material</label>
             <select id="classification" onchange="updateMaterialOptions()">
-    <option value="none">Select classification</option>
-    <option value="concrete">Concrete</option>
-    <option value="bricks">Bricks</option>
-    <option value="plaster">Plaster</option>
-    <option value="insulation">Insulation</option>
-</select>
+                <option value="none">Select classification</option>
+                <option value="concrete">Concrete</option>
+                <option value="bricks">Bricks</option>
+                <option value="plaster">Plaster</option>
+                <option value="insulation">Insulation</option>
+            </select>
 
             <label for="name">Name of material</label>
             <select id="name">
-    <option value="none">Select name of material</option>
-</select>
+                <option value="none">Select name of material</option>
+            </select>
 
             <h3>Result:</h3>
             <p>1- Name of manufacture</p>
-<input type="text" id="manufacture" placeholder="Manufacturer" readonly />
-	    <p>2- life cycle & environmental impact indicator:</p>
-    <center><img id="material-image" src="" alt="Material Image" style="display:none; width: 200px; height: auto;"></center>
-
-<!-- Modal for enlarged image -->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close" id="closeBtn">&times;</span>
-            <img id="enlarged-image" src="" alt="Enlarged Material Image" class="zoomed">
-        </div>
-    </div>
+            <input type="text" id="manufacture" placeholder="Manufacturer" readonly />
+            <p>2- life cycle & environmental impact indicator:</p>
+            <center><img id="material-image" src="" alt="Material Image" style="display:none; width: 200px; height: auto;"></center>
         </form>
 
         <h2>Phase Two</h2>
         <form>
-            <h3>1- Floor</h3>
-            <label for="material-floor">Name of material</label>
-            <select id="material-floor" name="material-floor">
-                <option value="floor1">Material 1</option>
-                <option value="floor2">Material 2</option>
+            <h3>LCA Indicator A1-A3</h3>
+
+            <div>
+                <h3>1) Foundation Name of material</h3>
+                <select id="material" name="material">
+                    <option value="material1">Material 1</option>
+                    <option value="material2">Material 2</option>
+                </select>
+                <label>Google Map Link</label>
+                <input type="text" id="google-map-link" placeholder="Google Map Link">
+            </div>
+
+            <div class="quantity-table">
+                <p>Quantity, Unit, Distance (m), Indicator values:</p>
+                <table>
+                    <tr>
+                        <th>Qty</th>
+                        <th>Unit</th>
+                        <th>Dist (m)</th>
+                        <th>Ind (1)</th>
+                        <th>Ind (2)</th>
+                        <th>Ind (3)</th>
+                        <th>Ind (4)</th>
+                        <th>Ind (5)</th>
+                        <th>Ind (6)</th>
+                        <th>Ind (7)</th>
+                        <th>A4</th>
+                    </tr>
+
+                    <tr>
+                        <td><input type="text" placeholder="Qty"></td>
+                        <td><input type="text" placeholder="Unit"></td>
+                        <td><input type="text" placeholder="Distance"></td>
+                        <td><input type="text" placeholder="Ind(1)"></td>
+                        <td><input type="text" placeholder="Ind(2)"></td>
+                        <td><input type="text" placeholder="Ind(3)"></td>
+                        <td><input type="text" placeholder="Ind(4)"></td>
+                        <td><input type="text" placeholder="Ind(5)"></td>
+                        <td><input type="text" placeholder="Ind(6)"></td>
+                        <td><input type="text" placeholder="Ind(7)"></td>
+                        <td><input type="text" placeholder="A4"></td>
+                    </tr>
+                </table>
+                <button type="button">Calculate</button>
+            </div>
+
+            <h3>2) Floor & Roofs</h3>
+            <select id="floor-roofs" name="floor-roofs">
+                <option value="roof1">Roof Material 1</option>
+                <option value="roof2">Roof Material 2</option>
             </select>
 
-            <input type="text" id="unit-floor" name="unit-floor" placeholder="Unit">
-            <input type="text" id="quantity-floor" name="quantity-floor" placeholder="Quantity">
-            <input type="text" id="from-floor" name="from-floor" placeholder="From">
-            <input type="text" id="to-floor" name="to-floor" placeholder="To">
-            <input type="text" id="global-warning-result" name="global-warning-result" placeholder="Global Warning Result">
+            <h3>3) Walls</h3>
+            <select id="walls" name="walls">
+                <option value="wall1">Wall Material 1</option>
+                <option value="wall2">Wall Material 2</option>
+            </select>
+
+            <h3>4) Window</h3>
+            <select id="window" name="window">
+                <option value="window1">Window Material 1</option>
+                <option value="window2">Window Material 2</option>
+            </select>
         </form>
 
         <h2>Phase Three</h2>
