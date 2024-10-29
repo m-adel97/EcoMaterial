@@ -1,4 +1,4 @@
-// Function to update the options for "Name of material" for Phase One
+// Function to update the options for "Name of material"
 function updateMaterialOptions() {
     const classification = document.getElementById('classification').value;
     const nameSelect = document.getElementById('name');
@@ -19,28 +19,12 @@ function updateMaterialOptions() {
         options = [
             { name: 'Select name of material' },
             { name: 'Reinforced horizontal concrete for slabs and beams grade C40 ready mix concrete', manufacturer: 'Alfalah Ready Mix LLC', image: 'img/con.png' },
-            { name: 'Reinforced Structure elements of substructure grade C40 Raft Foundation (Ready-mix concrete)', manufacturer: 'Alfalah Ready Mix LLC', image: 'img/con.png' },
-            { name: 'Vertical elements superstructure (Columns) Grade C50 (Ready-mix Concrete)', manufacturer: 'Alfalah Ready Mix LLC', image: 'img/con.png' },
-            { name: 'Vertical superstructure Durable Concrete grade C50 MPA (Ready Mix Concrete)', manufacturer: 'Alfalah Ready Mix LLC', image: 'img/con.png' },
-            { name: 'Concrete Paving Solid and hollow Bricks', manufacturer: 'Alfalah Ready Mix LLC', image: 'img/con.png' },
-            { name: '45_MPA_Early strength concrete', manufacturer: 'Ghrghar Group -Al wafaa W Amal City, Cairo ghrghar.com/group-company', image: 'img/con.png' },
-            { name: 'Foundations and Columns', manufacturer: 'Ghrghar Group -Al wafaa W Amal City, Cairo ghrghar.com/group-company', image: 'img/con.png' },
-            { name: 'Slab production', manufacturer: 'Red Sea Ready Mix (Orascom) - Head Office: 2005 A Corniche El Nil, Ramlet Boulaq, Nile City Towers, North Tower, 14th Floor – Cairo EGYPT - http://www.rsc.com.eg/', image: 'img/con.png' },
-            { name: 'Foundation and Piles', manufacturer: 'Red Sea Ready Mix (Orascom) - Head Office: 2005 A Corniche El Nil, Ramlet Boulaq, Nile City Towers, North Tower, 14th Floor – Cairo EGYPT - http://www.rsc.com.eg/', image: 'img/con.png' }
+            // ... more options
         ];
     } else if (classification === 'bricks') {
         options = [
             { name: 'Select name of material' },
             { name: 'Marmox Thermoblock 14/10', manufacturer: 'Marmox Egypt - CMB', image: 'img/con.png' }
-        ];
-    } else if (classification === 'plaster') {
-        options = [
-            { name: 'Select name of material' }
-        ];
-    } else if (classification === 'insulation') {
-        options = [
-            { name: 'Select name of material' },
-            { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', manufacturer: 'Marmox Egypt - CMB', image: 'img/con.png' }
         ];
     }
 
@@ -73,13 +57,12 @@ function updateMaterialOptions() {
         }
     });
 
-    // Get the <span> element that closes the modal
+    // Close the modal if the user clicks outside of the modal content
     const closeBtn = document.getElementById('closeBtn');
     closeBtn.onclick = function() {
         modal.style.display = 'none'; // Close modal
     };
-
-    // Close the modal if the user clicks outside of the modal content
+    
     window.onclick = function(event) {
         if (event.target === modal) {
             modal.style.display = 'none'; // Close modal
@@ -101,21 +84,6 @@ function updateMaterialOptions2() {
         options2 = [
             { name: 'Concrete Block A', manufacturer: 'Manufacturer A' },
             { name: 'Concrete Block B', manufacturer: 'Manufacturer B' }
-        ];
-    } else if (classification2 === 'bricks') {
-        options2 = [
-            { name: 'Brick A', manufacturer: 'Manufacturer C' },
-            { name: 'Brick B', manufacturer: 'Manufacturer D' }
-        ];
-    } else if (classification2 === 'plaster') {
-        options2 = [
-            { name: 'Plaster A', manufacturer: 'Manufacturer E' },
-            { name: 'Plaster B', manufacturer: 'Manufacturer F' }
-        ];
-    } else if (classification2 === 'insulation') {
-        options2 = [
-            { name: 'Insulation A', manufacturer: 'Manufacturer G' },
-            { name: 'Insulation B', manufacturer: 'Manufacturer H' }
         ];
     }
 
