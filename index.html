@@ -74,14 +74,14 @@
 
             <label for="name">Name of material</label>
             <select id="name">
-    <option value="none">Select name of material</option>
-</select>
+    	     <option value="none">Select name of material</option>
+	    </select>
 
             <h3>Result:</h3>
             <p>1- Name of manufacture</p>
-<input type="text" id="manufacture" placeholder="Manufacturer" readonly />
+	    <input type="text" id="manufacture" placeholder="Manufacturer" readonly />
 	    <p>2- life cycle & environmental impact indicator:</p>
-    <center><img id="material-image" src="" alt="Material Image" style="display:none; width: 200px; height: auto;"></center>
+    	    <center><img id="material-image" src="" alt="Material Image" style="display:none; width: 200px; height: auto;"></center>
 
 <!-- Modal for enlarged image -->
     <div id="myModal" class="modal">
@@ -111,11 +111,20 @@
 		<label>Google Map Link</label>
                 <input type="text" id="google-map-link" placeholder="Google Map Link" disabled="disabled">
 
-                <h3>1) Foundation Name of material</h3>
-                <select id="material" name="material">
-                    <option value="material1">Material 1</option>
-                    <option value="material2">Material 2</option>
-                </select>
+	        <label for="classification">Classification of material</label>
+	        <select id="classification" onchange="updateMaterialOptions()">
+	         <option value="none">Select classification</option>
+	         <option value="concrete">Concrete</option>
+	         <option value="bricks">Bricks</option>
+	         <option value="plaster">Plaster</option>
+	         <option value="insulation">Insulation</option>
+	        </select>
+
+            	<h3>Name of material</h3>
+            	<select id="name">
+    	     	 <option value="none">Select name of material</option>
+	    	</select>
+
             </div>
 
             <div class="quantity-table">
