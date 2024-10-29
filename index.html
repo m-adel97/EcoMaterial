@@ -109,7 +109,7 @@
 		
             <div>
 		<label>Google Map Link</label>
-                <input type="text" id="google-map-link" placeholder="Google Map Link">
+                <input type="text" id="google-map-link" placeholder="Google Map Link" disabled="disabled">
 
                 <h3>1) Foundation Name of material</h3>
                 <select id="material" name="material">
@@ -121,43 +121,43 @@
             <div class="quantity-table">
                 <p>Quantity, Unit, Distance (m), Indicator values:</p>
 		<div style="overflow-x: auto">
-	                <table>
-	                    <tr>
-	                        <th>Qty</th>
-	                        <th>Dist (m)</th>
-	                        <th>Fuel Type</th>
-	                        <th>Unit</th>
-	                        <th>(GWP)</th>
-	                        <th>(ODP)</th>
-	                        <th>(AP)</th>
-	                        <th>(EP)</th>
-	                        <th>(POPC)</th>
-	                        <th>(ADP)</th>
-	                        <th>(ADP-fossil fuels)</th>
-	                        <th>A4</th>
-	                    </tr>
-	
-	                    <tr>
-	                        <td><input type="text" placeholder="Qty"></td>
-				<td><input type="text" placeholder="Distance"></td>
-				<td>
-				 <select id="Fuel_Type" onchange="">
-			          <option value="LightOil">Light Oil</option>
-			          <option value="NaturalGas">Natural Gas</option>
-			          <option value="Diesel">Diesel</option>
-				 </select>
-				</td>
-	                        <td><input type="text" placeholder="Unit"></td>
-	                        <td><input type="text" placeholder="Ind(1)"></td>
-	                        <td><input type="text" placeholder="Ind(2)"></td>
-	                        <td><input type="text" placeholder="Ind(3)"></td>
-	                        <td><input type="text" placeholder="Ind(4)"></td>
-	                        <td><input type="text" placeholder="Ind(5)"></td>
-	                        <td><input type="text" placeholder="Ind(6)"></td>
-	                        <td><input type="text" placeholder="Ind(7)"></td>
-	                        <td><input type="text" placeholder="A4"></td>
-	                    </tr>
-	                </table>
+	          <table>
+	            <tr>
+	              <th>Qty</th>
+			<th>Dist (m)</th>
+			<th>Fuel Type</th>
+			<th>Unit</th>
+			<th>(GWP)</th>
+			<th>(ODP)</th>
+			<th>(AP)</th>
+			<th>(EP)</th>
+			<th>(POPC)</th>
+			<th>(ADP)</th>
+			<th>(ADP-fossil fuels)</th>
+			<th>A4</th>
+		    </tr>
+
+		    <tr>
+			<td><input type="text" placeholder="Qty"></td>
+			<td><input type="text" placeholder="Distance"></td>
+			<td>
+			 <select id="Fuel_Type" onchange="">
+			  <option value="LightOil">Light Oil</option>
+			  <option value="NaturalGas">Natural Gas</option>
+			  <option value="Diesel">Diesel</option>
+			 </select>
+			</td>
+			<td><input type="text" placeholder="Unit"></td>
+			<td><input type="text" placeholder="Ind(1)"></td>
+			<td><input type="text" placeholder="Ind(2)"></td>
+			<td><input type="text" placeholder="Ind(3)"></td>
+			<td><input type="text" placeholder="Ind(4)"></td>
+			<td><input type="text" placeholder="Ind(5)"></td>
+			<td><input type="text" placeholder="Ind(6)"></td>
+			<td><input type="text" placeholder="Ind(7)"></td>
+			<td><input type="text" placeholder="A4"></td>
+		    </tr>
+		  </table>
 		</div>
                 <center><button type="button">Calculate</button></center>
             </div>
