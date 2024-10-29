@@ -43,26 +43,84 @@ form {
 }
 
 .indicators h3 {
+    font-size: 20px;
+    color: #007bff;
     margin-bottom: 10px;
+}
+
+.indicators ul {
+    list-style-type: none; /* Remove default list styling */
+}
+
+.indicators li {
+    background-color: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #007bff;
+    transition: background-color 0.2s; /* Smooth transition for hover */
+}
+
+.indicators li:hover {
+    background-color: #cce5ff; /* Light blue on hover */
+}
+
+
+
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+select,
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .quantity-table {
     margin: 20px 0;
-    overflow-x: auto;
 }
 
-table {
+.quantity-table table {
     width: 100%;
+    margin-bottom: 20px;
     border-collapse: collapse;
 }
 
-th, td {
-    border: 1px solid #ccc;
-    padding: 8px;
+.quantity-table th,
+.quantity-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
     text-align: center;
 }
 
-th {
-    background-color: #007bff;
-    color: white;
+.charts {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.charts canvas {
+    flex: 1;
+    max-width: 45%;
+    height: 300px;
+    background-color: #e6f7ff;
+    border: 2px solid #007bff;
+}
+
+@media (max-width: 587px) {
+    .charts {
+        flex-direction: column;
+    }
+    
+    .charts canvas {
+        max-width: 100%;
+    }
 }
