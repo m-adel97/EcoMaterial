@@ -1,4 +1,4 @@
-// Function to update the options for "Name of material"
+// Function to update the options for "Name of material" for Phase One
 function updateMaterialOptions() {
     const classification = document.getElementById('classification').value;
     const nameSelect = document.getElementById('name');
@@ -15,7 +15,7 @@ function updateMaterialOptions() {
     let options = [];
 
     // Define options for each material classification
-if (classification === 'concrete') {
+    if (classification === 'concrete') {
         options = [
             { name: 'Select name of material' },
             { name: 'Reinforced horizontal concrete for slabs and beams grade C40 ready mix concrete', manufacturer: 'Alfalah Ready Mix LLC', image: 'img/con.png' },
@@ -87,6 +87,46 @@ if (classification === 'concrete') {
     };
 }
 
+// Function to update the options for "Name of material" for Phase Two
+function updateMaterialOptions2() {
+    const classification2 = document.getElementById('classification-2').value;
+    const nameSelect2 = document.getElementById('name-2');
+
+    nameSelect2.innerHTML = ''; // Clear previous options
+
+    let options2 = [];
+
+    // Define options for each material classification for Phase Two
+    if (classification2 === 'concrete') {
+        options2 = [
+            { name: 'Concrete Block A', manufacturer: 'Manufacturer A' },
+            { name: 'Concrete Block B', manufacturer: 'Manufacturer B' }
+        ];
+    } else if (classification2 === 'bricks') {
+        options2 = [
+            { name: 'Brick A', manufacturer: 'Manufacturer C' },
+            { name: 'Brick B', manufacturer: 'Manufacturer D' }
+        ];
+    } else if (classification2 === 'plaster') {
+        options2 = [
+            { name: 'Plaster A', manufacturer: 'Manufacturer E' },
+            { name: 'Plaster B', manufacturer: 'Manufacturer F' }
+        ];
+    } else if (classification2 === 'insulation') {
+        options2 = [
+            { name: 'Insulation A', manufacturer: 'Manufacturer G' },
+            { name: 'Insulation B', manufacturer: 'Manufacturer H' }
+        ];
+    }
+
+    // Populate the "Name of material" dropdown for Phase Two
+    options2.forEach(option => {
+        const opt = document.createElement('option');
+        opt.value = option.name;
+        opt.textContent = option.name;
+        nameSelect2.appendChild(opt);
+    });
+}
 
 // Sample data for charts
 const data1 = {
@@ -138,3 +178,6 @@ new Chart(ctx2, {
         }
     }
 });
+
+// Call the function to initialize options on load
+updateMaterialOptions();
