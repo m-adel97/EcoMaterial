@@ -111,20 +111,21 @@
 		<label>Google Map Link</label>
                 <input type="text" id="google-map-link" placeholder="Google Map Link" disabled="disabled">
 
-	        <label for="classification">Classification of material</label>
-	        <select id="classification" onchange="updateMaterialOptions()">
-	         <option value="none">Select classification</option>
-	         <option value="concrete">Concrete</option>
-	         <option value="bricks">Bricks</option>
-	         <option value="plaster">Plaster</option>
-	         <option value="insulation">Insulation</option>
-	        </select>
-
-            	<h3>Name of material</h3>
-            	<select id="name">
-    	     	 <option value="none">Select name of material</option>
-	    	</select>
-
+	        <form>
+		 <label for="classification">Classification of material</label>
+	            <select id="classification" onchange="updateMaterialOptions()">
+		     <option value="none">Select classification</option>
+		     <option value="concrete">Concrete</option>
+		     <option value="bricks">Bricks</option>
+		     <option value="plaster">Plaster</option>
+		     <option value="insulation">Insulation</option>
+		    </select>
+	
+	            <label for="name">Name of material</label>
+            	    <select id="name">
+    	     	    <option value="none">Select name of material</option>
+	    	   </select>
+		</form>
             </div>
 
             <div class="quantity-table">
