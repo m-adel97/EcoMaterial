@@ -65,12 +65,12 @@
         <form>
             <label for="classification">Classification of material</label>
             <select id="classification" onchange="updateMaterialOptions()">
-    <option value="none">Select classification</option>
-    <option value="concrete">Concrete</option>
-    <option value="bricks">Bricks</option>
-    <option value="plaster">Plaster</option>
-    <option value="insulation">Insulation</option>
-</select>
+	     <option value="none">Select classification</option>
+	     <option value="concrete">Concrete</option>
+	     <option value="bricks">Bricks</option>
+	     <option value="plaster">Plaster</option>
+	     <option value="insulation">Insulation</option>
+	    </select>
 
             <label for="name">Name of material</label>
             <select id="name">
@@ -139,7 +139,12 @@
 	                    <tr>
 	                        <td><input type="text" placeholder="Qty"></td>
 				<td><input type="text" placeholder="Distance"></td>
-				<td><input type="text" placeholder="Distance"></td>
+				<td>
+				 <select id="Fuel_Type" onchange="">
+			          <option value="LightOil">Light Oil</option>
+			          <option value="NaturalGas">Natural Gas</option>
+			          <option value="Diesel">Diesel</option>
+				</td>
 	                        <td><input type="text" placeholder="Unit"></td>
 	                        <td><input type="text" placeholder="Ind(1)"></td>
 	                        <td><input type="text" placeholder="Ind(2)"></td>
