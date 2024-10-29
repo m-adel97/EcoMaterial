@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -112,22 +113,61 @@
                 <input type="text" id="google-map-link" placeholder="Google Map Link" disabled="disabled">
 
 	        <form>
-		 <label for="classification">Classification of material</label>
-	            <select id="classification" onchange="updateMaterialOptions()">
-		     <option value="none">Select classification</option>
-		     <option value="concrete">Concrete</option>
-		     <option value="bricks">Bricks</option>
-		     <option value="plaster">Plaster</option>
-		     <option value="insulation">Insulation</option>
-		    </select>
-	
-	            <label for="name">Name of material</label>
-            	    <select id="name">
-    	     	    <option value="none">Select name of material</option>
-	    	   </select>
-		</form>
-            </div>
+		  <label for="material">Classification of material</label>
+  <select id="material" onchange="updateSubcategories()">
+    <option value="">Select Classification</option>
+    <option value="Concrete">Concrete</option>
+    <option value="Bricks">Bricks</option>
+    <option value="Plaster">Plaster</option>
+    <option value="Insulation">Insulation</option>
+  </select>
 
+<label for="subcategory">Name of material</label>
+  <select id="subcategory">
+    <option value="">Select name of material</option>
+  </select>
+	        </form>
+  
+<script>
+    // بيانات المواد والأنواع
+    const data = {
+      Concrete: [
+        "Reinforced horizontal concrete for slabs and beams grade C40 ready mix concrete",
+        "Reinforced Structure elements of substructure grade C40 Raft Foundation (Ready-mix concrete)",
+        "Vertical elements superstructure (Columns) Grade C50 (Ready-mix Concrete)",
+        "Vertical superstructure Durable Concrete grade C50 MPA (Ready Mix Concrete)",
+        "Concrete Paving Solid and hollow Bricks",
+        "45_MPA_Early strength concrete",
+        "Foundations and Columns",
+        "Slab production",
+        "Foundation and Piles"
+      ],
+      Bricks: ["Marmox Thermoblock 14/10"],
+      Insulation: ["Marmox Tile Backer Board-insulation board 12.5 thickness"],
+      Plaster: []  // يمكنك إضافة أنواع الجبس لاحقًا إذا كانت متوفرة
+    };
+
+    // تحديث قائمة الأنواع بناءً على اختيار المادة
+    function updateSubcategories() {
+      const materialSelect = document.getElementById("material");
+      const subcategorySelect = document.getElementById("subcategory");
+      const selectedMaterial = materialSelect.value;
+
+      // مسح الأنواع الحالية
+      subcategorySelect.innerHTML = '<option value="">Select name of material</option>';
+
+      // إضافة الأنواع الجديدة إذا تم اختيار مادة
+      if (selectedMaterial && data[selectedMaterial]) {
+        data[selectedMaterial].forEach(subcategory => {
+          const option = document.createElement("option");
+          option.value = subcategory;
+          option.textContent = subcategory;
+          subcategorySelect.appendChild(option);
+        });
+      }
+    }
+  </script>
+		
             <div class="quantity-table">
                 <p>Quantity, Unit, Distance (m), Indicator values:</p>
 		<div style="overflow-x: auto">
@@ -157,15 +197,15 @@
 			  <option value="Diesel">Diesel</option>
 			 </select>
 			</td>
-			<td><input type="text" placeholder="Unit"></td>
-			<td><input type="text" placeholder="Ind(1)"></td>
-			<td><input type="text" placeholder="Ind(2)"></td>
-			<td><input type="text" placeholder="Ind(3)"></td>
-			<td><input type="text" placeholder="Ind(4)"></td>
-			<td><input type="text" placeholder="Ind(5)"></td>
-			<td><input type="text" placeholder="Ind(6)"></td>
-			<td><input type="text" placeholder="Ind(7)"></td>
-			<td><input type="text" placeholder="A4"></td>
+			<td><input type="text" placeholder="Unit" disabled="disabled"></td>
+			<td><input type="text" placeholder="Ind(1)"  disabled="disabled"></td>
+			<td><input type="text" placeholder="Ind(2)"  disabled="disabled"></td>
+			<td><input type="text" placeholder="Ind(3)" disabled="disabled"></td>
+			<td><input type="text" placeholder="Ind(4)" disabled="disabled"></td>
+			<td><input type="text" placeholder="Ind(5)" disabled="disabled"></td>
+			<td><input type="text" placeholder="Ind(6)" disabled="disabled"></td>
+			<td><input type="text" placeholder="Ind(7)" disabled="disabled"></td>
+			<td><input type="text" placeholder="A4" disabled="disabled"></td>
 		    </tr>
 		  </table>
 		</div>
