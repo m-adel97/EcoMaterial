@@ -92,24 +92,37 @@
 
         <h2>Phase Two</h2>
         <form>
+            <div class="indicators">
+                <h3>LCA Indicator A1-A3</h3>
+                <ul>
+                    <li>(GWP): Global warming potential</li>
+                    <li>(ODP): Ozone Depletion Potential</li>
+                    <li>(AP): Acidification potential</li>
+                    <li>(EP): Eutrophication potential</li>
+                    <li>(POPC): Photochemical ozone creation</li>
+                    <li>(ADP): Abiotic depletion potential for non-fossil ressources</li>
+                    <li>(ADP-fossil fuels): Abiotic depletion potential for fossil ressources</li>
+                </ul>
+            </div>
+
             <div>
                 <label>Google Map Link</label>
                 <input type="text" id="google-map-link" placeholder="Google Map Link" disabled="disabled">
+
+                <label for="classification-2">Classification of material</label>
+                <select id="classification-2" onchange="updateMaterialOptions2()">
+                    <option value="none">Select classification</option>
+                    <option value="concrete">Concrete</option>
+                    <option value="bricks">Bricks</option>
+                    <option value="plaster">Plaster</option>
+                    <option value="insulation">Insulation</option>
+                </select>
+
+                <label for="name-2">Name of material</label>
+                <select id="name-2">
+                    <option value="none">Select name of material</option>
+                </select>
             </div>
-
-            <label for="classification-2">Classification of material</label>
-            <select id="classification-2" onchange="updateMaterialOptions2()">
-                <option value="none">Select classification</option>
-                <option value="concrete">Concrete</option>
-                <option value="bricks">Bricks</option>
-                <option value="plaster">Plaster</option>
-                <option value="insulation">Insulation</option>
-            </select>
-
-            <label for="name-2">Name of material</label>
-            <select id="name-2">
-                <option value="none">Select name of material</option>
-            </select>
 
             <div class="quantity-table">
                 <p>Quantity, Unit, Distance (m), Indicator values:</p>
