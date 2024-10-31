@@ -31,6 +31,7 @@ if (classification === 'concrete') {
     } else if (classification === 'bricks') {
         options = [
             { name: 'Select name of material' },
+            { name: 'Concrete Paving Solid and hollow Bricks', manufacturer: 'Marmox Egypt - CMB', image: 'img/con.png' },
             { name: 'Marmox Thermoblock 14/10', manufacturer: 'Marmox Egypt - CMB', image: 'img/con.png' }
         ];
     } else if (classification === 'plaster') {
