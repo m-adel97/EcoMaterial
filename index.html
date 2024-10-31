@@ -70,6 +70,9 @@
 	     <option value="bricks">Bricks</option>
 	     <option value="plaster">Plaster</option>
 	     <option value="insulation">Insulation</option>
+	     <option value="cement">Cement</option>
+	     <option value="glass">Glass</option>
+	     <option value="steel">Steel</option>		    
 	    </select>
 
             <label for="name">Name of material</label>
@@ -118,18 +121,21 @@
 	        <form>
 			
 		  <label for="material">Classification of material</label>
-  <select id="material" onchange="updateSubcategories()">
-    <option value="">Select Classification</option>
-    <option value="Concrete">Concrete</option>
-    <option value="Bricks">Bricks</option>
-    <option value="Plaster">Plaster</option>
-    <option value="Insulation">Insulation</option>
-  </select>
+  		  <select id="material" onchange="updateSubcategories()">
+	    	     <option value="none">Select classification</option>
+		     <option value="concrete">Concrete</option>
+		     <option value="bricks">Bricks</option>
+		     <option value="plaster">Plaster</option>
+		     <option value="insulation">Insulation</option>
+		     <option value="cement">Cement</option>
+		     <option value="glass">Glass</option>
+		     <option value="steel">Steel</option>	
+  		  </select>
 
-<label for="subcategory">Name of material</label>
-  <select id="subcategory">
-    <option value="">Select name of material</option>
-  </select>
+		  <label for="subcategory">Name of material</label>
+		    <select id="subcategory">
+		      <option value="">Select name of material</option>
+		    </select>
 			
 	        </form>
 		    <center><button type="button">ِAdd</button></center>
