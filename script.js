@@ -31,17 +31,37 @@ if (classification === 'concrete') {
     } else if (classification === 'bricks') {
         options = [
             { name: 'Select name of material' },
-            { name: 'Concrete Paving Solid and hollow Bricks', manufacturer: 'Marmox Egypt - CMB', image: 'img/con.png' },
+            { name: 'Concrete Paving Solid and hollow Bricks', manufacturer: 'ERTEKAA (The enhancement of integrated services and waste recycling company)-Www.ertekaa.org', image: 'img/con.png' },
             { name: 'Marmox Thermoblock 14/10', manufacturer: 'Marmox Egypt - CMB', image: 'img/con.png' }
         ];
     } else if (classification === 'plaster') {
         options = [
-            { name: 'Select name of material' }
+            { name: 'Select name of material' },
+            { name: 'Gypfine almomtaz 120- smoothing compound', manufacturer: 'Sain Gobain Gybrco', image: 'img/con.png' },
+            { name: 'GYPLAST fix', manufacturer: 'SAINT-GOBAIN GYPROC EGYPT-Egyptian Gypsum Company Building #12b04, Cairo Festival City, second floor New Cairo • Egypt', image: 'img/con.png' },
+            { name: 'GYPLAST fix', manufacturer: 'SAINT-GOBAIN GYPROC EGYPT-Egyptian Gypsum Company Building #12b04, Cairo Festival City, second floor New Cairo • Egypt', image: 'img/con.png' }
         ];
     } else if (classification === 'insulation') {
         options = [
             { name: 'Select name of material' },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', manufacturer: 'Marmox Egypt - CMB', image: 'img/con.png' }
+        ];
+    } else if (classification === 'cement') {
+        options = [
+            { name: 'Select name of material' },
+            { name: 'CEM III/A 42,5 N', manufacturer: 'Amreyah cement company', image: 'img/con.png' },
+            { name: 'CEM III/A 42,5 N', manufacturer: 'Lafarge Egypt-Kilo 93 Kattameia El Ein El Sokhna Suez, Egypt', image: 'img/con.png' },
+            { name: 'portland cement-CEM I 42,5 N', manufacturer: 'Lafarge Egypt-kilo 93 kattameia', image: 'img/con.png' }
+        ];
+    } else if (classification === 'glass') {
+        options = [
+            { name: 'Select name of material' },
+            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', manufacturer: 'Saint-Gobain Glass EGYPT, Building 12B4,Cairo Festival City, 2nd Floor, New Cairo', image: 'img/con.png' }
+        ];
+    }  else if (classification === 'steel') {
+        options = [
+            { name: 'Select name of material' },
+            { name: 'Reinforcing steel bars', manufacturer: 'Al Ezz Dekheila Steel Co. - Alexandria (EZDK) El Dekheila', image: 'img/con.png' }
         ];
     }
 
