@@ -15,7 +15,7 @@ function updateMaterialOptions() {
     let options = [];
 
     // Define options for each material classification
-if (classification === 'concrete') {
+    if (classification === 'concrete') {
         options = [
             { name: 'Select name of material' },
             { name: 'Reinforced horizontal concrete for slabs and beams grade C40 ready mix concrete', manufacturer: 'Alfalah Ready Mix LLC', image: 'img/concrete/0.png' },
@@ -86,6 +86,27 @@ if (classification === 'concrete') {
         }
     });
 
+    // Populate the "Name of material" dropdown with options
+    options.forEach(option => {
+        const opt = document.createElement('option');
+        opt.value = option.name;
+        opt.textContent = option.name;
+        nameSelect.appendChild(opt);
+    });
+
+    // Update the manufacturer field and image when a material is selected
+    nameSelect.addEventListener('change', function() {
+        const selectedOption = options.find(opt => opt.name === nameSelect.value);
+        manufactureInput.value = selectedOption ? selectedOption.manufacturer : '';
+        if (selectedOption && selectedOption.image) {
+            materialImage.src = selectedOption.image;
+            materialImage.style.display = 'block'; // Show image
+        } else {
+            materialImage.src = '';
+            materialImage.style.display = 'none'; // Hide image
+        }
+    });
+
     // Add event listener to show modal with enlarged image on click
     materialImage.addEventListener('click', function() {
         if (materialImage.src) {
@@ -108,6 +129,113 @@ if (classification === 'concrete') {
     };
 }
 
+// Function to update the second set of material options
+function updateSubcategories() {
+    const classification = document.getElementById('material').value;
+    const subcategorySelect = document.getElementById('subcategory');
+    const txtPlace = document.getElementById('txtPlace');
+    const txtUnit = document.getElementById('txtUnit');
+    const txtInd1 = document.getElementById('txtInd1');
+    const txtInd2 = document.getElementById('txtInd2');
+    const txtInd3 = document.getElementById('txtInd3');
+    const txtInd4 = document.getElementById('txtInd4');
+    const txtInd5 = document.getElementById('txtInd5');
+    const txtInd6 = document.getElementById('txtInd6');
+    const txtInd7 = document.getElementById('txtInd7');
+    const txtA4 = document.getElementById('txtA4');
+
+    subcategorySelect.innerHTML = ''; // Clear previous options
+
+    let suboptions = [];
+
+    // Define options for each material classification
+    if (classification === 'concrete') {
+        suboptions = [
+            { name: 'Select name of material' },
+            { name: 'Reinforced horizontal concrete for slabs and beams grade C40 ready mix concrete', place: 'Factory A', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'Reinforced Structure elements of substructure grade C40 Raft Foundation (Ready-mix concrete)', place: 'Factory A', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'Vertical elements superstructure (Columns) Grade C50 (Ready-mix Concrete)', place: 'Factory A', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'Vertical superstructure Durable Concrete grade C50 MPA (Ready Mix Concrete)', place: 'Factory A', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'Concrete Paving Solid and hollow Bricks', place: 'Factory A', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: '45_MPA_Early strength concrete', manufacturer: 'Ghrghar Group -Al wafaa W Amal City, Cairo ghrghar.com/group-company', place: 'Factory A', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'Foundations and Columns', place: 'Factory A', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'Slab production', place: 'Factory A', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'Foundation and Piles', place: 'Factory A', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] }
+        ];
+    } else if (classification === 'bricks') {
+        suboptions = [
+            { name: 'Select name of material', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'Concrete Paving Solid and hollow Bricks', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'Marmox Thermoblock 14/10', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] }
+        ];
+    } else if (classification === 'plaster') {
+        suboptions = [
+            { name: 'Select name of material', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'Gypfine almomtaz 120- smoothing compound', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'GYPLAST fix', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'GYPLAST fix', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] }
+        ];
+    } else if (classification === 'insulation') {
+        suboptions = [
+            { name: 'Select name of material', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] }
+        ];
+    } else if (classification === 'cement') {
+        suboptions = [
+            { name: 'Select name of material', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'CEM III/A 42,5 N', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'CEM III/A 42,5 N', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'portland cement-CEM I 42,5 N', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] }
+        ];
+    } else if (classification === 'glass') {
+        suboptions = [
+            { name: 'Select name of material', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] }
+        ];
+    } else if (classification === 'steel') {
+        suboptions = [
+            { name: 'Select name of material', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'Reinforcing steel bars', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] }
+        ];
+    }
+
+    // Populate the "Name of material" dropdown with options
+    suboptions.forEach(option => {
+        const opt = document.createElement('option');
+        opt.value = option.name;
+        opt.textContent = option.name;
+        subcategorySelect.appendChild(opt);
+    });
+
+    // Update the fields when a subcategory is selected
+    subcategorySelect.addEventListener('change', function() {
+        const selectedOption = suboptions.find(opt => opt.name === subcategorySelect.value);
+        if (selectedOption) {
+            txtPlace.value = selectedOption.place;
+            txtUnit.value = selectedOption.unit;
+            txtInd1.value = selectedOption.indicators[0];
+            txtInd2.value = selectedOption.indicators[1];
+            txtInd3.value = selectedOption.indicators[2];
+            txtInd4.value = selectedOption.indicators[3];
+            txtInd5.value = selectedOption.indicators[4];
+            txtInd6.value = selectedOption.indicators[5];
+            txtInd7.value = selectedOption.indicators[6];
+            txtA4.value = selectedOption.indicators[7];
+        } else {
+            // Clear fields if nothing is selected
+            txtPlace.value = '';
+            txtUnit.value = '';
+            txtInd1.value = '';
+            txtInd2.value = '';
+            txtInd3.value = '';
+            txtInd4.value = '';
+            txtInd5.value = '';
+            txtInd6.value = '';
+            txtInd7.value = '';
+            txtA4.value = '';
+        }
+    });
+}
 
 // Sample data for charts
 const data1 = {
