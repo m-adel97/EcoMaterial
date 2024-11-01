@@ -152,19 +152,18 @@ function updateSubcategories() {
     if (classification === 'concrete') {
         suboptions = [
             { name: 'Select name of material' },
-            { name: 'Reinforced horizontal concrete for slabs and beams grade C40 ready mix concrete', place: 'Factory A', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
-            { name: 'Reinforced Structure elements of substructure grade C40 Raft Foundation (Ready-mix concrete)', place: 'Factory A', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
-            { name: 'Vertical elements superstructure (Columns) Grade C50 (Ready-mix Concrete)', place: 'Factory A', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
-            { name: 'Vertical superstructure Durable Concrete grade C50 MPA (Ready Mix Concrete)', place: 'Factory A', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
-            { name: 'Concrete Paving Solid and hollow Bricks', place: 'Factory A', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
-            { name: '45_MPA_Early strength concrete', manufacturer: 'Ghrghar Group -Al wafaa W Amal City, Cairo ghrghar.com/group-company', place: 'Factory A', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
-            { name: 'Foundations and Columns', place: 'Factory A', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
-            { name: 'Slab production', place: 'Factory A', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
-            { name: 'Foundation and Piles', place: 'Factory A', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] }
+            { name: 'Reinforced horizontal concrete for slabs and beams grade C40 ready mix concrete', place: 'New Capital, Cairo Egypt', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'Reinforced Structure elements of substructure grade C40 Raft Foundation (Ready-mix concrete)', place: 'New Capital, Cairo Egypt', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'Vertical elements superstructure (Columns) Grade C50 (Ready-mix Concrete)', place: 'New Capital, Cairo Egypt', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'Vertical superstructure Durable Concrete grade C50 MPA (Ready Mix Concrete)', place: 'New Capital, Cairo Egypt', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: '45_MPA_Early strength concrete', place: 'Cairo', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'Foundations and Columns', place: 'Cairo', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'Slab production', place: 'El Gouna, Egypt', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'Foundation and Piles', place: 'El Gouna, Egypt', unit: 'm3', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] }
         ];
     } else if (classification === 'bricks') {
         suboptions = [
-            { name: 'Select name of material', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'Select name of material' },
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] }
         ];
