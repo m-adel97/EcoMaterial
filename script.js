@@ -165,37 +165,37 @@ function updateSubcategories() {
     } else if (classification === 'bricks') {
         suboptions = [
             { name: 'Select name of material', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
-            { name: 'Concrete Paving Solid and hollow Bricks', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
-            { name: 'Marmox Thermoblock 14/10', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] }
+            { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] }
         ];
     } else if (classification === 'plaster') {
         suboptions = [
-            { name: 'Select name of material', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
-            { name: 'Gypfine almomtaz 120- smoothing compound', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
-            { name: 'GYPLAST fix', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
-            { name: 'GYPLAST fix', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] }
+            { name: 'Select name of material' },
+            { name: 'Gypfine almomtaz 120- smoothing compound', place: 'Amreya plant-Borg Alarab -Alexandria- Egypt', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'GYPLAST fix', place: 'SADAT CITY / BPB PLACO EGYPT', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'GYPLAST fix', place: 'SADAT CITY / BPB PLACO EGYPT', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] }
         ];
     } else if (classification === 'insulation') {
         suboptions = [
-            { name: 'Select name of material', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
-            { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] }
+            { name: 'Select name of material' },
+            { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] }
         ];
     } else if (classification === 'cement') {
         suboptions = [
-            { name: 'Select name of material', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
-            { name: 'CEM III/A 42,5 N', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
-            { name: 'CEM III/A 42,5 N', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
-            { name: 'portland cement-CEM I 42,5 N', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] }
+            { name: 'Select name of material' },
+            { name: 'CEM III/A 42,5 N', place: 'Alexandria', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'CEM III/A 42,5 N', place: 'Lafarge Egypt-Kilo 93 Kattameia El Ein El Sokhna Suez, Egypt', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
+            { name: 'portland cement-CEM I 42,5 N', place: 'El Sokhna plant, Bagged', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] }
         ];
     } else if (classification === 'glass') {
         suboptions = [
-            { name: 'Select name of material', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
-            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] }
+            { name: 'Select name of material' },
+            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', place: 'El Sokhna plant, Bagged', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] }
         ];
     } else if (classification === 'steel') {
         suboptions = [
-            { name: 'Select name of material', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
-            { name: 'Reinforcing steel bars', place: 'Factory B', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] }
+            { name: 'Select name of material' },
+            { name: 'Reinforcing steel bars', place: 'Alexandria', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] }
         ];
     }
 
