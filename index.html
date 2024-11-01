@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -137,48 +138,7 @@
 		      <option value="">Select name of material</option>
 		    </select>
 			
-	        </form>
-		    <center><button type="button">ِAdd</button></center>
-  
-<script>
-    // بيانات المواد والأنواع
-    const data = {
-      Concrete: [
-        "Reinforced horizontal concrete for slabs and beams grade C40 ready mix concrete",
-        "Reinforced Structure elements of substructure grade C40 Raft Foundation (Ready-mix concrete)",
-        "Vertical elements superstructure (Columns) Grade C50 (Ready-mix Concrete)",
-        "Vertical superstructure Durable Concrete grade C50 MPA (Ready Mix Concrete)",
-        "Concrete Paving Solid and hollow Bricks",
-        "45_MPA_Early strength concrete",
-        "Foundations and Columns",
-        "Slab production",
-        "Foundation and Piles"
-      ],
-      Bricks: ["Marmox Thermoblock 14/10"],
-      Insulation: ["Marmox Tile Backer Board-insulation board 12.5 thickness"],
-      Plaster: []  // يمكنك إضافة أنواع الجبس لاحقًا إذا كانت متوفرة
-    };
-
-    // تحديث قائمة الأنواع بناءً على اختيار المادة
-    function updateSubcategories() {
-      const materialSelect = document.getElementById("material");
-      const subcategorySelect = document.getElementById("subcategory");
-      const selectedMaterial = materialSelect.value;
-
-      // مسح الأنواع الحالية
-      subcategorySelect.innerHTML = '<option value="">Select name of material</option>';
-
-      // إضافة الأنواع الجديدة إذا تم اختيار مادة
-      if (selectedMaterial && data[selectedMaterial]) {
-        data[selectedMaterial].forEach(subcategory => {
-          const option = document.createElement("option");
-          option.value = subcategory;
-          option.textContent = subcategory;
-          subcategorySelect.appendChild(option);
-        });
-      }
-    }
-  </script>
+	        </form>  
 		
             <div class="quantity-table">
                 <p>Quantity, Unit, Distance (m), Indicator values:</p>
@@ -201,8 +161,8 @@
 		    </tr>
 
 		    <tr>
-			<td><input type="text" placeholder="Qty"></td>
-			<td><input type="text" placeholder="Distance"></td>
+			<td><input id="txtQty" type="text" placeholder="Qty"></td>
+			<td><input id="txDist"  type="text" placeholder="Distance"></td>
 			<td>
 			 <select id="Fuel_Type" onchange="">
 			  <option value="LightOil">Light Oil</option>
@@ -210,16 +170,16 @@
 			  <option value="Diesel">Diesel</option>
 			 </select>
 			</td>
-			<td><input type="text" placeholder="PlaceOfProduction" disabled="disabled"></td>
-			<td><input type="text" placeholder="Unit" disabled="disabled"></td>
-			<td><input type="text" placeholder="Ind(1)"  disabled="disabled"></td>
-			<td><input type="text" placeholder="Ind(2)"  disabled="disabled"></td>
-			<td><input type="text" placeholder="Ind(3)" disabled="disabled"></td>
-			<td><input type="text" placeholder="Ind(4)" disabled="disabled"></td>
-			<td><input type="text" placeholder="Ind(5)" disabled="disabled"></td>
-			<td><input type="text" placeholder="Ind(6)" disabled="disabled"></td>
-			<td><input type="text" placeholder="Ind(7)" disabled="disabled"></td>
-			<td><input type="text" placeholder="A4" disabled="disabled"></td>
+			<td><input id="txtPlace" type="text" placeholder="PlaceOfProduction" disabled="disabled"></td>
+			<td><input id="txtUnit" type="text" placeholder="Unit" disabled="disabled"></td>
+			<td><input id="txtInd1" type="text" placeholder="Ind(1)"  disabled="disabled"></td>
+			<td><input id="txtInd2" type="text" placeholder="Ind(2)"  disabled="disabled"></td>
+			<td><input id="txtInd3" type="text" placeholder="Ind(3)" disabled="disabled"></td>
+			<td><input id="txtInd4" type="text" placeholder="Ind(4)" disabled="disabled"></td>
+			<td><input id="txtInd5" type="text" placeholder="Ind(5)" disabled="disabled"></td>
+			<td><input id="txtInd6" type="text" placeholder="Ind(6)" disabled="disabled"></td>
+			<td><input id="txtInd7" type="text" placeholder="Ind(7)" disabled="disabled"></td>
+			<td><input id="txtA4" type="text" placeholder="A4" disabled="disabled"></td>
 		    </tr>
 		  </table>
 		</div>
