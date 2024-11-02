@@ -38,7 +38,7 @@ function updateMaterialOptions() {
             { name: 'Select name of material' },
             { name: 'Gypfine almomtaz 120- smoothing compound', manufacturer: 'Sain Gobain Gybrco', image: 'img/plaster/0.png' },
             { name: 'GYPLAST fix', manufacturer: 'SAINT-GOBAIN GYPROC EGYPT-Egyptian Gypsum Company Building #12b04, Cairo Festival City, second floor New Cairo • Egypt', image: 'img/plaster/1.png' },
-            { name: 'GYPLAST fix', manufacturer: 'SAINT-GOBAIN GYPROC EGYPT-Egyptian Gypsum Company Building #12b04, Cairo Festival City, second floor New Cairo • Egypt', image: 'img/plaster/2.png' }
+            { name: 'GYPLAST fill', manufacturer: 'SAINT-GOBAIN GYPROC EGYPT-Egyptian Gypsum Company Building #12b04, Cairo Festival City, second floor New Cairo • Egypt', image: 'img/plaster/2.png' }
         ];
     } else if (classification === 'insulation') {
         options = [
@@ -163,7 +163,7 @@ function updateSubcategories() {
             { name: 'Select name of material' },
             { name: 'Gypfine almomtaz 120- smoothing compound', place: 'Amreya plant-Borg Alarab -Alexandria- Egypt', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
             { name: 'GYPLAST fix', place: 'SADAT CITY / BPB PLACO EGYPT', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] },
-            { name: 'GYPLAST fix', place: 'SADAT CITY / BPB PLACO EGYPT', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] }
+            { name: 'GYPLAST fill', place: 'SADAT CITY / BPB PLACO EGYPT', unit: 'pcs', indicators: ['Ind1', 'Ind2', 'Ind3', 'Ind4', 'Ind5', 'Ind6', 'Ind7', 'A4'] }
         ];
     } else if (classification === 'insulation') {
         suboptions = [
