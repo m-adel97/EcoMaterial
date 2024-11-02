@@ -38,7 +38,7 @@ function updateMaterialOptions() {
             { name: 'Select name of material' },
             { name: 'Gypfine almomtaz 120- smoothing compound', manufacturer: 'Sain Gobain Gybrco', image: 'img/plaster/0.png' },
             { name: 'GYPLAST fix', manufacturer: 'SAINT-GOBAIN GYPROC EGYPT-Egyptian Gypsum Company Building #12b04, Cairo Festival City, second floor New Cairo • Egypt', image: 'img/plaster/1.png' },
-            { name: 'GYPLAST fill', manufacturer: 'SAINT-GOBAIN GYPROC EGYPT-Egyptian Gypsum Company Building #12b04, Cairo Festival City, second floor New Cairo • Egypt', image: 'img/plaster/2.png' }
+            { name: 'GYPLAST fill', manufacturer: 'SAINT-GOBAIN GYPROC EGYPT-Egyptian Gypsum Company Building #12b04, Cairo Festival City, second floor New Cairo • Egypt', image: 'img/plaster/2.jpg' }
         ];
     } else if (classification === 'insulation') {
         options = [
