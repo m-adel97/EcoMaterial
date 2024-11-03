@@ -172,14 +172,14 @@ function updateSubcategories() {
         ];
     } else if (classification === 'cement') {
         suboptions = [
-            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', '']  },
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'CEM III/A 42,5 N', place: 'Alexandria', unit: '1 kg', indicators: ['821', '1.98', '0.0000602', '1.8', '0.00254', '4490', 'Ind7', 'A4'] },
             { name: 'CEM III/A 42,5 N', place: 'Lafarge Egypt-Kilo 93 Kattameia El Ein El Sokhna Suez, Egypt', unit: '1 kg', indicators: ['0.457', '0.00204', '4.07E-09', '0.00194', '0.00000243', '3.276', 'Ind7', 'A4'] },
             { name: 'portland cement-CEM I 42,5 N', place: 'El Sokhna plant, Bagged', unit: '1000 kg', indicators: ['855', '1.48', '4.92e-6', '5.84', '1.89', '0.00314', '4595', 'A4'] }
         ];
     } else if (classification === 'glass') {
         suboptions = [
-            { name: 'Select name of material' },
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', '']  },
             { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['16', '15.9', '0.0542', '0.00504', '0.145', '0.00000086', '0.0931', 'A4'] }
         ];
     } else if (classification === 'steel') {
@@ -226,6 +226,20 @@ function updateSubcategories() {
         }
     });
 }
+
+function calculateResults() {
+    const qty = parseFloat(document.getElementById("txtQty").value) || 0;
+    const dist = parseFloat(document.getElementById("txtDist").value) || 0;
+    const fuelType = parseFloat(document.getElementById("Fuel_Type").value) || 0;
+
+    for (let i = 1; i <= 7; i++) { // عدل عدد الحلقات حسب عدد Inds لديك
+        const indValue = parseFloat(document.getElementById('txtInd${i}').value) || 0;
+        document.getElementById('ResultInd${i}-t1').value = indValue * qty;
+    }
+
+    document.getElementById("ResultA4-t1").value = qty * dist * fuelType;
+}
+
 
 // Sample data for charts
 const data1 = {
