@@ -232,9 +232,9 @@ function calculateResults() {
     const dist = parseFloat(document.getElementById("txtDist").value) || 0;
     const fuelType = parseFloat(document.getElementById("Fuel_Type").value) || 0;
 
-    for (let i = 1; i <= 7; i++) { // عدل عدد الحلقات حسب عدد Inds لديك
-        const indValue = parseFloat(document.getElementById('txtInd${i}').value) || 0;
-        document.getElementById('ResultInd${i}-t1').value = indValue * qty;
+    for (let i = 1; i <= 7; i++) {
+        const indValue = parseFloat(document.getElementById(`txtInd${i}`).value) || 0;
+        document.getElementById(`ResultInd${i}-t1`).value = indValue * qty;
     }
 
     document.getElementById("ResultA4-t1").value = qty * dist * fuelType;
