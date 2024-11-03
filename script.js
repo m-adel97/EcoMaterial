@@ -142,7 +142,7 @@ function updateSubcategories() {
     // Define options for each material classification
     if (classification === 'concrete') {
         suboptions = [
-            { name: 'Select name of material' },
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Reinforced horizontal concrete for slabs and beams grade C40 ready mix concrete', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['4.02E2', '1.61E‐5', '9.06E‐1', '2.82E‐1', '3.67E‐2', '1.65E‐3', '2.21E3', 'A4'] },
             { name: 'Reinforced Structure elements of substructure grade C40 Raft Foundation (Ready-mix concrete)', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['3.95E2', '1.74E‐5', '9.44E‐1', '2.92E‐1', '3.97E‐2', '1.68E‐3', '2.36E3', 'A4'] },
             { name: 'Vertical elements superstructure (Columns) Grade C50 (Ready-mix Concrete)', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['4.46E2', '1.75E‐5', '1', '3.12E‐1', '4.06E‐2', '1.85E‐3', '2.43E3', 'A4'] },
@@ -154,25 +154,25 @@ function updateSubcategories() {
         ];
     } else if (classification === 'bricks') {
         suboptions = [
-            { name: 'Select name of material' },
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', '']  },
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] }
         ];
     } else if (classification === 'plaster') {
         suboptions = [
-            { name: 'Select name of material' },
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', '']  },
             { name: 'Gypfine almomtaz 120- smoothing compound', place: 'Amreya plant-Borg Alarab -Alexandria- Egypt', unit: '1 kg', indicators: ['0.148', '0.179', '-0.0307', '0.000161', '0.0011', '2.65E-08', '0.000505', 'A4'] },
             { name: 'GYPLAST fix', place: 'SADAT CITY / BPB PLACO EGYPT', unit: '1 kg', indicators: ['0.487', '0.00158', '8.9E-09', '0.000732', '0.0000159', '9.43E-08', '6.02', 'A4'] },
             { name: 'GYPLAST fill', place: 'SADAT CITY / BPB PLACO EGYPT', unit: '1 kg', indicators: ['4.69E-01', '1.51E-03', '8.86E-09', '7.19E-04', '1.39E-05', '9.31E-08', '5.8', 'A4'] }
         ];
     } else if (classification === 'insulation') {
         suboptions = [
-            { name: 'Select name of material' },
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', '']  },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] }
         ];
     } else if (classification === 'cement') {
         suboptions = [
-            { name: 'Select name of material' },
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', '']  },
             { name: 'CEM III/A 42,5 N', place: 'Alexandria', unit: '1 kg', indicators: ['821', '1.98', '0.0000602', '1.8', '0.00254', '4490', 'Ind7', 'A4'] },
             { name: 'CEM III/A 42,5 N', place: 'Lafarge Egypt-Kilo 93 Kattameia El Ein El Sokhna Suez, Egypt', unit: '1 kg', indicators: ['0.457', '0.00204', '4.07E-09', '0.00194', '0.00000243', '3.276', 'Ind7', 'A4'] },
             { name: 'portland cement-CEM I 42,5 N', place: 'El Sokhna plant, Bagged', unit: '1000 kg', indicators: ['855', '1.48', '4.92e-6', '5.84', '1.89', '0.00314', '4595', 'A4'] }
@@ -184,7 +184,7 @@ function updateSubcategories() {
         ];
     } else if (classification === 'steel') {
         suboptions = [
-            { name: 'Select name of material' },
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', '']  },
             { name: 'Reinforcing steel bars', place: 'Alexandria', unit: '1 ton', indicators: ['2270', '3.62E-12', '15', '30.4', '8.12', '0.000334', '27100', 'A4'] }
         ];
     }
