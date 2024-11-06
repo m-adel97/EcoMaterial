@@ -156,19 +156,24 @@ function updateSubcategories() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', '']  },
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
-            { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] }
+            { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
+            { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },            
         ];
     } else if (classification === 'plaster') {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', '']  },
             { name: 'Gypfine almomtaz 120- smoothing compound', place: 'Amreya plant-Borg Alarab -Alexandria- Egypt', unit: '1 kg', indicators: ['0.148', '0.179', '-0.0307', '0.000161', '0.0011', '2.65E-08', '0.000505', 'A4'] },
             { name: 'GYPLAST fix', place: 'SADAT CITY / BPB PLACO EGYPT', unit: '1 kg', indicators: ['0.487', '0.00158', '8.9E-09', '0.000732', '0.0000159', '9.43E-08', '6.02', 'A4'] },
-            { name: 'GYPLAST fill', place: 'SADAT CITY / BPB PLACO EGYPT', unit: '1 kg', indicators: ['4.69E-01', '1.51E-03', '8.86E-09', '7.19E-04', '1.39E-05', '9.31E-08', '5.8', 'A4'] }
+            { name: 'GYPLAST fill', place: 'SADAT CITY / BPB PLACO EGYPT', unit: '1 kg', indicators: ['4.69E-01', '1.51E-03', '8.86E-09', '7.19E-04', '1.39E-05', '9.31E-08', '5.8', 'A4'] },
+            { name: 'Mortar( cement sand mix)', place: '', unit: '1 kg', indicators: ['0.221', '', '', '', '', '', '', ''] },
+            { name: 'Mortar (cement, lime mix) ', place: '', unit: '1 kg', indicators: ['0.213', '', '', '', '', '', '', ''] }
+
         ];
     } else if (classification === 'insulation') {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', '']  },
-            { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] }
+            { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
+            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] }
         ];
     } else if (classification === 'cement') {
         suboptions = [
@@ -186,6 +191,26 @@ function updateSubcategories() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', '']  },
             { name: 'Reinforcing steel bars', place: 'Alexandria', unit: '1 ton', indicators: ['2270', '3.62E-12', '15', '30.4', '8.12', '0.000334', '27100', 'A4'] }
+        ];
+    } else if (classification === 'sand') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', '']  },
+            { name: 'sand (generic data)', place: '', unit: '1 kg', indicators: ['0.0051', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification === 'paint') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', '']  },
+            { name: 'Standard paint', place: '', unit: '1 kg', indicators: ['2.91', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification === 'aluminium') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', '']  },
+            { name: 'Aluminium', place: '', unit: '1 kg', indicators: ['1.81', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification === 'timber') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', '']  },
+            { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
         ];
     }
 
