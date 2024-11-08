@@ -2076,7 +2076,170 @@ function calculateTotalResults(event) {
     document.getElementById("TotalResultA4").value = totalA4.toFixed(2);
 }
 
+function calculateTotalResults_Floor(event) {
+    event.preventDefault();
 
+    // الحصول على القيم من جدول 1 (t1)
+    var resultInd1_t4 = parseFloat(document.getElementById("ResultInd1_t4").value) || 0;
+    var resultInd2_t4 = parseFloat(document.getElementById("ResultInd2_t4").value) || 0;
+    var resultInd3_t4 = parseFloat(document.getElementById("ResultInd3_t4").value) || 0;
+    var resultInd4_t4 = parseFloat(document.getElementById("ResultInd4_t4").value) || 0;
+    var resultInd5_t4 = parseFloat(document.getElementById("ResultInd5_t4").value) || 0;
+    var resultInd6_t4 = parseFloat(document.getElementById("ResultInd6_t4").value) || 0;
+    var resultInd7_t4 = parseFloat(document.getElementById("ResultInd7_t4").value) || 0;
+    var resultA4_t4 = parseFloat(document.getElementById("ResultA4_t4").value) || 0;
+
+    // الحصول على القيم من جدول 2 (t2)
+    var resultInd1_t5 = parseFloat(document.getElementById("ResultInd1_t5").value) || 0;
+    var resultInd2_t5 = parseFloat(document.getElementById("ResultInd2_t5").value) || 0;
+    var resultInd3_t5 = parseFloat(document.getElementById("ResultInd3_t5").value) || 0;
+    var resultInd4_t5 = parseFloat(document.getElementById("ResultInd4_t5").value) || 0;
+    var resultInd5_t5 = parseFloat(document.getElementById("ResultInd5_t5").value) || 0;
+    var resultInd6_t5 = parseFloat(document.getElementById("ResultInd6_t5").value) || 0;
+    var resultInd7_t5 = parseFloat(document.getElementById("ResultInd7_t5").value) || 0;
+    var resultA4_t5 = parseFloat(document.getElementById("ResultA4_t5").value) || 0;
+
+    // الحصول على القيم من جدول 3 (t3)
+    var resultInd1_t6 = parseFloat(document.getElementById("ResultInd1_t6").value) || 0;
+    var resultInd2_t6 = parseFloat(document.getElementById("ResultInd2_t6").value) || 0;
+    var resultInd3_t6 = parseFloat(document.getElementById("ResultInd3_t6").value) || 0;
+    var resultInd4_t6 = parseFloat(document.getElementById("ResultInd4_t6").value) || 0;
+    var resultInd5_t6 = parseFloat(document.getElementById("ResultInd5_t6").value) || 0;
+    var resultInd6_t6 = parseFloat(document.getElementById("ResultInd6_t6").value) || 0;
+    var resultInd7_t6 = parseFloat(document.getElementById("ResultInd7_t6").value) || 0;
+    var resultA4_t6 = parseFloat(document.getElementById("ResultA4_t6").value) || 0;
+
+    // حساب المجموع
+    var totalInd1 = resultInd1_t4 + resultInd1_t5 + resultInd1_t6;
+    var totalInd2 = resultInd2_t4 + resultInd2_t5 + resultInd2_t6;
+    var totalInd3 = resultInd3_t4 + resultInd3_t5 + resultInd3_t6;
+    var totalInd4 = resultInd4_t4 + resultInd4_t5 + resultInd4_t6;
+    var totalInd5 = resultInd5_t4 + resultInd5_t5 + resultInd5_t6;
+    var totalInd6 = resultInd6_t4 + resultInd6_t5 + resultInd6_t6;
+    var totalInd7 = resultInd7_t4 + resultInd7_t5 + resultInd7_t6;
+    var totalA4 = resultA4_t4 + resultA4_t5 + resultA4_t6;
+
+    // عرض النتائج في الحقول الخاصة بالمجموع
+    document.getElementById("TotalResultInd1_Floor").value = totalInd1.toFixed(2);
+    document.getElementById("TotalResultInd2_Floor").value = totalInd2.toFixed(2);
+    document.getElementById("TotalResultInd3_Floor").value = totalInd3.toFixed(2);
+    document.getElementById("TotalResultInd4_Floor").value = totalInd4.toFixed(2);
+    document.getElementById("TotalResultInd5_Floor").value = totalInd5.toFixed(2);
+    document.getElementById("TotalResultInd6_Floor").value = totalInd6.toFixed(2);
+    document.getElementById("TotalResultInd7_Floor").value = totalInd7.toFixed(2);
+    document.getElementById("TotalResultA4_Floor").value = totalA4.toFixed(2);
+}
+
+
+function calculateTotalResults_Walls(event) {
+    event.preventDefault();
+
+    // الحصول على القيم من جدول 7 (t7)
+    var resultInd1_t7 = parseFloat(document.getElementById("ResultInd1_t7").value) || 0;
+    var resultInd2_t7 = parseFloat(document.getElementById("ResultInd2_t7").value) || 0;
+    var resultInd3_t7 = parseFloat(document.getElementById("ResultInd3_t7").value) || 0;
+    var resultInd4_t7 = parseFloat(document.getElementById("ResultInd4_t7").value) || 0;
+    var resultInd5_t7 = parseFloat(document.getElementById("ResultInd5_t7").value) || 0;
+    var resultInd6_t7 = parseFloat(document.getElementById("ResultInd6_t7").value) || 0;
+    var resultInd7_t7 = parseFloat(document.getElementById("ResultInd7_t7").value) || 0;
+    var resultA4_t7 = parseFloat(document.getElementById("ResultA4_t7").value) || 0;
+
+    // الحصول على القيم من جدول 8 (t8)
+    var resultInd1_t8 = parseFloat(document.getElementById("ResultInd1_t8").value) || 0;
+    var resultInd2_t8 = parseFloat(document.getElementById("ResultInd2_t8").value) || 0;
+    var resultInd3_t8 = parseFloat(document.getElementById("ResultInd3_t8").value) || 0;
+    var resultInd4_t8 = parseFloat(document.getElementById("ResultInd4_t8").value) || 0;
+    var resultInd5_t8 = parseFloat(document.getElementById("ResultInd5_t8").value) || 0;
+    var resultInd6_t8 = parseFloat(document.getElementById("ResultInd6_t8").value) || 0;
+    var resultInd7_t8 = parseFloat(document.getElementById("ResultInd7_t8").value) || 0;
+    var resultA4_t8 = parseFloat(document.getElementById("ResultA4_t8").value) || 0;
+
+    // الحصول على القيم من جدول 9 (t9)
+    var resultInd1_t9 = parseFloat(document.getElementById("ResultInd1_t9").value) || 0;
+    var resultInd2_t9 = parseFloat(document.getElementById("ResultInd2_t9").value) || 0;
+    var resultInd3_t9 = parseFloat(document.getElementById("ResultInd3_t9").value) || 0;
+    var resultInd4_t9 = parseFloat(document.getElementById("ResultInd4_t9").value) || 0;
+    var resultInd5_t9 = parseFloat(document.getElementById("ResultInd5_t9").value) || 0;
+    var resultInd6_t9 = parseFloat(document.getElementById("ResultInd6_t9").value) || 0;
+    var resultInd7_t9 = parseFloat(document.getElementById("ResultInd7_t9").value) || 0;
+    var resultA4_t9 = parseFloat(document.getElementById("ResultA4_t9").value) || 0;
+
+    // حساب المجموع
+    var totalInd1 = resultInd1_t7 + resultInd1_t8 + resultInd1_t9;
+    var totalInd2 = resultInd2_t7 + resultInd2_t8 + resultInd2_t9;
+    var totalInd3 = resultInd3_t7 + resultInd3_t8 + resultInd3_t9;
+    var totalInd4 = resultInd4_t7 + resultInd4_t8 + resultInd4_t9;
+    var totalInd5 = resultInd5_t7 + resultInd5_t8 + resultInd5_t9;
+    var totalInd6 = resultInd6_t7 + resultInd6_t8 + resultInd6_t9;
+    var totalInd7 = resultInd7_t7 + resultInd7_t8 + resultInd7_t9;
+    var totalA4 = resultA4_t7 + resultA4_t8 + resultA4_t9;
+
+    // عرض النتائج في الحقول الخاصة بالمجموع
+    document.getElementById("TotalResultInd1_Walls").value = totalInd1.toFixed(2);
+    document.getElementById("TotalResultInd2_Walls").value = totalInd2.toFixed(2);
+    document.getElementById("TotalResultInd3_Walls").value = totalInd3.toFixed(2);
+    document.getElementById("TotalResultInd4_Walls").value = totalInd4.toFixed(2);
+    document.getElementById("TotalResultInd5_Walls").value = totalInd5.toFixed(2);
+    document.getElementById("TotalResultInd6_Walls").value = totalInd6.toFixed(2);
+    document.getElementById("TotalResultInd7_Walls").value = totalInd7.toFixed(2);
+    document.getElementById("TotalResultA4_Walls").value = totalA4.toFixed(2);
+}
+
+
+
+function calculateTotalResults_Window(event) {
+    event.preventDefault();
+
+    // الحصول على القيم من جدول 10 (t10)
+    var resultInd1_t10 = parseFloat(document.getElementById("ResultInd1_t10").value) || 0;
+    var resultInd2_t10 = parseFloat(document.getElementById("ResultInd2_t10").value) || 0;
+    var resultInd3_t10 = parseFloat(document.getElementById("ResultInd3_t10").value) || 0;
+    var resultInd4_t10 = parseFloat(document.getElementById("ResultInd4_t10").value) || 0;
+    var resultInd5_t10 = parseFloat(document.getElementById("ResultInd5_t10").value) || 0;
+    var resultInd6_t10 = parseFloat(document.getElementById("ResultInd6_t10").value) || 0;
+    var resultInd7_t10 = parseFloat(document.getElementById("ResultInd7_t10").value) || 0;
+    var resultA4_t10 = parseFloat(document.getElementById("ResultA4_t10").value) || 0;
+
+    // الحصول على القيم من جدول 11 (t11)
+    var resultInd1_t11 = parseFloat(document.getElementById("ResultInd1_t11").value) || 0;
+    var resultInd2_t11 = parseFloat(document.getElementById("ResultInd2_t11").value) || 0;
+    var resultInd3_t11 = parseFloat(document.getElementById("ResultInd3_t11").value) || 0;
+    var resultInd4_t11 = parseFloat(document.getElementById("ResultInd4_t11").value) || 0;
+    var resultInd5_t11 = parseFloat(document.getElementById("ResultInd5_t11").value) || 0;
+    var resultInd6_t11 = parseFloat(document.getElementById("ResultInd6_t11").value) || 0;
+    var resultInd7_t11 = parseFloat(document.getElementById("ResultInd7_t11").value) || 0;
+    var resultA4_t11 = parseFloat(document.getElementById("ResultA4_t11").value) || 0;
+
+    // الحصول على القيم من جدول 12 (t12)
+    var resultInd1_t12 = parseFloat(document.getElementById("ResultInd1_t12").value) || 0;
+    var resultInd2_t12 = parseFloat(document.getElementById("ResultInd2_t12").value) || 0;
+    var resultInd3_t12 = parseFloat(document.getElementById("ResultInd3_t12").value) || 0;
+    var resultInd4_t12 = parseFloat(document.getElementById("ResultInd4_t12").value) || 0;
+    var resultInd5_t12 = parseFloat(document.getElementById("ResultInd5_t12").value) || 0;
+    var resultInd6_t12 = parseFloat(document.getElementById("ResultInd6_t12").value) || 0;
+    var resultInd7_t12 = parseFloat(document.getElementById("ResultInd7_t12").value) || 0;
+    var resultA4_t12 = parseFloat(document.getElementById("ResultA4_t12").value) || 0;
+
+    // حساب المجموع
+    var totalInd1 = resultInd1_t10 + resultInd1_t11 + resultInd1_t12;
+    var totalInd2 = resultInd2_t10 + resultInd2_t11 + resultInd2_t12;
+    var totalInd3 = resultInd3_t10 + resultInd3_t11 + resultInd3_t12;
+    var totalInd4 = resultInd4_t10 + resultInd4_t11 + resultInd4_t12;
+    var totalInd5 = resultInd5_t10 + resultInd5_t11 + resultInd5_t12;
+    var totalInd6 = resultInd6_t10 + resultInd6_t11 + resultInd6_t12;
+    var totalInd7 = resultInd7_t10 + resultInd7_t11 + resultInd7_t12;
+    var totalA4 = resultA4_t10 + resultA4_t11 + resultA4_t12;
+
+    // عرض النتائج في الحقول الخاصة بالمجموع
+    document.getElementById("TotalResultInd1_Window").value = totalInd1.toFixed(2);
+    document.getElementById("TotalResultInd2_Window").value = totalInd2.toFixed(2);
+    document.getElementById("TotalResultInd3_Window").value = totalInd3.toFixed(2);
+    document.getElementById("TotalResultInd4_Window").value = totalInd4.toFixed(2);
+    document.getElementById("TotalResultInd5_Window").value = totalInd5.toFixed(2);
+    document.getElementById("TotalResultInd6_Window").value = totalInd6.toFixed(2);
+    document.getElementById("TotalResultInd7_Window").value = totalInd7.toFixed(2);
+    document.getElementById("TotalResultA4_Window").value = totalA4.toFixed(2);
+}
 
 
 
