@@ -2245,10 +2245,10 @@ function calculateTotalResults_Window(event) {
 
 // Sample data for charts
 const data1 = {
-    labels: ['Item 1', 'Item 2', 'Item 3'],
+    labels: ['Foundation of material', 'Floor & Roofs', 'Walls', 'Window'],
     datasets: [{
         label: 'Design 1',
-        data: [12, 19, 3],
+        data: [0, 0, 0, 0], // Starting with zeros
         backgroundColor: 'rgba(0, 162, 255, 0.2)',
         borderColor: 'rgba(0, 162, 255, 1)',
         borderWidth: 1
@@ -2256,10 +2256,10 @@ const data1 = {
 };
 
 const data2 = {
-    labels: ['Item 1', 'Item 2', 'Item 3'],
+    labels: ['Foundation of material', 'Floor & Roofs', 'Walls', 'Window'],
     datasets: [{
         label: 'Design 2',
-        data: [9, 16, 7],
+        data: [0, 0, 0, 0], // Starting with zeros
         backgroundColor: 'rgba(0, 255, 132, 0.2)',
         borderColor: 'rgba(0, 255, 132, 1)',
         borderWidth: 1
@@ -2293,6 +2293,7 @@ new Chart(ctx2, {
         }
     }
 });
+
 
 
 
