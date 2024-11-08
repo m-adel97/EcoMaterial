@@ -1,1 +1,704 @@
-function _0x3073(){const _0x1dceb1=['Foundation\x20and\x20Piles','0.000334','img/concrete/5.png','ResultInd6-t1','txtInd3_t2','0.00000086','txtQty','3.74E2','ResultInd1_t2','Item\x201','4490','Sain\x20Gobain\x20Gybrco','Bitumen','1.81','0.00194','1\x20m3','Saint-Gobain\x20Glass\x20EGYPT,\x20Building\x2012B4,Cairo\x20Festival\x20City,\x202nd\x20Floor,\x20New\x20Cairo','Mortar(\x20cement\x20sand\x20mix)','Lafarge\x20Egypt-Kilo\x2093\x20Kattameia\x20El\x20Ein\x20El\x20Sokhna\x20Suez,\x20Egypt','find','bar','6.15E+00','1.75E‐3','0.00204','2.4E3','manufacturer','4.06E‐2','Egypt','5.84','ResultInd3-t1','3.03E‐02','forEach','REFLECTASOL\x20Clear\x20(on\x20PLANILUX)-Pyrolytic\x20CVD\x20coated\x20glass-4mm','1\x20kg','target','Vertical\x20elements\x20superstructure\x20(Columns)\x20Grade\x20C50\x20(Ready-mix\x20Concrete)','ResultInd5_t3','4.99E1','none','txtA4','4595','3.12E‐1','8.87E‐1','txtInd5_t3','name','1.17E‐7','change','_t2','2.48E‐5','txtInd4_t2','0.0931','1.83E‐5','myModal','SAINT-GOBAIN\x20GYPROC\x20EGYPT-Egyptian\x20Gypsum\x20Company\x20Building\x20#12b04,\x20Cairo\x20Festival\x20City,\x20second\x20floor\x20New\x20Cairo\x20•\x20Egypt','501','0.00158','2.59E‐1','style','1.09E0','rgba(0,\x20162,\x20255,\x200.2)','3.43E‐2','TotalResultInd3','6.22E‐1','txtInd6_t3','931868ZOyHXi','3.22E‐1','onclick','1.61E‐5','indicators','4.07E-09','preventDefault','rgba(0,\x20255,\x20132,\x200.2)','Vertical\x20superstructure\x20Durable\x20Concrete\x20grade\x20C50\x20MPA\x20(Ready\x20Mix\x20Concrete)','1.75E‐5','Red\x20Sea\x20Ready\x20Mix\x20(Orascom)\x20-\x20Head\x20Office:\x202005\x20A\x20Corniche\x20El\x20Nil,\x20Ramlet\x20Boulaq,\x20Nile\x20City\x20Towers,\x20North\x20Tower,\x2014th\x20Floor\x20–\x20Cairo\x20EGYPT\x20-\x20http://www.rsc.com.eg/','2.96E‐1','txtInd7_t2','0.457','ResultInd2-t1','unit','txtInd3','2.66E‐2','Item\x202','2.53E2','2.85E‐2','0.145','toFixed','0.0000159','insulation','chart1','4.67E‐2','0.55','9.31E-08','Reinforced\x20Structure\x20elements\x20of\x20substructure\x20grade\x20C40\x20Raft\x20Foundation\x20(Ready-mix\x20concrete)','block','3.97E‐2','txtInd1','TotalResultInd7','enlarged-image','image','3.67E‐2','458','TotalResultInd4','img/cement/2.png','manufacture','ResultA4_t2','TotalResultInd1','Alfalah\x20Ready\x20Mix\x20LLC','1.65E‐3','8.12','txtQty_t3','2270','1\x20unit\x20of\x20Masonry\x20Block\x20(600\x20mm\x20useable\x20length\x20x\x20140\x20mm\x20Width\x20x\x20100\x20mm\x20Hight)','img/bricks/0.png','txtDist','2.32E‐2','8.9E-09','0.000732','shiftKey','4.46E2','_t3','keyCode','Marmox\x20Tile\x20Backer\x20Board-insulation\x20board\x2012.5\x20thickness','0.0011','classification','ResultInd4_t2','Fuel_Type_t2','4.69E-01','8.86E-09','0.00314','material_t3','821','7951320ungNKv','1\x20ton','TotalResultA4','966BETONx','img/concrete/3.png','txtInd7','chart2','0.000161','txtDist_t3','2.73E3','4.35E‐2','2.36E3','Reinforced\x20horizontal\x20concrete\x20for\x20slabs\x20and\x20beams\x20grade\x20C40\x20ready\x20mix\x20concrete','2.05E‐5','2.92E‐1','img/plaster/2.jpg','1.51E-03','El\x20Gouna,\x20Egypt','ResultInd1_t3','appendChild','material-image','-t1','9.06E‐1','createElement','-0.0307','option','concrete','0.72','Foundations\x20and\x20Columns','ResultInd3_t3','txtPlace_t2','1.82E‐1','El\x20Sokhna\x20plant,\x20Bagged','9.22E2','txtInd4_t3','9.44E‐1','855','9.43E-08','929276BWWtgk','bricks','ResultInd2_t2','1.49E‐2','45_MPA_Early\x20strength\x20concrete','4.36E‐2','txtInd5_t2','txtInd3_t3','ctrlKey','Design\x202','3070','0.0542','textContent','Reinforcing\x20steel\x20bars','2.28E0','glass','2.43E3','ERTEKAA\x20(The\x20enhancement\x20of\x20integrated\x20services\x20and\x20waste\x20recycling\x20company)-Www.ertekaa.org','0.00054','1.15E+02','display','img/concrete/1.png','cement','closeBtn','0.00254','ResultA4_t3','0.0000602','SADAT\x20CITY\x20/\x20BPB\x20PLACO\x20EGYPT','img/concrete/8.png','ResultInd6_t3','1.06E‐4','6.02','sand\x20(generic\x20data)','Slab\x20production','6918372Rhaqls','0.24','0.487','red\x20brick\x20(generic\x20data)','ResultInd5_t2','GYPLAST\x20fill','2.82E‐1','1.36E2','5.01E‐4','place','3.87E‐2','1\x20m2\x20\x20of\x20board\x20thickness\x2012.5\x20mm','Concrete\x20Paving\x20Solid\x20and\x20hollow\x20Bricks','30.4','1.98','Aluminium','ResultInd1-t1','Timber','ResultInd4-t1','ResultInd7_t3','0.0051','46504HHZzgV','Gypfine\x20almomtaz\x20120-\x20smoothing\x20compound','3.68E2','plaster','txtInd2','Marmox\x20Egypt\x20-\x20CMB','0.213','1.85E‐3','0.179','txtInd','txtPlace_t3','txtInd2_t2','3.95E2','2.36E‐5','7.51E‐6','1.89','src','rgba(0,\x20162,\x20255,\x201)','getElementById','14529888TumpWS','Design\x201','5.8','material_t2','txtUnit_t2','ResultInd7_t2','1.39E-05','Item\x203','3230','Fuel_Type','1.12E‐1','keydown','1.8','img/concrete/0.png','CEM\x20III/A\x2042,5\x20N','7392wqAdMi','7.19E-04','ResultA4-t1','2.91','img/bricks/1.png','27100','4.92e-6','ResultInd','Amreya\x20plant-Borg\x20Alarab\x20-Alexandria-\x20Egypt','txtQty_t2','getContext','Standard\x20paint','New\x20Capital,\x20Cairo\x20Egypt','innerHTML','0.00000243','1.08','portland\x20cement-CEM\x20I\x2042,5\x20N','1.48','subcategory_t3','contextmenu','2.21E3','txtInd2_t3','subcategory_t2','0.148','1.17','4.02E2','1\x20m2','1.68E‐3','4.31E‐2','0.000505','9.19E‐3','steel','ResultInd2_t3','416WbMawX','Ind7','3.62E-12','ResultInd3_t2','timber','3.276','ResultInd7-t1','paint','0.221','1000\x20kg','txtDist_t2','3.31E‐1','0.00504','Marmox\x20Thermoblock\x2014/10','Select\x20name\x20of\x20material','Cairo','ResultInd6_t2','3.71E‐1','ResultInd5-t1','2.36E‐02','sand','2.65E-08','GYPLAST\x20fix','6.85E‐07','6.91E‐05','txtPlace','aluminium','txtA4_t2','material','value','3.51E3','img/plaster/1.png','4,79E‐4','Alexandria','Mortar\x20(cement,\x20lime\x20mix)\x20','addEventListener','15.9'];_0x3073=function(){return _0x1dceb1;};return _0x3073();}const _0x7e4a7b=_0x309e;(function(_0x2ff574,_0x4d1911){const _0x1d1d5a=_0x309e,_0x39a642=_0x2ff574();while(!![]){try{const _0x2fcab5=parseInt(_0x1d1d5a(0x27c))/0x1+parseInt(_0x1d1d5a(0x212))/0x2+-parseInt(_0x1d1d5a(0x18c))/0x3*(parseInt(_0x1d1d5a(0x1ad))/0x4)+-parseInt(_0x1d1d5a(0x256))/0x5+-parseInt(_0x1d1d5a(0x155))/0x6+parseInt(_0x1d1d5a(0x259))/0x7*(parseInt(_0x1d1d5a(0x16a))/0x8)+parseInt(_0x1d1d5a(0x17d))/0x9;if(_0x2fcab5===_0x4d1911)break;else _0x39a642['push'](_0x39a642['shift']());}catch(_0x1cf796){_0x39a642['push'](_0x39a642['shift']());}}}(_0x3073,0xc64de));function updateMaterialOptions(){const _0x5ce9f4=_0x309e,_0x2aac6c=document['getElementById'](_0x5ce9f4(0x24e))[_0x5ce9f4(0x1ca)],_0xbe6377=document['getElementById']('name'),_0x48c7bf=document[_0x5ce9f4(0x17c)](_0x5ce9f4(0x23a)),_0x2e8ba7=document['getElementById'](_0x5ce9f4(0x26a)),_0x4c7273=document[_0x5ce9f4(0x17c)](_0x5ce9f4(0x234)),_0x5020a9=document[_0x5ce9f4(0x17c)](_0x5ce9f4(0x206));_0xbe6377[_0x5ce9f4(0x199)]='',_0x48c7bf[_0x5ce9f4(0x1ca)]='',_0x2e8ba7[_0x5ce9f4(0x17a)]='',_0x2e8ba7[_0x5ce9f4(0x20b)][_0x5ce9f4(0x147)]=_0x5ce9f4(0x1f8);let _0x3bac9a=[];if(_0x2aac6c===_0x5ce9f4(0x270))_0x3bac9a=[{'name':_0x5ce9f4(0x1bb)},{'name':_0x5ce9f4(0x262),'manufacturer':'Alfalah\x20Ready\x20Mix\x20LLC','image':_0x5ce9f4(0x18a)},{'name':_0x5ce9f4(0x22f),'manufacturer':_0x5ce9f4(0x23d),'image':_0x5ce9f4(0x148)},{'name':_0x5ce9f4(0x1f5),'manufacturer':'Alfalah\x20Ready\x20Mix\x20LLC','image':'img/concrete/2.png'},{'name':_0x5ce9f4(0x21a),'manufacturer':'Alfalah\x20Ready\x20Mix\x20LLC','image':_0x5ce9f4(0x25a)},{'name':'45_MPA_Early\x20strength\x20concrete','manufacturer':'Ghrghar\x20Group\x20-Al\x20wafaa\x20W\x20Amal\x20City,\x20Cairo\x20ghrghar.com/group-company','image':_0x5ce9f4(0x1d4)},{'name':_0x5ce9f4(0x272),'manufacturer':'Ghrghar\x20Group\x20-Al\x20wafaa\x20W\x20Amal\x20City,\x20Cairo\x20ghrghar.com/group-company','image':'img/concrete/6.png'},{'name':_0x5ce9f4(0x154),'manufacturer':_0x5ce9f4(0x21c),'image':'img/concrete/7.png'},{'name':_0x5ce9f4(0x1d2),'manufacturer':_0x5ce9f4(0x21c),'image':_0x5ce9f4(0x14f)}];else{if(_0x2aac6c==='bricks')_0x3bac9a=[{'name':_0x5ce9f4(0x1bb)},{'name':_0x5ce9f4(0x161),'manufacturer':_0x5ce9f4(0x144),'image':_0x5ce9f4(0x243)},{'name':_0x5ce9f4(0x1ba),'manufacturer':'Marmox\x20Egypt\x20-\x20CMB','image':_0x5ce9f4(0x190)}];else{if(_0x2aac6c===_0x5ce9f4(0x16d))_0x3bac9a=[{'name':_0x5ce9f4(0x1bb)},{'name':'Gypfine\x20almomtaz\x20120-\x20smoothing\x20compound','manufacturer':_0x5ce9f4(0x1dd),'image':'img/plaster/0.png'},{'name':'GYPLAST\x20fix','manufacturer':_0x5ce9f4(0x207),'image':_0x5ce9f4(0x265)},{'name':_0x5ce9f4(0x15a),'manufacturer':'SAINT-GOBAIN\x20GYPROC\x20EGYPT-Egyptian\x20Gypsum\x20Company\x20Building\x20#12b04,\x20Cairo\x20Festival\x20City,\x20second\x20floor\x20New\x20Cairo\x20•\x20Egypt','image':_0x5ce9f4(0x1cc)}];else{if(_0x2aac6c===_0x5ce9f4(0x22a))_0x3bac9a=[{'name':_0x5ce9f4(0x1bb)},{'name':_0x5ce9f4(0x24c),'manufacturer':_0x5ce9f4(0x16f),'image':'img/insulation/0.png'}];else{if(_0x2aac6c===_0x5ce9f4(0x149))_0x3bac9a=[{'name':_0x5ce9f4(0x1bb)},{'name':_0x5ce9f4(0x18b),'manufacturer':'Amreyah\x20cement\x20company','image':'img/cement/0.png'},{'name':_0x5ce9f4(0x18b),'manufacturer':'Lafarge\x20Egypt-Kilo\x2093\x20Kattameia\x20El\x20Ein\x20El\x20Sokhna\x20Suez,\x20Egypt','image':'img/cement/1.png'},{'name':_0x5ce9f4(0x19c),'manufacturer':'Lafarge\x20Egypt-kilo\x2093\x20kattameia','image':_0x5ce9f4(0x239)}];else{if(_0x2aac6c===_0x5ce9f4(0x142))_0x3bac9a=[{'name':_0x5ce9f4(0x1bb)},{'name':'REFLECTASOL\x20Clear\x20(on\x20PLANILUX)-Pyrolytic\x20CVD\x20coated\x20glass-4mm','manufacturer':_0x5ce9f4(0x1e2),'image':'img/glass/0.png'}];else _0x2aac6c===_0x5ce9f4(0x1ab)&&(_0x3bac9a=[{'name':'Select\x20name\x20of\x20material'},{'name':_0x5ce9f4(0x140),'manufacturer':'Al\x20Ezz\x20Dekheila\x20Steel\x20Co.\x20-\x20Alexandria\x20(EZDK)\x20El\x20Dekheila','image':'img/steel/0.png'}]);}}}}}_0x3bac9a[_0x5ce9f4(0x1f1)](_0xe39878=>{const _0x530ca7=_0x5ce9f4,_0x2a6d4a=document[_0x530ca7(0x26d)](_0x530ca7(0x26f));_0x2a6d4a[_0x530ca7(0x1ca)]=_0xe39878[_0x530ca7(0x1fe)],_0x2a6d4a[_0x530ca7(0x13f)]=_0xe39878[_0x530ca7(0x1fe)],_0xbe6377[_0x530ca7(0x269)](_0x2a6d4a);}),_0xbe6377['addEventListener'](_0x5ce9f4(0x200),function(){const _0x5a68d7=_0x5ce9f4,_0x4fe086=_0x3bac9a[_0x5a68d7(0x1e5)](_0x458462=>_0x458462[_0x5a68d7(0x1fe)]===_0xbe6377[_0x5a68d7(0x1ca)]);_0x48c7bf[_0x5a68d7(0x1ca)]=_0x4fe086?_0x4fe086[_0x5a68d7(0x1eb)]:'',_0x4fe086&&_0x4fe086[_0x5a68d7(0x235)]?(_0x2e8ba7[_0x5a68d7(0x17a)]=_0x4fe086[_0x5a68d7(0x235)],_0x2e8ba7[_0x5a68d7(0x20b)][_0x5a68d7(0x147)]=_0x5a68d7(0x230)):(_0x2e8ba7['src']='',_0x2e8ba7['style'][_0x5a68d7(0x147)]='none');}),_0xbe6377['addEventListener'](_0x5ce9f4(0x200),function(){const _0x148a1b=_0x5ce9f4,_0x3e0135=_0x3bac9a[_0x148a1b(0x1e5)](_0x10365c=>_0x10365c[_0x148a1b(0x1fe)]===_0xbe6377['value']);_0x48c7bf[_0x148a1b(0x1ca)]=_0x3e0135?_0x3e0135[_0x148a1b(0x1eb)]:'',_0x3e0135&&_0x3e0135[_0x148a1b(0x235)]?(_0x2e8ba7[_0x148a1b(0x17a)]=_0x3e0135[_0x148a1b(0x235)],_0x2e8ba7['style'][_0x148a1b(0x147)]=_0x148a1b(0x230)):(_0x2e8ba7[_0x148a1b(0x17a)]='',_0x2e8ba7[_0x148a1b(0x20b)][_0x148a1b(0x147)]=_0x148a1b(0x1f8));}),_0x2e8ba7[_0x5ce9f4(0x1d0)]('click',function(){const _0x235a12=_0x5ce9f4;_0x2e8ba7[_0x235a12(0x17a)]&&(_0x4c7273[_0x235a12(0x17a)]=_0x2e8ba7['src'],_0x5020a9['style'][_0x235a12(0x147)]='block');});const _0x270b6a=document[_0x5ce9f4(0x17c)](_0x5ce9f4(0x14a));_0x270b6a[_0x5ce9f4(0x214)]=function(){const _0x4021f3=_0x5ce9f4;_0x5020a9[_0x4021f3(0x20b)][_0x4021f3(0x147)]='none';},window[_0x5ce9f4(0x214)]=function(_0x1f25a7){const _0x414c53=_0x5ce9f4;_0x1f25a7[_0x414c53(0x1f4)]===_0x5020a9&&(_0x5020a9[_0x414c53(0x20b)][_0x414c53(0x147)]=_0x414c53(0x1f8));};}function updateSubcategories(){const _0x540c29=_0x309e,_0x4083a9=document[_0x540c29(0x17c)](_0x540c29(0x1c9))[_0x540c29(0x1ca)],_0x3bea1b=document[_0x540c29(0x17c)]('subcategory'),_0x16afc1=document['getElementById'](_0x540c29(0x1c6)),_0x4f147b=document[_0x540c29(0x17c)]('txtUnit'),_0x2349ac=document[_0x540c29(0x17c)](_0x540c29(0x232)),_0x23e0be=document[_0x540c29(0x17c)](_0x540c29(0x16e)),_0x5df518=document[_0x540c29(0x17c)](_0x540c29(0x222)),_0x2d4e45=document[_0x540c29(0x17c)]('txtInd4'),_0x3128d6=document[_0x540c29(0x17c)]('txtInd5'),_0x50311c=document[_0x540c29(0x17c)]('txtInd6'),_0x456a33=document[_0x540c29(0x17c)](_0x540c29(0x25b)),_0x2f9af1=document[_0x540c29(0x17c)](_0x540c29(0x1f9));_0x3bea1b['innerHTML']='';let _0x38e750=[];if(_0x4083a9===_0x540c29(0x270))_0x38e750=[{'name':_0x540c29(0x1bb),'place':'','unit':'','indicators':['','','','','','','','']},{'name':'Reinforced\x20horizontal\x20concrete\x20for\x20slabs\x20and\x20beams\x20grade\x20C40\x20ready\x20mix\x20concrete','place':_0x540c29(0x198),'unit':'1\x20m3','indicators':['4.02E2','1.61E‐5',_0x540c29(0x26c),'2.82E‐1',_0x540c29(0x236),_0x540c29(0x23e),_0x540c29(0x1a0),'A4']},{'name':_0x540c29(0x22f),'place':'New\x20Capital,\x20Cairo\x20Egypt','unit':_0x540c29(0x1e1),'indicators':[_0x540c29(0x176),'1.74E‐5',_0x540c29(0x279),_0x540c29(0x264),_0x540c29(0x231),_0x540c29(0x1a7),'2.36E3','A4']},{'name':_0x540c29(0x1f5),'place':_0x540c29(0x198),'unit':_0x540c29(0x1e1),'indicators':['4.46E2',_0x540c29(0x21b),'1',_0x540c29(0x1fb),_0x540c29(0x1ec),_0x540c29(0x171),'2.43E3','A4']},{'name':'Vertical\x20superstructure\x20Durable\x20Concrete\x20grade\x20C50\x20MPA\x20(Ready\x20Mix\x20Concrete)','place':_0x540c29(0x198),'unit':'1\x20m3','indicators':['3.68E2',_0x540c29(0x205),_0x540c29(0x20c),_0x540c29(0x1b8),_0x540c29(0x281),_0x540c29(0x226),'2.73E3','A4']},{'name':'45_MPA_Early\x20strength\x20concrete','place':_0x540c29(0x1bc),'unit':_0x540c29(0x1e1),'indicators':[_0x540c29(0x208),_0x540c29(0x202),_0x540c29(0x1a4),_0x540c29(0x213),_0x540c29(0x22c),_0x540c29(0x1a8),_0x540c29(0x185),'A4']},{'name':_0x540c29(0x272),'place':_0x540c29(0x1bc),'unit':_0x540c29(0x1e1),'indicators':[_0x540c29(0x237),_0x540c29(0x177),_0x540c29(0x19b),_0x540c29(0x21d),'4.35E‐2','3.87E‐2','3070','A4']},{'name':_0x540c29(0x154),'place':_0x540c29(0x267),'unit':'1\x20m3','indicators':['2.53E2','1.68E‐5','6.22E‐1',_0x540c29(0x275),_0x540c29(0x223),_0x540c29(0x245),'2.4E3','A4']},{'name':_0x540c29(0x1d2),'place':_0x540c29(0x267),'unit':'1\x20m3','indicators':[_0x540c29(0x1d9),'8.87E‐1',_0x540c29(0x263),_0x540c29(0x20a),'3.73E‐2',_0x540c29(0x20e),_0x540c29(0x1cb),'A4']}];else{if(_0x4083a9===_0x540c29(0x27d))_0x38e750=[{'name':_0x540c29(0x1bb),'place':'','unit':'','indicators':['','','','','','','','']},{'name':'Concrete\x20Paving\x20Solid\x20and\x20hollow\x20Bricks','place':_0x540c29(0x198),'unit':_0x540c29(0x1e1),'indicators':[_0x540c29(0x15c),'7.51E‐6',_0x540c29(0x1be),_0x540c29(0x187),_0x540c29(0x27f),_0x540c29(0x1cd),_0x540c29(0x277),'A4']},{'name':'Marmox\x20Thermoblock\x2014/10','place':'Egypt','unit':_0x540c29(0x242),'indicators':[_0x540c29(0x1e7),_0x540c29(0x1c4),'3.03E‐02','0.00054',_0x540c29(0x1c0),_0x540c29(0x1c5),'1.15E+02','A4']},{'name':_0x540c29(0x158),'place':'','unit':_0x540c29(0x1f3),'indicators':[_0x540c29(0x156),'','','','','','','']}];else{if(_0x4083a9==='plaster')_0x38e750=[{'name':_0x540c29(0x1bb),'place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x540c29(0x16b),'place':_0x540c29(0x194),'unit':_0x540c29(0x1f3),'indicators':[_0x540c29(0x1a3),_0x540c29(0x172),_0x540c29(0x26e),_0x540c29(0x25d),'0.0011',_0x540c29(0x1c2),_0x540c29(0x1a9),'A4']},{'name':_0x540c29(0x1c3),'place':'SADAT\x20CITY\x20/\x20BPB\x20PLACO\x20EGYPT','unit':_0x540c29(0x1f3),'indicators':['0.487','0.00158',_0x540c29(0x246),'0.000732','0.0000159','9.43E-08',_0x540c29(0x152),'A4']},{'name':'GYPLAST\x20fill','place':_0x540c29(0x14e),'unit':_0x540c29(0x1f3),'indicators':['4.69E-01',_0x540c29(0x266),'8.86E-09',_0x540c29(0x18d),_0x540c29(0x183),_0x540c29(0x22e),_0x540c29(0x17f),'A4']},{'name':'Mortar(\x20cement\x20sand\x20mix)','place':'','unit':_0x540c29(0x1f3),'indicators':[_0x540c29(0x1b5),'','','','','','','']},{'name':_0x540c29(0x1cf),'place':'','unit':_0x540c29(0x1f3),'indicators':[_0x540c29(0x170),'','','','','','','']}];else{if(_0x4083a9===_0x540c29(0x22a))_0x38e750=[{'name':_0x540c29(0x1bb),'place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x540c29(0x24c),'place':'Egypt','unit':_0x540c29(0x160),'indicators':[_0x540c29(0x141),_0x540c29(0x1ff),_0x540c29(0x1aa),_0x540c29(0x1e8),_0x540c29(0x15d),_0x540c29(0x151),_0x540c29(0x1f7),'A4']},{'name':_0x540c29(0x1de),'place':'','unit':_0x540c29(0x1f3),'indicators':[_0x540c29(0x22d),'','','','','','','']}];else{if(_0x4083a9==='cement')_0x38e750=[{'name':'Select\x20name\x20of\x20material','place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x540c29(0x18b),'place':_0x540c29(0x1ce),'unit':_0x540c29(0x1f3),'indicators':['821','1.98',_0x540c29(0x14d),'1.8',_0x540c29(0x14b),_0x540c29(0x1dc),_0x540c29(0x1ae),'A4']},{'name':_0x540c29(0x18b),'place':_0x540c29(0x1e4),'unit':_0x540c29(0x1f3),'indicators':['0.457',_0x540c29(0x1e9),_0x540c29(0x217),'0.00194',_0x540c29(0x19a),'3.276','Ind7','A4']},{'name':_0x540c29(0x19c),'place':_0x540c29(0x276),'unit':_0x540c29(0x1b6),'indicators':[_0x540c29(0x27a),_0x540c29(0x19d),_0x540c29(0x192),_0x540c29(0x1ee),'1.89','0.00314',_0x540c29(0x1fa),'A4']}];else{if(_0x4083a9===_0x540c29(0x142))_0x38e750=[{'name':'Select\x20name\x20of\x20material','place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x540c29(0x1f2),'place':_0x540c29(0x276),'unit':_0x540c29(0x1a6),'indicators':['16',_0x540c29(0x1d1),'0.0542',_0x540c29(0x1b9),'0.145',_0x540c29(0x1d7),_0x540c29(0x204),'A4']}];else{if(_0x4083a9==='steel')_0x38e750=[{'name':'Select\x20name\x20of\x20material','place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x540c29(0x140),'place':_0x540c29(0x1ce),'unit':_0x540c29(0x257),'indicators':['2270',_0x540c29(0x1af),'15','30.4',_0x540c29(0x23f),'0.000334',_0x540c29(0x191),'A4']}];else{if(_0x4083a9===_0x540c29(0x1c1))_0x38e750=[{'name':_0x540c29(0x1bb),'place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x540c29(0x153),'place':'','unit':_0x540c29(0x1f3),'indicators':[_0x540c29(0x169),'','','','','','','']}];else{if(_0x4083a9===_0x540c29(0x1b4))_0x38e750=[{'name':_0x540c29(0x1bb),'place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x540c29(0x197),'place':'','unit':_0x540c29(0x1f3),'indicators':[_0x540c29(0x18f),'','','','','','','']}];else{if(_0x4083a9==='aluminium')_0x38e750=[{'name':_0x540c29(0x1bb),'place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x540c29(0x164),'place':'','unit':_0x540c29(0x1f3),'indicators':[_0x540c29(0x1df),'','','','','','','']}];else _0x4083a9==='timber'&&(_0x38e750=[{'name':_0x540c29(0x1bb),'place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x540c29(0x166),'place':'','unit':_0x540c29(0x1f3),'indicators':[_0x540c29(0x271),'','','','','','','']}]);}}}}}}}}}_0x38e750[_0x540c29(0x1f1)](_0x303ec5=>{const _0x166e15=_0x540c29,_0x2f080e=document[_0x166e15(0x26d)](_0x166e15(0x26f));_0x2f080e[_0x166e15(0x1ca)]=_0x303ec5[_0x166e15(0x1fe)],_0x2f080e[_0x166e15(0x13f)]=_0x303ec5[_0x166e15(0x1fe)],_0x3bea1b[_0x166e15(0x269)](_0x2f080e);}),_0x3bea1b[_0x540c29(0x1d0)]('change',function(){const _0x132589=_0x540c29,_0x20de97=_0x38e750[_0x132589(0x1e5)](_0x479e97=>_0x479e97['name']===_0x3bea1b[_0x132589(0x1ca)]);_0x20de97?(_0x16afc1[_0x132589(0x1ca)]=_0x20de97[_0x132589(0x15e)],_0x4f147b[_0x132589(0x1ca)]=_0x20de97['unit'],_0x2349ac[_0x132589(0x1ca)]=_0x20de97['indicators'][0x0],_0x23e0be[_0x132589(0x1ca)]=_0x20de97['indicators'][0x1],_0x5df518[_0x132589(0x1ca)]=_0x20de97[_0x132589(0x216)][0x2],_0x2d4e45[_0x132589(0x1ca)]=_0x20de97[_0x132589(0x216)][0x3],_0x3128d6['value']=_0x20de97['indicators'][0x4],_0x50311c[_0x132589(0x1ca)]=_0x20de97[_0x132589(0x216)][0x5],_0x456a33['value']=_0x20de97[_0x132589(0x216)][0x6],_0x2f9af1['value']=_0x20de97[_0x132589(0x216)][0x7]):(_0x16afc1[_0x132589(0x1ca)]='',_0x4f147b[_0x132589(0x1ca)]='',_0x2349ac[_0x132589(0x1ca)]='',_0x23e0be[_0x132589(0x1ca)]='',_0x5df518[_0x132589(0x1ca)]='',_0x2d4e45[_0x132589(0x1ca)]='',_0x3128d6['value']='',_0x50311c[_0x132589(0x1ca)]='',_0x456a33['value']='',_0x2f9af1[_0x132589(0x1ca)]='');});}function calculateResults(){const _0x32464b=_0x309e,_0x313cf8=parseFloat(document[_0x32464b(0x17c)](_0x32464b(0x1d8))['value'])||0x0,_0x4bf5ea=parseFloat(document['getElementById'](_0x32464b(0x244))[_0x32464b(0x1ca)])||0x0,_0x2a838e=parseFloat(document[_0x32464b(0x17c)](_0x32464b(0x186))[_0x32464b(0x1ca)])||0x0;for(let _0x251032=0x1;_0x251032<=0x7;_0x251032++){const _0x56ce95=parseFloat(document[_0x32464b(0x17c)](_0x32464b(0x173)+_0x251032)[_0x32464b(0x1ca)])||0x0;document[_0x32464b(0x17c)]('ResultInd'+_0x251032+_0x32464b(0x26b))[_0x32464b(0x1ca)]=_0x56ce95*_0x313cf8;}document[_0x32464b(0x17c)](_0x32464b(0x18e))['value']=_0x313cf8*_0x4bf5ea*_0x2a838e;}function updateSubcategories_t2(){const _0x1a9563=_0x309e,_0x237467=document['getElementById'](_0x1a9563(0x180))[_0x1a9563(0x1ca)],_0x5ca61d=document['getElementById'](_0x1a9563(0x1a2)),_0x3035e2=document[_0x1a9563(0x17c)](_0x1a9563(0x274)),_0x32838e=document[_0x1a9563(0x17c)](_0x1a9563(0x181)),_0x561cfa=document[_0x1a9563(0x17c)]('txtInd1_t2'),_0x2bb51f=document[_0x1a9563(0x17c)](_0x1a9563(0x175)),_0xa162d9=document[_0x1a9563(0x17c)](_0x1a9563(0x1d6)),_0x45ddc2=document[_0x1a9563(0x17c)](_0x1a9563(0x203)),_0x2b5f23=document[_0x1a9563(0x17c)](_0x1a9563(0x282)),_0x254d72=document[_0x1a9563(0x17c)]('txtInd6_t2'),_0x4eb1e6=document['getElementById'](_0x1a9563(0x21e)),_0x1bbf80=document[_0x1a9563(0x17c)](_0x1a9563(0x1c8));_0x5ca61d['innerHTML']='';let _0xddd749=[];if(_0x237467===_0x1a9563(0x270))_0xddd749=[{'name':'Select\x20name\x20of\x20material','place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x1a9563(0x262),'place':_0x1a9563(0x198),'unit':'1\x20m3','indicators':['4.02E2',_0x1a9563(0x215),_0x1a9563(0x26c),_0x1a9563(0x15b),_0x1a9563(0x236),_0x1a9563(0x23e),_0x1a9563(0x1a0),'A4']},{'name':_0x1a9563(0x22f),'place':_0x1a9563(0x198),'unit':_0x1a9563(0x1e1),'indicators':[_0x1a9563(0x176),'1.74E‐5','9.44E‐1',_0x1a9563(0x264),_0x1a9563(0x231),_0x1a9563(0x1a7),_0x1a9563(0x261),'A4']},{'name':_0x1a9563(0x1f5),'place':_0x1a9563(0x198),'unit':'1\x20m3','indicators':[_0x1a9563(0x249),_0x1a9563(0x21b),'1',_0x1a9563(0x1fb),_0x1a9563(0x1ec),_0x1a9563(0x171),_0x1a9563(0x143),'A4']},{'name':_0x1a9563(0x21a),'place':'New\x20Capital,\x20Cairo\x20Egypt','unit':_0x1a9563(0x1e1),'indicators':[_0x1a9563(0x16c),'1.83E‐5',_0x1a9563(0x20c),'3.31E‐1',_0x1a9563(0x281),_0x1a9563(0x226),_0x1a9563(0x25f),'A4']},{'name':'45_MPA_Early\x20strength\x20concrete','place':_0x1a9563(0x1bc),'unit':_0x1a9563(0x1e1),'indicators':[_0x1a9563(0x208),'2.48E‐5',_0x1a9563(0x1a4),_0x1a9563(0x213),_0x1a9563(0x22c),_0x1a9563(0x1a8),_0x1a9563(0x185),'A4']},{'name':_0x1a9563(0x272),'place':_0x1a9563(0x1bc),'unit':_0x1a9563(0x1e1),'indicators':[_0x1a9563(0x237),_0x1a9563(0x177),'1.08',_0x1a9563(0x21d),_0x1a9563(0x260),_0x1a9563(0x15f),'3070','A4']},{'name':_0x1a9563(0x154),'place':_0x1a9563(0x267),'unit':_0x1a9563(0x1e1),'indicators':[_0x1a9563(0x225),'1.68E‐5',_0x1a9563(0x210),_0x1a9563(0x275),'2.66E‐2',_0x1a9563(0x245),'2.4E3','A4']},{'name':_0x1a9563(0x1d2),'place':_0x1a9563(0x267),'unit':'1\x20m3','indicators':[_0x1a9563(0x1d9),_0x1a9563(0x1fc),_0x1a9563(0x263),_0x1a9563(0x20a),'3.73E‐2','3.43E‐2',_0x1a9563(0x1cb),'A4']}];else{if(_0x237467===_0x1a9563(0x27d))_0xddd749=[{'name':'Select\x20name\x20of\x20material','place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x1a9563(0x161),'place':_0x1a9563(0x198),'unit':_0x1a9563(0x1e1),'indicators':[_0x1a9563(0x15c),_0x1a9563(0x178),_0x1a9563(0x1be),'1.12E‐1',_0x1a9563(0x27f),_0x1a9563(0x1cd),_0x1a9563(0x277),'A4']},{'name':'Marmox\x20Thermoblock\x2014/10','place':_0x1a9563(0x1ed),'unit':'1\x20unit\x20of\x20Masonry\x20Block\x20(600\x20mm\x20useable\x20length\x20x\x20140\x20mm\x20Width\x20x\x20100\x20mm\x20Hight)','indicators':[_0x1a9563(0x1e7),_0x1a9563(0x1c4),_0x1a9563(0x1f0),_0x1a9563(0x145),_0x1a9563(0x1c0),'6.91E‐05',_0x1a9563(0x146),'A4']},{'name':'red\x20brick\x20(generic\x20data)','place':'','unit':_0x1a9563(0x1f3),'indicators':['0.24','','','','','','','']}];else{if(_0x237467==='plaster')_0xddd749=[{'name':_0x1a9563(0x1bb),'place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x1a9563(0x16b),'place':_0x1a9563(0x194),'unit':_0x1a9563(0x1f3),'indicators':[_0x1a9563(0x1a3),'0.179','-0.0307',_0x1a9563(0x25d),_0x1a9563(0x24d),_0x1a9563(0x1c2),'0.000505','A4']},{'name':'GYPLAST\x20fix','place':'SADAT\x20CITY\x20/\x20BPB\x20PLACO\x20EGYPT','unit':'1\x20kg','indicators':[_0x1a9563(0x157),_0x1a9563(0x209),_0x1a9563(0x246),'0.000732',_0x1a9563(0x229),_0x1a9563(0x27b),'6.02','A4']},{'name':_0x1a9563(0x15a),'place':_0x1a9563(0x14e),'unit':'1\x20kg','indicators':['4.69E-01',_0x1a9563(0x266),'8.86E-09',_0x1a9563(0x18d),_0x1a9563(0x183),_0x1a9563(0x22e),_0x1a9563(0x17f),'A4']},{'name':_0x1a9563(0x1e3),'place':'','unit':'1\x20kg','indicators':[_0x1a9563(0x1b5),'','','','','','','']},{'name':_0x1a9563(0x1cf),'place':'','unit':_0x1a9563(0x1f3),'indicators':[_0x1a9563(0x170),'','','','','','','']}];else{if(_0x237467==='insulation')_0xddd749=[{'name':_0x1a9563(0x1bb),'place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x1a9563(0x24c),'place':_0x1a9563(0x1ed),'unit':_0x1a9563(0x160),'indicators':[_0x1a9563(0x141),_0x1a9563(0x1ff),'9.19E‐3',_0x1a9563(0x1e8),_0x1a9563(0x15d),_0x1a9563(0x151),'4.99E1','A4']},{'name':'Bitumen','place':'','unit':'1\x20kg','indicators':[_0x1a9563(0x22d),'','','','','','','']}];else{if(_0x237467==='cement')_0xddd749=[{'name':_0x1a9563(0x1bb),'place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x1a9563(0x18b),'place':'Alexandria','unit':_0x1a9563(0x1f3),'indicators':[_0x1a9563(0x255),_0x1a9563(0x163),'0.0000602','1.8',_0x1a9563(0x14b),_0x1a9563(0x1dc),_0x1a9563(0x1ae),'A4']},{'name':_0x1a9563(0x18b),'place':_0x1a9563(0x1e4),'unit':_0x1a9563(0x1f3),'indicators':['0.457',_0x1a9563(0x1e9),_0x1a9563(0x217),_0x1a9563(0x1e0),_0x1a9563(0x19a),'3.276',_0x1a9563(0x1ae),'A4']},{'name':'portland\x20cement-CEM\x20I\x2042,5\x20N','place':'El\x20Sokhna\x20plant,\x20Bagged','unit':_0x1a9563(0x1b6),'indicators':[_0x1a9563(0x27a),_0x1a9563(0x19d),_0x1a9563(0x192),_0x1a9563(0x1ee),'1.89',_0x1a9563(0x253),_0x1a9563(0x1fa),'A4']}];else{if(_0x237467===_0x1a9563(0x142))_0xddd749=[{'name':'Select\x20name\x20of\x20material','place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x1a9563(0x1f2),'place':_0x1a9563(0x276),'unit':_0x1a9563(0x1a6),'indicators':['16',_0x1a9563(0x1d1),_0x1a9563(0x13e),_0x1a9563(0x1b9),_0x1a9563(0x227),_0x1a9563(0x1d7),'0.0931','A4']}];else{if(_0x237467===_0x1a9563(0x1ab))_0xddd749=[{'name':_0x1a9563(0x1bb),'place':'','unit':'','indicators':['','','','','','','','']},{'name':'Reinforcing\x20steel\x20bars','place':_0x1a9563(0x1ce),'unit':_0x1a9563(0x257),'indicators':[_0x1a9563(0x241),_0x1a9563(0x1af),'15','30.4',_0x1a9563(0x23f),'0.000334',_0x1a9563(0x191),'A4']}];else{if(_0x237467===_0x1a9563(0x1c1))_0xddd749=[{'name':_0x1a9563(0x1bb),'place':'','unit':'','indicators':['','','','','','','','']},{'name':'sand\x20(generic\x20data)','place':'','unit':_0x1a9563(0x1f3),'indicators':[_0x1a9563(0x169),'','','','','','','']}];else{if(_0x237467===_0x1a9563(0x1b4))_0xddd749=[{'name':'Select\x20name\x20of\x20material','place':'','unit':'','indicators':['','','','','','','','']},{'name':'Standard\x20paint','place':'','unit':_0x1a9563(0x1f3),'indicators':[_0x1a9563(0x18f),'','','','','','','']}];else{if(_0x237467===_0x1a9563(0x1c7))_0xddd749=[{'name':_0x1a9563(0x1bb),'place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x1a9563(0x164),'place':'','unit':_0x1a9563(0x1f3),'indicators':[_0x1a9563(0x1df),'','','','','','','']}];else _0x237467===_0x1a9563(0x1b1)&&(_0xddd749=[{'name':_0x1a9563(0x1bb),'place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x1a9563(0x166),'place':'','unit':_0x1a9563(0x1f3),'indicators':[_0x1a9563(0x271),'','','','','','','']}]);}}}}}}}}}_0xddd749['forEach'](_0x1ea19a=>{const _0x44843f=_0x1a9563,_0x504208=document['createElement'](_0x44843f(0x26f));_0x504208[_0x44843f(0x1ca)]=_0x1ea19a[_0x44843f(0x1fe)],_0x504208['textContent']=_0x1ea19a[_0x44843f(0x1fe)],_0x5ca61d[_0x44843f(0x269)](_0x504208);}),_0x5ca61d['addEventListener'](_0x1a9563(0x200),function(){const _0x5d516f=_0x1a9563,_0x2e302a=_0xddd749[_0x5d516f(0x1e5)](_0x394a9=>_0x394a9[_0x5d516f(0x1fe)]===_0x5ca61d[_0x5d516f(0x1ca)]);_0x2e302a?(_0x3035e2['value']=_0x2e302a[_0x5d516f(0x15e)],_0x32838e['value']=_0x2e302a[_0x5d516f(0x221)],_0x561cfa[_0x5d516f(0x1ca)]=_0x2e302a[_0x5d516f(0x216)][0x0],_0x2bb51f[_0x5d516f(0x1ca)]=_0x2e302a[_0x5d516f(0x216)][0x1],_0xa162d9[_0x5d516f(0x1ca)]=_0x2e302a['indicators'][0x2],_0x45ddc2[_0x5d516f(0x1ca)]=_0x2e302a[_0x5d516f(0x216)][0x3],_0x2b5f23['value']=_0x2e302a[_0x5d516f(0x216)][0x4],_0x254d72[_0x5d516f(0x1ca)]=_0x2e302a[_0x5d516f(0x216)][0x5],_0x4eb1e6[_0x5d516f(0x1ca)]=_0x2e302a[_0x5d516f(0x216)][0x6],_0x1bbf80[_0x5d516f(0x1ca)]=_0x2e302a[_0x5d516f(0x216)][0x7]):(_0x3035e2['value']='',_0x32838e[_0x5d516f(0x1ca)]='',_0x561cfa[_0x5d516f(0x1ca)]='',_0x2bb51f['value']='',_0xa162d9[_0x5d516f(0x1ca)]='',_0x45ddc2['value']='',_0x2b5f23[_0x5d516f(0x1ca)]='',_0x254d72[_0x5d516f(0x1ca)]='',_0x4eb1e6[_0x5d516f(0x1ca)]='',_0x1bbf80[_0x5d516f(0x1ca)]='');});}function calculateResults_t2(){const _0x44f2cd=_0x309e,_0x2907b8=parseFloat(document[_0x44f2cd(0x17c)](_0x44f2cd(0x195))[_0x44f2cd(0x1ca)])||0x0,_0x1f20ea=parseFloat(document[_0x44f2cd(0x17c)](_0x44f2cd(0x1b7))[_0x44f2cd(0x1ca)])||0x0,_0x50edb3=parseFloat(document['getElementById'](_0x44f2cd(0x250))[_0x44f2cd(0x1ca)])||0x0;for(let _0x7641be=0x1;_0x7641be<=0x7;_0x7641be++){const _0x422b82=parseFloat(document['getElementById']('txtInd'+_0x7641be+'_t2')['value'])||0x0;document[_0x44f2cd(0x17c)](_0x44f2cd(0x193)+_0x7641be+_0x44f2cd(0x201))['value']=_0x422b82*_0x2907b8;}document[_0x44f2cd(0x17c)](_0x44f2cd(0x23b))[_0x44f2cd(0x1ca)]=_0x2907b8*_0x1f20ea*_0x50edb3;}function updateSubcategories_t3(){const _0x31dbff=_0x309e,_0x3078fa=document[_0x31dbff(0x17c)](_0x31dbff(0x254))['value'],_0x4c282c=document['getElementById'](_0x31dbff(0x19e)),_0x49f0fd=document[_0x31dbff(0x17c)](_0x31dbff(0x174)),_0x8d9a53=document['getElementById']('txtUnit_t3'),_0x1d91a4=document[_0x31dbff(0x17c)]('txtInd1_t3'),_0x36765d=document[_0x31dbff(0x17c)](_0x31dbff(0x1a1)),_0x32ef60=document['getElementById'](_0x31dbff(0x283)),_0x23c9a8=document[_0x31dbff(0x17c)](_0x31dbff(0x278)),_0x2d5a50=document[_0x31dbff(0x17c)](_0x31dbff(0x1fd)),_0x5a21df=document['getElementById'](_0x31dbff(0x211)),_0x3e0ffd=document[_0x31dbff(0x17c)]('txtInd7_t3'),_0x3e1a52=document[_0x31dbff(0x17c)]('txtA4_t3');_0x4c282c[_0x31dbff(0x199)]='';let _0x2aefa4=[];if(_0x3078fa===_0x31dbff(0x270))_0x2aefa4=[{'name':_0x31dbff(0x1bb),'place':'','unit':'','indicators':['','','','','','','','']},{'name':'Reinforced\x20horizontal\x20concrete\x20for\x20slabs\x20and\x20beams\x20grade\x20C40\x20ready\x20mix\x20concrete','place':'New\x20Capital,\x20Cairo\x20Egypt','unit':_0x31dbff(0x1e1),'indicators':[_0x31dbff(0x1a5),_0x31dbff(0x215),_0x31dbff(0x26c),_0x31dbff(0x15b),_0x31dbff(0x236),_0x31dbff(0x23e),_0x31dbff(0x1a0),'A4']},{'name':_0x31dbff(0x22f),'place':'New\x20Capital,\x20Cairo\x20Egypt','unit':'1\x20m3','indicators':['3.95E2','1.74E‐5',_0x31dbff(0x279),_0x31dbff(0x264),_0x31dbff(0x231),_0x31dbff(0x1a7),_0x31dbff(0x261),'A4']},{'name':_0x31dbff(0x1f5),'place':_0x31dbff(0x198),'unit':'1\x20m3','indicators':['4.46E2',_0x31dbff(0x21b),'1',_0x31dbff(0x1fb),'4.06E‐2',_0x31dbff(0x171),_0x31dbff(0x143),'A4']},{'name':_0x31dbff(0x21a),'place':_0x31dbff(0x198),'unit':_0x31dbff(0x1e1),'indicators':['3.68E2',_0x31dbff(0x205),_0x31dbff(0x20c),_0x31dbff(0x1b8),_0x31dbff(0x281),'2.85E‐2',_0x31dbff(0x25f),'A4']},{'name':_0x31dbff(0x280),'place':_0x31dbff(0x1bc),'unit':_0x31dbff(0x1e1),'indicators':['501',_0x31dbff(0x202),'1.17',_0x31dbff(0x213),'4.67E‐2','4.31E‐2','3230','A4']},{'name':_0x31dbff(0x272),'place':_0x31dbff(0x1bc),'unit':'1\x20m3','indicators':[_0x31dbff(0x237),_0x31dbff(0x177),_0x31dbff(0x19b),_0x31dbff(0x21d),_0x31dbff(0x260),'3.87E‐2',_0x31dbff(0x286),'A4']},{'name':'Slab\x20production','place':_0x31dbff(0x267),'unit':_0x31dbff(0x1e1),'indicators':[_0x31dbff(0x225),'1.68E‐5',_0x31dbff(0x210),'1.82E‐1',_0x31dbff(0x223),_0x31dbff(0x245),_0x31dbff(0x1ea),'A4']},{'name':_0x31dbff(0x1d2),'place':_0x31dbff(0x267),'unit':_0x31dbff(0x1e1),'indicators':['3.74E2',_0x31dbff(0x1fc),_0x31dbff(0x263),_0x31dbff(0x20a),'3.73E‐2',_0x31dbff(0x20e),_0x31dbff(0x1cb),'A4']}];else{if(_0x3078fa===_0x31dbff(0x27d))_0x2aefa4=[{'name':_0x31dbff(0x1bb),'place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x31dbff(0x161),'place':_0x31dbff(0x198),'unit':_0x31dbff(0x1e1),'indicators':[_0x31dbff(0x15c),_0x31dbff(0x178),_0x31dbff(0x1be),'1.12E‐1',_0x31dbff(0x27f),_0x31dbff(0x1cd),_0x31dbff(0x277),'A4']},{'name':_0x31dbff(0x1ba),'place':'Egypt','unit':_0x31dbff(0x242),'indicators':['6.15E+00',_0x31dbff(0x1c4),_0x31dbff(0x1f0),'0.00054',_0x31dbff(0x1c0),_0x31dbff(0x1c5),_0x31dbff(0x146),'A4']},{'name':_0x31dbff(0x158),'place':'','unit':_0x31dbff(0x1f3),'indicators':['0.24','','','','','','','']}];else{if(_0x3078fa===_0x31dbff(0x16d))_0x2aefa4=[{'name':_0x31dbff(0x1bb),'place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x31dbff(0x16b),'place':_0x31dbff(0x194),'unit':_0x31dbff(0x1f3),'indicators':[_0x31dbff(0x1a3),'0.179','-0.0307',_0x31dbff(0x25d),'0.0011','2.65E-08',_0x31dbff(0x1a9),'A4']},{'name':'GYPLAST\x20fix','place':_0x31dbff(0x14e),'unit':'1\x20kg','indicators':[_0x31dbff(0x157),_0x31dbff(0x209),'8.9E-09',_0x31dbff(0x247),_0x31dbff(0x229),'9.43E-08',_0x31dbff(0x152),'A4']},{'name':'GYPLAST\x20fill','place':_0x31dbff(0x14e),'unit':_0x31dbff(0x1f3),'indicators':[_0x31dbff(0x251),'1.51E-03',_0x31dbff(0x252),_0x31dbff(0x18d),_0x31dbff(0x183),_0x31dbff(0x22e),_0x31dbff(0x17f),'A4']},{'name':_0x31dbff(0x1e3),'place':'','unit':_0x31dbff(0x1f3),'indicators':[_0x31dbff(0x1b5),'','','','','','','']},{'name':_0x31dbff(0x1cf),'place':'','unit':'1\x20kg','indicators':[_0x31dbff(0x170),'','','','','','','']}];else{if(_0x3078fa===_0x31dbff(0x22a))_0x2aefa4=[{'name':_0x31dbff(0x1bb),'place':'','unit':'','indicators':['','','','','','','','']},{'name':'Marmox\x20Tile\x20Backer\x20Board-insulation\x20board\x2012.5\x20thickness','place':'Egypt','unit':'1\x20m2\x20\x20of\x20board\x20thickness\x2012.5\x20mm','indicators':['2.28E0',_0x31dbff(0x1ff),_0x31dbff(0x1aa),_0x31dbff(0x1e8),_0x31dbff(0x15d),'1.06E‐4',_0x31dbff(0x1f7),'A4']},{'name':_0x31dbff(0x1de),'place':'','unit':_0x31dbff(0x1f3),'indicators':[_0x31dbff(0x22d),'','','','','','','']}];else{if(_0x3078fa===_0x31dbff(0x149))_0x2aefa4=[{'name':_0x31dbff(0x1bb),'place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x31dbff(0x18b),'place':'Alexandria','unit':_0x31dbff(0x1f3),'indicators':[_0x31dbff(0x255),_0x31dbff(0x163),'0.0000602',_0x31dbff(0x189),_0x31dbff(0x14b),_0x31dbff(0x1dc),'Ind7','A4']},{'name':_0x31dbff(0x18b),'place':_0x31dbff(0x1e4),'unit':_0x31dbff(0x1f3),'indicators':[_0x31dbff(0x21f),'0.00204',_0x31dbff(0x217),_0x31dbff(0x1e0),'0.00000243',_0x31dbff(0x1b2),'Ind7','A4']},{'name':'portland\x20cement-CEM\x20I\x2042,5\x20N','place':_0x31dbff(0x276),'unit':_0x31dbff(0x1b6),'indicators':['855','1.48','4.92e-6','5.84',_0x31dbff(0x179),_0x31dbff(0x253),_0x31dbff(0x1fa),'A4']}];else{if(_0x3078fa===_0x31dbff(0x142))_0x2aefa4=[{'name':_0x31dbff(0x1bb),'place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x31dbff(0x1f2),'place':_0x31dbff(0x276),'unit':_0x31dbff(0x1a6),'indicators':['16',_0x31dbff(0x1d1),_0x31dbff(0x13e),_0x31dbff(0x1b9),'0.145',_0x31dbff(0x1d7),_0x31dbff(0x204),'A4']}];else{if(_0x3078fa===_0x31dbff(0x1ab))_0x2aefa4=[{'name':'Select\x20name\x20of\x20material','place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x31dbff(0x140),'place':_0x31dbff(0x1ce),'unit':'1\x20ton','indicators':[_0x31dbff(0x241),_0x31dbff(0x1af),'15',_0x31dbff(0x162),_0x31dbff(0x23f),_0x31dbff(0x1d3),'27100','A4']}];else{if(_0x3078fa===_0x31dbff(0x1c1))_0x2aefa4=[{'name':_0x31dbff(0x1bb),'place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x31dbff(0x153),'place':'','unit':_0x31dbff(0x1f3),'indicators':[_0x31dbff(0x169),'','','','','','','']}];else{if(_0x3078fa===_0x31dbff(0x1b4))_0x2aefa4=[{'name':_0x31dbff(0x1bb),'place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x31dbff(0x197),'place':'','unit':_0x31dbff(0x1f3),'indicators':[_0x31dbff(0x18f),'','','','','','','']}];else{if(_0x3078fa===_0x31dbff(0x1c7))_0x2aefa4=[{'name':_0x31dbff(0x1bb),'place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x31dbff(0x164),'place':'','unit':_0x31dbff(0x1f3),'indicators':[_0x31dbff(0x1df),'','','','','','','']}];else _0x3078fa==='timber'&&(_0x2aefa4=[{'name':'Select\x20name\x20of\x20material','place':'','unit':'','indicators':['','','','','','','','']},{'name':_0x31dbff(0x166),'place':'','unit':_0x31dbff(0x1f3),'indicators':[_0x31dbff(0x271),'','','','','','','']}]);}}}}}}}}}_0x2aefa4[_0x31dbff(0x1f1)](_0x3b048c=>{const _0x5b756a=_0x31dbff,_0x836a74=document[_0x5b756a(0x26d)](_0x5b756a(0x26f));_0x836a74[_0x5b756a(0x1ca)]=_0x3b048c[_0x5b756a(0x1fe)],_0x836a74[_0x5b756a(0x13f)]=_0x3b048c['name'],_0x4c282c[_0x5b756a(0x269)](_0x836a74);}),_0x4c282c['addEventListener'](_0x31dbff(0x200),function(){const _0x21e2bb=_0x31dbff,_0x1915c0=_0x2aefa4['find'](_0x1c7184=>_0x1c7184['name']===_0x4c282c[_0x21e2bb(0x1ca)]);_0x1915c0?(_0x49f0fd[_0x21e2bb(0x1ca)]=_0x1915c0['place'],_0x8d9a53[_0x21e2bb(0x1ca)]=_0x1915c0['unit'],_0x1d91a4[_0x21e2bb(0x1ca)]=_0x1915c0[_0x21e2bb(0x216)][0x0],_0x36765d[_0x21e2bb(0x1ca)]=_0x1915c0['indicators'][0x1],_0x32ef60[_0x21e2bb(0x1ca)]=_0x1915c0[_0x21e2bb(0x216)][0x2],_0x23c9a8[_0x21e2bb(0x1ca)]=_0x1915c0['indicators'][0x3],_0x2d5a50['value']=_0x1915c0[_0x21e2bb(0x216)][0x4],_0x5a21df[_0x21e2bb(0x1ca)]=_0x1915c0[_0x21e2bb(0x216)][0x5],_0x3e0ffd['value']=_0x1915c0['indicators'][0x6],_0x3e1a52[_0x21e2bb(0x1ca)]=_0x1915c0[_0x21e2bb(0x216)][0x7]):(_0x49f0fd[_0x21e2bb(0x1ca)]='',_0x8d9a53['value']='',_0x1d91a4[_0x21e2bb(0x1ca)]='',_0x36765d[_0x21e2bb(0x1ca)]='',_0x32ef60['value']='',_0x23c9a8[_0x21e2bb(0x1ca)]='',_0x2d5a50[_0x21e2bb(0x1ca)]='',_0x5a21df[_0x21e2bb(0x1ca)]='',_0x3e0ffd[_0x21e2bb(0x1ca)]='',_0x3e1a52[_0x21e2bb(0x1ca)]='');});}function _0x309e(_0x2c55de,_0x5cf109){const _0x307393=_0x3073();return _0x309e=function(_0x309ec8,_0x156974){_0x309ec8=_0x309ec8-0x13e;let _0x4ed00a=_0x307393[_0x309ec8];return _0x4ed00a;},_0x309e(_0x2c55de,_0x5cf109);}function calculateResults_t3(){const _0xf77ce0=_0x309e,_0x4019fe=parseFloat(document['getElementById'](_0xf77ce0(0x240))[_0xf77ce0(0x1ca)])||0x0,_0x45f4ca=parseFloat(document[_0xf77ce0(0x17c)](_0xf77ce0(0x25e))[_0xf77ce0(0x1ca)])||0x0,_0x697cdb=parseFloat(document[_0xf77ce0(0x17c)]('Fuel_Type_t3')[_0xf77ce0(0x1ca)])||0x0;for(let _0x354942=0x1;_0x354942<=0x7;_0x354942++){const _0x3ed6d6=parseFloat(document[_0xf77ce0(0x17c)]('txtInd'+_0x354942+'_t3')[_0xf77ce0(0x1ca)])||0x0;document[_0xf77ce0(0x17c)]('ResultInd'+_0x354942+_0xf77ce0(0x24a))['value']=_0x3ed6d6*_0x4019fe;}document[_0xf77ce0(0x17c)](_0xf77ce0(0x14c))[_0xf77ce0(0x1ca)]=_0x4019fe*_0x45f4ca*_0x697cdb;}function calculateTotalResults(){const _0x31c848=_0x309e;var _0x49234a=parseFloat(document[_0x31c848(0x17c)](_0x31c848(0x165))['value'])||0x0,_0x1ff723=parseFloat(document[_0x31c848(0x17c)](_0x31c848(0x220))[_0x31c848(0x1ca)])||0x0,_0x5ce140=parseFloat(document[_0x31c848(0x17c)](_0x31c848(0x1ef))[_0x31c848(0x1ca)])||0x0,_0x1f427d=parseFloat(document['getElementById'](_0x31c848(0x167))[_0x31c848(0x1ca)])||0x0,_0x3fe9aa=parseFloat(document[_0x31c848(0x17c)](_0x31c848(0x1bf))['value'])||0x0,_0x1b3b40=parseFloat(document[_0x31c848(0x17c)](_0x31c848(0x1d5))[_0x31c848(0x1ca)])||0x0,_0xea4459=parseFloat(document['getElementById'](_0x31c848(0x1b3))[_0x31c848(0x1ca)])||0x0,_0x181861=parseFloat(document['getElementById']('ResultA4-t1')[_0x31c848(0x1ca)])||0x0,_0x51656f=parseFloat(document[_0x31c848(0x17c)](_0x31c848(0x1da))['value'])||0x0,_0x55ffbe=parseFloat(document['getElementById'](_0x31c848(0x27e))[_0x31c848(0x1ca)])||0x0,_0x301ca3=parseFloat(document[_0x31c848(0x17c)](_0x31c848(0x1b0))[_0x31c848(0x1ca)])||0x0,_0x1f8ac5=parseFloat(document['getElementById'](_0x31c848(0x24f))['value'])||0x0,_0x530891=parseFloat(document[_0x31c848(0x17c)](_0x31c848(0x159))[_0x31c848(0x1ca)])||0x0,_0x45407b=parseFloat(document['getElementById'](_0x31c848(0x1bd))[_0x31c848(0x1ca)])||0x0,_0x486dde=parseFloat(document[_0x31c848(0x17c)](_0x31c848(0x182))[_0x31c848(0x1ca)])||0x0,_0x3e6170=parseFloat(document['getElementById'](_0x31c848(0x23b))[_0x31c848(0x1ca)])||0x0,_0x4c6a39=parseFloat(document['getElementById'](_0x31c848(0x268))[_0x31c848(0x1ca)])||0x0,_0x493984=parseFloat(document[_0x31c848(0x17c)](_0x31c848(0x1ac))[_0x31c848(0x1ca)])||0x0,_0x122a22=parseFloat(document['getElementById'](_0x31c848(0x273))[_0x31c848(0x1ca)])||0x0,_0x210371=parseFloat(document['getElementById']('ResultInd4_t3')[_0x31c848(0x1ca)])||0x0,_0x136dc3=parseFloat(document[_0x31c848(0x17c)](_0x31c848(0x1f6))['value'])||0x0,_0x48c27a=parseFloat(document[_0x31c848(0x17c)](_0x31c848(0x150))[_0x31c848(0x1ca)])||0x0,_0x1cef83=parseFloat(document[_0x31c848(0x17c)](_0x31c848(0x168))[_0x31c848(0x1ca)])||0x0,_0x2d9f93=parseFloat(document[_0x31c848(0x17c)](_0x31c848(0x14c))[_0x31c848(0x1ca)])||0x0,_0x1c8bbc=_0x49234a+_0x51656f+_0x4c6a39,_0x48bdac=_0x1ff723+_0x55ffbe+_0x493984,_0x8af3f9=_0x5ce140+_0x301ca3+_0x122a22,_0x50308a=_0x1f427d+_0x1f8ac5+_0x210371,_0x832ea6=_0x3fe9aa+_0x530891+_0x136dc3,_0x622360=_0x1b3b40+_0x45407b+_0x48c27a,_0x3dbf73=_0xea4459+_0x486dde+_0x1cef83,_0x12b3ca=_0x181861+_0x3e6170+_0x2d9f93;document['getElementById'](_0x31c848(0x23c))[_0x31c848(0x1ca)]=_0x1c8bbc[_0x31c848(0x228)](0x2),document[_0x31c848(0x17c)]('TotalResultInd2')[_0x31c848(0x1ca)]=_0x48bdac['toFixed'](0x2),document['getElementById'](_0x31c848(0x20f))['value']=_0x8af3f9['toFixed'](0x2),document[_0x31c848(0x17c)](_0x31c848(0x238))[_0x31c848(0x1ca)]=_0x50308a[_0x31c848(0x228)](0x2),document[_0x31c848(0x17c)]('TotalResultInd5')['value']=_0x832ea6[_0x31c848(0x228)](0x2),document['getElementById']('TotalResultInd6')[_0x31c848(0x1ca)]=_0x622360[_0x31c848(0x228)](0x2),document[_0x31c848(0x17c)](_0x31c848(0x233))[_0x31c848(0x1ca)]=_0x3dbf73[_0x31c848(0x228)](0x2),document[_0x31c848(0x17c)](_0x31c848(0x258))[_0x31c848(0x1ca)]=_0x12b3ca[_0x31c848(0x228)](0x2);}const data1={'labels':[_0x7e4a7b(0x1db),_0x7e4a7b(0x224),_0x7e4a7b(0x184)],'datasets':[{'label':_0x7e4a7b(0x17e),'data':[0xc,0x13,0x3],'backgroundColor':_0x7e4a7b(0x20d),'borderColor':_0x7e4a7b(0x17b),'borderWidth':0x1}]},data2={'labels':['Item\x201',_0x7e4a7b(0x224),_0x7e4a7b(0x184)],'datasets':[{'label':_0x7e4a7b(0x285),'data':[0x9,0x10,0x7],'backgroundColor':_0x7e4a7b(0x219),'borderColor':'rgba(0,\x20255,\x20132,\x201)','borderWidth':0x1}]},ctx1=document['getElementById'](_0x7e4a7b(0x22b))[_0x7e4a7b(0x196)]('2d'),ctx2=document[_0x7e4a7b(0x17c)](_0x7e4a7b(0x25c))[_0x7e4a7b(0x196)]('2d');new Chart(ctx1,{'type':_0x7e4a7b(0x1e6),'data':data1,'options':{'scales':{'y':{'beginAtZero':!![]}}}}),new Chart(ctx2,{'type':_0x7e4a7b(0x1e6),'data':data2,'options':{'scales':{'y':{'beginAtZero':!![]}}}}),document[_0x7e4a7b(0x1d0)](_0x7e4a7b(0x188),function(_0x5697b2){const _0x4c087d=_0x7e4a7b;_0x5697b2[_0x4c087d(0x24b)]===0x7b&&_0x5697b2['preventDefault'](),_0x5697b2[_0x4c087d(0x284)]&&_0x5697b2[_0x4c087d(0x248)]&&_0x5697b2[_0x4c087d(0x24b)]===0x49&&_0x5697b2[_0x4c087d(0x218)](),_0x5697b2[_0x4c087d(0x284)]&&_0x5697b2[_0x4c087d(0x24b)]===0x55&&_0x5697b2[_0x4c087d(0x218)]();}),document[_0x7e4a7b(0x1d0)](_0x7e4a7b(0x19f),function(_0x6d1b4a){const _0xe5b286=_0x7e4a7b;_0x6d1b4a[_0xe5b286(0x218)]();});
+// Function to update the options for "Name of material"
+function updateMaterialOptions() {
+    const classification = document.getElementById('classification').value;
+    const nameSelect = document.getElementById('name');
+    const manufactureInput = document.getElementById('manufacture');
+    const materialImage = document.getElementById('material-image');
+    const enlargedImage = document.getElementById('enlarged-image');
+    const modal = document.getElementById('myModal');
+
+    nameSelect.innerHTML = ''; // Clear previous options
+    manufactureInput.value = ''; // Clear the manufacturer name
+    materialImage.src = ''; // Clear previous image
+    materialImage.style.display = 'none'; // Hide image
+
+    let options = [];
+
+    // Define options for each material classification
+    if (classification === 'concrete') {
+        options = [
+            { name: 'Select name of material' },
+            { name: 'Reinforced horizontal concrete for slabs and beams grade C40 ready mix concrete', manufacturer: 'Alfalah Ready Mix LLC', image: 'img/concrete/0.png' },
+            { name: 'Reinforced Structure elements of substructure grade C40 Raft Foundation (Ready-mix concrete)', manufacturer: 'Alfalah Ready Mix LLC', image: 'img/concrete/1.png' },
+            { name: 'Vertical elements superstructure (Columns) Grade C50 (Ready-mix Concrete)', manufacturer: 'Alfalah Ready Mix LLC', image: 'img/concrete/2.png' },
+            { name: 'Vertical superstructure Durable Concrete grade C50 MPA (Ready Mix Concrete)', manufacturer: 'Alfalah Ready Mix LLC', image: 'img/concrete/3.png' },
+            { name: '45_MPA_Early strength concrete', manufacturer: 'Ghrghar Group -Al wafaa W Amal City, Cairo ghrghar.com/group-company', image: 'img/concrete/5.png' },
+            { name: 'Foundations and Columns', manufacturer: 'Ghrghar Group -Al wafaa W Amal City, Cairo ghrghar.com/group-company', image: 'img/concrete/6.png' },
+            { name: 'Slab production', manufacturer: 'Red Sea Ready Mix (Orascom) - Head Office: 2005 A Corniche El Nil, Ramlet Boulaq, Nile City Towers, North Tower, 14th Floor – Cairo EGYPT - http://www.rsc.com.eg/', image: 'img/concrete/7.png' },
+            { name: 'Foundation and Piles', manufacturer: 'Red Sea Ready Mix (Orascom) - Head Office: 2005 A Corniche El Nil, Ramlet Boulaq, Nile City Towers, North Tower, 14th Floor – Cairo EGYPT - http://www.rsc.com.eg/', image: 'img/concrete/8.png' }
+        ];
+    } else if (classification === 'bricks') {
+        options = [
+            { name: 'Select name of material' },
+            { name: 'Concrete Paving Solid and hollow Bricks', manufacturer: 'ERTEKAA (The enhancement of integrated services and waste recycling company)-Www.ertekaa.org', image: 'img/bricks/0.png' },
+            { name: 'Marmox Thermoblock 14/10', manufacturer: 'Marmox Egypt - CMB', image: 'img/bricks/1.png' }
+        ];
+    } else if (classification === 'plaster') {
+        options = [
+            { name: 'Select name of material' },
+            { name: 'Gypfine almomtaz 120- smoothing compound', manufacturer: 'Sain Gobain Gybrco', image: 'img/plaster/0.png' },
+            { name: 'GYPLAST fix', manufacturer: 'SAINT-GOBAIN GYPROC EGYPT-Egyptian Gypsum Company Building #12b04, Cairo Festival City, second floor New Cairo • Egypt', image: 'img/plaster/2.jpg' },
+            { name: 'GYPLAST fill', manufacturer: 'SAINT-GOBAIN GYPROC EGYPT-Egyptian Gypsum Company Building #12b04, Cairo Festival City, second floor New Cairo • Egypt', image: 'img/plaster/1.png' }
+        ];
+    } else if (classification === 'insulation') {
+        options = [
+            { name: 'Select name of material' },
+            { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', manufacturer: 'Marmox Egypt - CMB', image: 'img/insulation/0.png' }
+        ];
+    } else if (classification === 'cement') {
+        options = [
+            { name: 'Select name of material' },
+            { name: 'CEM III/A 42,5 N', manufacturer: 'Amreyah cement company', image: 'img/cement/0.png' },
+            { name: 'CEM III/A 42,5 N', manufacturer: 'Lafarge Egypt-Kilo 93 Kattameia El Ein El Sokhna Suez, Egypt', image: 'img/cement/1.png' },
+            { name: 'portland cement-CEM I 42,5 N', manufacturer: 'Lafarge Egypt-kilo 93 kattameia', image: 'img/cement/2.png' }
+        ];
+    } else if (classification === 'glass') {
+        options = [
+            { name: 'Select name of material' },
+            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', manufacturer: 'Saint-Gobain Glass EGYPT, Building 12B4,Cairo Festival City, 2nd Floor, New Cairo', image: 'img/glass/0.png' }
+        ];
+    } else if (classification === 'steel') {
+        options = [
+            { name: 'Select name of material' },
+            { name: 'Reinforcing steel bars', manufacturer: 'Al Ezz Dekheila Steel Co. - Alexandria (EZDK) El Dekheila', image: 'img/steel/0.png' }
+        ];
+    }
+
+    // Populate the "Name of material" dropdown with options
+    options.forEach(option => {
+        const opt = document.createElement('option');
+        opt.value = option.name;
+        opt.textContent = option.name;
+        nameSelect.appendChild(opt);
+    });
+
+    // Update the manufacturer field and image when a material is selected
+    nameSelect.addEventListener('change', function () {
+        const selectedOption = options.find(opt => opt.name === nameSelect.value);
+        manufactureInput.value = selectedOption ? selectedOption.manufacturer : '';
+        if (selectedOption && selectedOption.image) {
+            materialImage.src = selectedOption.image;
+            materialImage.style.display = 'block'; // Show image
+        } else {
+            materialImage.src = '';
+            materialImage.style.display = 'none'; // Hide image
+        }
+    });
+
+    // Update the manufacturer field and image when a material is selected
+    nameSelect.addEventListener('change', function () {
+        const selectedOption = options.find(opt => opt.name === nameSelect.value);
+        manufactureInput.value = selectedOption ? selectedOption.manufacturer : '';
+        if (selectedOption && selectedOption.image) {
+            materialImage.src = selectedOption.image;
+            materialImage.style.display = 'block'; // Show image
+        } else {
+            materialImage.src = '';
+            materialImage.style.display = 'none'; // Hide image
+        }
+    });
+
+    // Add event listener to show modal with enlarged image on click
+    materialImage.addEventListener('click', function () {
+        if (materialImage.src) {
+            enlargedImage.src = materialImage.src; // Set enlarged image source
+            modal.style.display = 'block'; // Show modal
+        }
+    });
+
+    // Get the <span> element that closes the modal
+    const closeBtn = document.getElementById('closeBtn');
+    closeBtn.onclick = function () {
+        modal.style.display = 'none'; // Close modal
+    };
+
+    // Close the modal if the user clicks outside of the modal content
+    window.onclick = function (event) {
+        if (event.target === modal) {
+            modal.style.display = 'none'; // Close modal
+        }
+    };
+}
+
+// Function to update the second set of material options for first table
+function updateSubcategories() {
+    const classification = document.getElementById('material').value;
+    const subcategorySelect = document.getElementById('subcategory');
+    const txtPlace = document.getElementById('txtPlace');
+    const txtUnit = document.getElementById('txtUnit');
+    const txtInd1 = document.getElementById('txtInd1');
+    const txtInd2 = document.getElementById('txtInd2');
+    const txtInd3 = document.getElementById('txtInd3');
+    const txtInd4 = document.getElementById('txtInd4');
+    const txtInd5 = document.getElementById('txtInd5');
+    const txtInd6 = document.getElementById('txtInd6');
+    const txtInd7 = document.getElementById('txtInd7');
+    const txtA4 = document.getElementById('txtA4');
+
+    subcategorySelect.innerHTML = ''; // Clear previous options
+
+    let suboptions = [];
+
+    // Define options for each material classification
+    if (classification === 'concrete') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Reinforced horizontal concrete for slabs and beams grade C40 ready mix concrete', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['4.02E2', '1.61E‐5', '9.06E‐1', '2.82E‐1', '3.67E‐2', '1.65E‐3', '2.21E3', 'A4'] },
+            { name: 'Reinforced Structure elements of substructure grade C40 Raft Foundation (Ready-mix concrete)', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['3.95E2', '1.74E‐5', '9.44E‐1', '2.92E‐1', '3.97E‐2', '1.68E‐3', '2.36E3', 'A4'] },
+            { name: 'Vertical elements superstructure (Columns) Grade C50 (Ready-mix Concrete)', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['4.46E2', '1.75E‐5', '1', '3.12E‐1', '4.06E‐2', '1.85E‐3', '2.43E3', 'A4'] },
+            { name: 'Vertical superstructure Durable Concrete grade C50 MPA (Ready Mix Concrete)', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['3.68E2', '1.83E‐5', '1.09E0', '3.31E‐1', '4.36E‐2', '2.85E‐2', '2.73E3', 'A4'] },
+            { name: '45_MPA_Early strength concrete', place: 'Cairo', unit: '1 m3', indicators: ['501', '2.48E‐5', '1.17', '3.22E‐1', '4.67E‐2', '4.31E‐2', '3230', 'A4'] },
+            { name: 'Foundations and Columns', place: 'Cairo', unit: '1 m3', indicators: ['458', '2.36E‐5', '1.08', '2.96E‐1', '4.35E‐2', '3.87E‐2', '3070', 'A4'] },
+            { name: 'Slab production', place: 'El Gouna, Egypt', unit: '1 m3', indicators: ['2.53E2', '1.68E‐5', '6.22E‐1', '1.82E‐1', '2.66E‐2', '2.32E‐2', '2.4E3', 'A4'] },
+            { name: 'Foundation and Piles', place: 'El Gouna, Egypt', unit: '1 m3', indicators: ['3.74E2', '8.87E‐1', '2.05E‐5', '2.59E‐1', '3.73E‐2', '3.43E‐2', '3.51E3', 'A4'] }
+        ];
+    } else if (classification === 'bricks') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
+            { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
+            { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+        ];
+    } else if (classification === 'plaster') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Gypfine almomtaz 120- smoothing compound', place: 'Amreya plant-Borg Alarab -Alexandria- Egypt', unit: '1 kg', indicators: ['0.148', '0.179', '-0.0307', '0.000161', '0.0011', '2.65E-08', '0.000505', 'A4'] },
+            { name: 'GYPLAST fix', place: 'SADAT CITY / BPB PLACO EGYPT', unit: '1 kg', indicators: ['0.487', '0.00158', '8.9E-09', '0.000732', '0.0000159', '9.43E-08', '6.02', 'A4'] },
+            { name: 'GYPLAST fill', place: 'SADAT CITY / BPB PLACO EGYPT', unit: '1 kg', indicators: ['4.69E-01', '1.51E-03', '8.86E-09', '7.19E-04', '1.39E-05', '9.31E-08', '5.8', 'A4'] },
+            { name: 'Mortar( cement sand mix)', place: '', unit: '1 kg', indicators: ['0.221', '', '', '', '', '', '', ''] },
+            { name: 'Mortar (cement, lime mix) ', place: '', unit: '1 kg', indicators: ['0.213', '', '', '', '', '', '', ''] }
+
+        ];
+    } else if (classification === 'insulation') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
+            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification === 'cement') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'CEM III/A 42,5 N', place: 'Alexandria', unit: '1 kg', indicators: ['821', '1.98', '0.0000602', '1.8', '0.00254', '4490', 'Ind7', 'A4'] },
+            { name: 'CEM III/A 42,5 N', place: 'Lafarge Egypt-Kilo 93 Kattameia El Ein El Sokhna Suez, Egypt', unit: '1 kg', indicators: ['0.457', '0.00204', '4.07E-09', '0.00194', '0.00000243', '3.276', 'Ind7', 'A4'] },
+            { name: 'portland cement-CEM I 42,5 N', place: 'El Sokhna plant, Bagged', unit: '1000 kg', indicators: ['855', '1.48', '4.92e-6', '5.84', '1.89', '0.00314', '4595', 'A4'] }
+        ];
+    } else if (classification === 'glass') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['16', '15.9', '0.0542', '0.00504', '0.145', '0.00000086', '0.0931', 'A4'] }
+        ];
+    } else if (classification === 'steel') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Reinforcing steel bars', place: 'Alexandria', unit: '1 ton', indicators: ['2270', '3.62E-12', '15', '30.4', '8.12', '0.000334', '27100', 'A4'] }
+        ];
+    } else if (classification === 'sand') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'sand (generic data)', place: '', unit: '1 kg', indicators: ['0.0051', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification === 'paint') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Standard paint', place: '', unit: '1 kg', indicators: ['2.91', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification === 'aluminium') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Aluminium', place: '', unit: '1 kg', indicators: ['1.81', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification === 'timber') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
+        ];
+    }
+
+    // Populate the "Name of material" dropdown with options
+    suboptions.forEach(option => {
+        const opt = document.createElement('option');
+        opt.value = option.name;
+        opt.textContent = option.name;
+        subcategorySelect.appendChild(opt);
+    });
+
+    // Update the fields when a subcategory is selected
+    subcategorySelect.addEventListener('change', function () {
+        const selectedOption = suboptions.find(opt => opt.name === subcategorySelect.value);
+        if (selectedOption) {
+            txtPlace.value = selectedOption.place;
+            txtUnit.value = selectedOption.unit;
+            txtInd1.value = selectedOption.indicators[0];
+            txtInd2.value = selectedOption.indicators[1];
+            txtInd3.value = selectedOption.indicators[2];
+            txtInd4.value = selectedOption.indicators[3];
+            txtInd5.value = selectedOption.indicators[4];
+            txtInd6.value = selectedOption.indicators[5];
+            txtInd7.value = selectedOption.indicators[6];
+            txtA4.value = selectedOption.indicators[7];
+        } else {
+            // Clear fields if nothing is selected
+            txtPlace.value = '';
+            txtUnit.value = '';
+            txtInd1.value = '';
+            txtInd2.value = '';
+            txtInd3.value = '';
+            txtInd4.value = '';
+            txtInd5.value = '';
+            txtInd6.value = '';
+            txtInd7.value = '';
+            txtA4.value = '';
+        }
+    });
+}
+
+function calculateResults() {
+    const qty = parseFloat(document.getElementById("txtQty").value) || 0;
+    const dist = parseFloat(document.getElementById("txtDist").value) || 0;
+    const fuelType = parseFloat(document.getElementById("Fuel_Type").value) || 0;
+
+    for (let i = 1; i <= 7; i++) {
+        const indValue = parseFloat(document.getElementById(`txtInd${i}`).value) || 0;
+        document.getElementById(`ResultInd${i}-t1`).value = indValue * qty;
+    }
+
+    document.getElementById("ResultA4-t1").value = qty * dist * fuelType;
+}
+
+
+
+
+// Function to update the second set of material options for second table
+function updateSubcategories_t2() {
+    const classification_t2 = document.getElementById('material_t2').value;
+    const subcategorySelect_t2 = document.getElementById('subcategory_t2');
+    const txtPlace_t2 = document.getElementById('txtPlace_t2');
+    const txtUnit_t2 = document.getElementById('txtUnit_t2');
+    const txtInd1_t2 = document.getElementById('txtInd1_t2');
+    const txtInd2_t2 = document.getElementById('txtInd2_t2');
+    const txtInd3_t2 = document.getElementById('txtInd3_t2');
+    const txtInd4_t2 = document.getElementById('txtInd4_t2');
+    const txtInd5_t2 = document.getElementById('txtInd5_t2');
+    const txtInd6_t2 = document.getElementById('txtInd6_t2');
+    const txtInd7_t2 = document.getElementById('txtInd7_t2');
+    const txtA4_t2 = document.getElementById('txtA4_t2');
+
+    subcategorySelect_t2.innerHTML = ''; // Clear previous options
+
+    let suboptions = [];
+
+    // Define options for each material classification
+    if (classification_t2 === 'concrete') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Reinforced horizontal concrete for slabs and beams grade C40 ready mix concrete', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['4.02E2', '1.61E‐5', '9.06E‐1', '2.82E‐1', '3.67E‐2', '1.65E‐3', '2.21E3', 'A4'] },
+            { name: 'Reinforced Structure elements of substructure grade C40 Raft Foundation (Ready-mix concrete)', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['3.95E2', '1.74E‐5', '9.44E‐1', '2.92E‐1', '3.97E‐2', '1.68E‐3', '2.36E3', 'A4'] },
+            { name: 'Vertical elements superstructure (Columns) Grade C50 (Ready-mix Concrete)', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['4.46E2', '1.75E‐5', '1', '3.12E‐1', '4.06E‐2', '1.85E‐3', '2.43E3', 'A4'] },
+            { name: 'Vertical superstructure Durable Concrete grade C50 MPA (Ready Mix Concrete)', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['3.68E2', '1.83E‐5', '1.09E0', '3.31E‐1', '4.36E‐2', '2.85E‐2', '2.73E3', 'A4'] },
+            { name: '45_MPA_Early strength concrete', place: 'Cairo', unit: '1 m3', indicators: ['501', '2.48E‐5', '1.17', '3.22E‐1', '4.67E‐2', '4.31E‐2', '3230', 'A4'] },
+            { name: 'Foundations and Columns', place: 'Cairo', unit: '1 m3', indicators: ['458', '2.36E‐5', '1.08', '2.96E‐1', '4.35E‐2', '3.87E‐2', '3070', 'A4'] },
+            { name: 'Slab production', place: 'El Gouna, Egypt', unit: '1 m3', indicators: ['2.53E2', '1.68E‐5', '6.22E‐1', '1.82E‐1', '2.66E‐2', '2.32E‐2', '2.4E3', 'A4'] },
+            { name: 'Foundation and Piles', place: 'El Gouna, Egypt', unit: '1 m3', indicators: ['3.74E2', '8.87E‐1', '2.05E‐5', '2.59E‐1', '3.73E‐2', '3.43E‐2', '3.51E3', 'A4'] }
+        ];
+    } else if (classification_t2 === 'bricks') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
+            { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
+            { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+        ];
+    } else if (classification_t2 === 'plaster') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Gypfine almomtaz 120- smoothing compound', place: 'Amreya plant-Borg Alarab -Alexandria- Egypt', unit: '1 kg', indicators: ['0.148', '0.179', '-0.0307', '0.000161', '0.0011', '2.65E-08', '0.000505', 'A4'] },
+            { name: 'GYPLAST fix', place: 'SADAT CITY / BPB PLACO EGYPT', unit: '1 kg', indicators: ['0.487', '0.00158', '8.9E-09', '0.000732', '0.0000159', '9.43E-08', '6.02', 'A4'] },
+            { name: 'GYPLAST fill', place: 'SADAT CITY / BPB PLACO EGYPT', unit: '1 kg', indicators: ['4.69E-01', '1.51E-03', '8.86E-09', '7.19E-04', '1.39E-05', '9.31E-08', '5.8', 'A4'] },
+            { name: 'Mortar( cement sand mix)', place: '', unit: '1 kg', indicators: ['0.221', '', '', '', '', '', '', ''] },
+            { name: 'Mortar (cement, lime mix) ', place: '', unit: '1 kg', indicators: ['0.213', '', '', '', '', '', '', ''] }
+
+        ];
+    } else if (classification_t2 === 'insulation') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
+            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification_t2 === 'cement') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'CEM III/A 42,5 N', place: 'Alexandria', unit: '1 kg', indicators: ['821', '1.98', '0.0000602', '1.8', '0.00254', '4490', 'Ind7', 'A4'] },
+            { name: 'CEM III/A 42,5 N', place: 'Lafarge Egypt-Kilo 93 Kattameia El Ein El Sokhna Suez, Egypt', unit: '1 kg', indicators: ['0.457', '0.00204', '4.07E-09', '0.00194', '0.00000243', '3.276', 'Ind7', 'A4'] },
+            { name: 'portland cement-CEM I 42,5 N', place: 'El Sokhna plant, Bagged', unit: '1000 kg', indicators: ['855', '1.48', '4.92e-6', '5.84', '1.89', '0.00314', '4595', 'A4'] }
+        ];
+    } else if (classification_t2 === 'glass') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['16', '15.9', '0.0542', '0.00504', '0.145', '0.00000086', '0.0931', 'A4'] }
+        ];
+    } else if (classification_t2 === 'steel') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Reinforcing steel bars', place: 'Alexandria', unit: '1 ton', indicators: ['2270', '3.62E-12', '15', '30.4', '8.12', '0.000334', '27100', 'A4'] }
+        ];
+    } else if (classification_t2 === 'sand') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'sand (generic data)', place: '', unit: '1 kg', indicators: ['0.0051', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification_t2 === 'paint') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Standard paint', place: '', unit: '1 kg', indicators: ['2.91', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification_t2 === 'aluminium') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Aluminium', place: '', unit: '1 kg', indicators: ['1.81', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification_t2 === 'timber') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
+        ];
+    }
+
+    // Populate the "Name of material" dropdown with options
+    suboptions.forEach(option => {
+        const opt = document.createElement('option');
+        opt.value = option.name;
+        opt.textContent = option.name;
+        subcategorySelect_t2.appendChild(opt);
+    });
+
+    // Update the fields when a subcategory is selected
+    subcategorySelect_t2.addEventListener('change', function () {
+        const selectedOption = suboptions.find(opt => opt.name === subcategorySelect_t2.value);
+        if (selectedOption) {
+            txtPlace_t2.value = selectedOption.place;
+            txtUnit_t2.value = selectedOption.unit;
+            txtInd1_t2.value = selectedOption.indicators[0];
+            txtInd2_t2.value = selectedOption.indicators[1];
+            txtInd3_t2.value = selectedOption.indicators[2];
+            txtInd4_t2.value = selectedOption.indicators[3];
+            txtInd5_t2.value = selectedOption.indicators[4];
+            txtInd6_t2.value = selectedOption.indicators[5];
+            txtInd7_t2.value = selectedOption.indicators[6];
+            txtA4_t2.value = selectedOption.indicators[7];
+        } else {
+            // Clear fields if nothing is selected
+            txtPlace_t2.value = '';
+            txtUnit_t2.value = '';
+            txtInd1_t2.value = '';
+            txtInd2_t2.value = '';
+            txtInd3_t2.value = '';
+            txtInd4_t2.value = '';
+            txtInd5_t2.value = '';
+            txtInd6_t2.value = '';
+            txtInd7_t2.value = '';
+            txtA4_t2.value = '';
+        }
+    });
+}
+
+function calculateResults_t2() {
+    const qty_t2 = parseFloat(document.getElementById("txtQty_t2").value) || 0;
+    const dist_t2 = parseFloat(document.getElementById("txtDist_t2").value) || 0;
+    const fuelType_t2 = parseFloat(document.getElementById("Fuel_Type_t2").value) || 0;
+
+    for (let i = 1; i <= 7; i++) {
+        const indValue_t2 = parseFloat(document.getElementById(`txtInd${i}_t2`).value) || 0;
+        document.getElementById(`ResultInd${i}_t2`).value = indValue_t2 * qty_t2;
+    }
+
+    document.getElementById("ResultA4_t2").value = qty_t2 * dist_t2 * fuelType_t2;
+}
+
+
+// Function to update the second set of material options for third table
+function updateSubcategories_t3() {
+    const classification_t3 = document.getElementById('material_t3').value;
+    const subcategorySelect_t3 = document.getElementById('subcategory_t3');
+    const txtPlace_t3 = document.getElementById('txtPlace_t3');
+    const txtUnit_t3 = document.getElementById('txtUnit_t3');
+    const txtInd1_t3 = document.getElementById('txtInd1_t3');
+    const txtInd2_t3 = document.getElementById('txtInd2_t3');
+    const txtInd3_t3 = document.getElementById('txtInd3_t3');
+    const txtInd4_t3 = document.getElementById('txtInd4_t3');
+    const txtInd5_t3 = document.getElementById('txtInd5_t3');
+    const txtInd6_t3 = document.getElementById('txtInd6_t3');
+    const txtInd7_t3 = document.getElementById('txtInd7_t3');
+    const txtA4_t3 = document.getElementById('txtA4_t3');
+
+    subcategorySelect_t3.innerHTML = ''; // Clear previous options
+
+    let suboptions = [];
+
+    // Define options for each material classification
+    if (classification_t3 === 'concrete') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Reinforced horizontal concrete for slabs and beams grade C40 ready mix concrete', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['4.02E2', '1.61E‐5', '9.06E‐1', '2.82E‐1', '3.67E‐2', '1.65E‐3', '2.21E3', 'A4'] },
+            { name: 'Reinforced Structure elements of substructure grade C40 Raft Foundation (Ready-mix concrete)', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['3.95E2', '1.74E‐5', '9.44E‐1', '2.92E‐1', '3.97E‐2', '1.68E‐3', '2.36E3', 'A4'] },
+            { name: 'Vertical elements superstructure (Columns) Grade C50 (Ready-mix Concrete)', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['4.46E2', '1.75E‐5', '1', '3.12E‐1', '4.06E‐2', '1.85E‐3', '2.43E3', 'A4'] },
+            { name: 'Vertical superstructure Durable Concrete grade C50 MPA (Ready Mix Concrete)', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['3.68E2', '1.83E‐5', '1.09E0', '3.31E‐1', '4.36E‐2', '2.85E‐2', '2.73E3', 'A4'] },
+            { name: '45_MPA_Early strength concrete', place: 'Cairo', unit: '1 m3', indicators: ['501', '2.48E‐5', '1.17', '3.22E‐1', '4.67E‐2', '4.31E‐2', '3230', 'A4'] },
+            { name: 'Foundations and Columns', place: 'Cairo', unit: '1 m3', indicators: ['458', '2.36E‐5', '1.08', '2.96E‐1', '4.35E‐2', '3.87E‐2', '3070', 'A4'] },
+            { name: 'Slab production', place: 'El Gouna, Egypt', unit: '1 m3', indicators: ['2.53E2', '1.68E‐5', '6.22E‐1', '1.82E‐1', '2.66E‐2', '2.32E‐2', '2.4E3', 'A4'] },
+            { name: 'Foundation and Piles', place: 'El Gouna, Egypt', unit: '1 m3', indicators: ['3.74E2', '8.87E‐1', '2.05E‐5', '2.59E‐1', '3.73E‐2', '3.43E‐2', '3.51E3', 'A4'] }
+        ];
+    } else if (classification_t3 === 'bricks') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
+            { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
+            { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+        ];
+    } else if (classification_t3 === 'plaster') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Gypfine almomtaz 120- smoothing compound', place: 'Amreya plant-Borg Alarab -Alexandria- Egypt', unit: '1 kg', indicators: ['0.148', '0.179', '-0.0307', '0.000161', '0.0011', '2.65E-08', '0.000505', 'A4'] },
+            { name: 'GYPLAST fix', place: 'SADAT CITY / BPB PLACO EGYPT', unit: '1 kg', indicators: ['0.487', '0.00158', '8.9E-09', '0.000732', '0.0000159', '9.43E-08', '6.02', 'A4'] },
+            { name: 'GYPLAST fill', place: 'SADAT CITY / BPB PLACO EGYPT', unit: '1 kg', indicators: ['4.69E-01', '1.51E-03', '8.86E-09', '7.19E-04', '1.39E-05', '9.31E-08', '5.8', 'A4'] },
+            { name: 'Mortar( cement sand mix)', place: '', unit: '1 kg', indicators: ['0.221', '', '', '', '', '', '', ''] },
+            { name: 'Mortar (cement, lime mix) ', place: '', unit: '1 kg', indicators: ['0.213', '', '', '', '', '', '', ''] }
+
+        ];
+    } else if (classification_t3 === 'insulation') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
+            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification_t3 === 'cement') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'CEM III/A 42,5 N', place: 'Alexandria', unit: '1 kg', indicators: ['821', '1.98', '0.0000602', '1.8', '0.00254', '4490', 'Ind7', 'A4'] },
+            { name: 'CEM III/A 42,5 N', place: 'Lafarge Egypt-Kilo 93 Kattameia El Ein El Sokhna Suez, Egypt', unit: '1 kg', indicators: ['0.457', '0.00204', '4.07E-09', '0.00194', '0.00000243', '3.276', 'Ind7', 'A4'] },
+            { name: 'portland cement-CEM I 42,5 N', place: 'El Sokhna plant, Bagged', unit: '1000 kg', indicators: ['855', '1.48', '4.92e-6', '5.84', '1.89', '0.00314', '4595', 'A4'] }
+        ];
+    } else if (classification_t3 === 'glass') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['16', '15.9', '0.0542', '0.00504', '0.145', '0.00000086', '0.0931', 'A4'] }
+        ];
+    } else if (classification_t3 === 'steel') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Reinforcing steel bars', place: 'Alexandria', unit: '1 ton', indicators: ['2270', '3.62E-12', '15', '30.4', '8.12', '0.000334', '27100', 'A4'] }
+        ];
+    } else if (classification_t3 === 'sand') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'sand (generic data)', place: '', unit: '1 kg', indicators: ['0.0051', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification_t3 === 'paint') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Standard paint', place: '', unit: '1 kg', indicators: ['2.91', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification_t3 === 'aluminium') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Aluminium', place: '', unit: '1 kg', indicators: ['1.81', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification_t3 === 'timber') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
+        ];
+    }
+
+    // Populate the "Name of material" dropdown with options
+    suboptions.forEach(option => {
+        const opt = document.createElement('option');
+        opt.value = option.name;
+        opt.textContent = option.name;
+        subcategorySelect_t3.appendChild(opt);
+    });
+
+    // Update the fields when a subcategory is selected
+    subcategorySelect_t3.addEventListener('change', function () {
+        const selectedOption = suboptions.find(opt => opt.name === subcategorySelect_t3.value);
+        if (selectedOption) {
+            txtPlace_t3.value = selectedOption.place;
+            txtUnit_t3.value = selectedOption.unit;
+            txtInd1_t3.value = selectedOption.indicators[0];
+            txtInd2_t3.value = selectedOption.indicators[1];
+            txtInd3_t3.value = selectedOption.indicators[2];
+            txtInd4_t3.value = selectedOption.indicators[3];
+            txtInd5_t3.value = selectedOption.indicators[4];
+            txtInd6_t3.value = selectedOption.indicators[5];
+            txtInd7_t3.value = selectedOption.indicators[6];
+            txtA4_t3.value = selectedOption.indicators[7];
+        } else {
+            // Clear fields if nothing is selected
+            txtPlace_t3.value = '';
+            txtUnit_t3.value = '';
+            txtInd1_t3.value = '';
+            txtInd2_t3.value = '';
+            txtInd3_t3.value = '';
+            txtInd4_t3.value = '';
+            txtInd5_t3.value = '';
+            txtInd6_t3.value = '';
+            txtInd7_t3.value = '';
+            txtA4_t3.value = '';
+        }
+    });
+}
+
+function calculateResults_t3() {
+    const qty_t3 = parseFloat(document.getElementById("txtQty_t3").value) || 0;
+    const dist_t3 = parseFloat(document.getElementById("txtDist_t3").value) || 0;
+    const fuelType_t3 = parseFloat(document.getElementById("Fuel_Type_t3").value) || 0;
+
+    for (let i = 1; i <= 7; i++) {
+        const indValue_t3 = parseFloat(document.getElementById(`txtInd${i}_t3`).value) || 0;
+        document.getElementById(`ResultInd${i}_t3`).value = indValue_t3 * qty_t3;
+    }
+
+    document.getElementById("ResultA4_t3").value = qty_t3 * dist_t3 * fuelType_t3;
+}
+
+
+
+
+
+
+
+
+
+function calculateTotalResults(event) {
+    event.preventDefault();
+
+    // الحصول على القيم من جدول 1 (t1)
+    var resultInd1_t1 = parseFloat(document.getElementById("ResultInd1-t1").value) || 0;
+    var resultInd2_t1 = parseFloat(document.getElementById("ResultInd2-t1").value) || 0;
+    var resultInd3_t1 = parseFloat(document.getElementById("ResultInd3-t1").value) || 0;
+    var resultInd4_t1 = parseFloat(document.getElementById("ResultInd4-t1").value) || 0;
+    var resultInd5_t1 = parseFloat(document.getElementById("ResultInd5-t1").value) || 0;
+    var resultInd6_t1 = parseFloat(document.getElementById("ResultInd6-t1").value) || 0;
+    var resultInd7_t1 = parseFloat(document.getElementById("ResultInd7-t1").value) || 0;
+    var resultA4_t1 = parseFloat(document.getElementById("ResultA4-t1").value) || 0;
+
+    // الحصول على القيم من جدول 2 (t2)
+    var resultInd1_t2 = parseFloat(document.getElementById("ResultInd1_t2").value) || 0;
+    var resultInd2_t2 = parseFloat(document.getElementById("ResultInd2_t2").value) || 0;
+    var resultInd3_t2 = parseFloat(document.getElementById("ResultInd3_t2").value) || 0;
+    var resultInd4_t2 = parseFloat(document.getElementById("ResultInd4_t2").value) || 0;
+    var resultInd5_t2 = parseFloat(document.getElementById("ResultInd5_t2").value) || 0;
+    var resultInd6_t2 = parseFloat(document.getElementById("ResultInd6_t2").value) || 0;
+    var resultInd7_t2 = parseFloat(document.getElementById("ResultInd7_t2").value) || 0;
+    var resultA4_t2 = parseFloat(document.getElementById("ResultA4_t2").value) || 0;
+
+    // الحصول على القيم من جدول 3 (t3)
+    var resultInd1_t3 = parseFloat(document.getElementById("ResultInd1_t3").value) || 0;
+    var resultInd2_t3 = parseFloat(document.getElementById("ResultInd2_t3").value) || 0;
+    var resultInd3_t3 = parseFloat(document.getElementById("ResultInd3_t3").value) || 0;
+    var resultInd4_t3 = parseFloat(document.getElementById("ResultInd4_t3").value) || 0;
+    var resultInd5_t3 = parseFloat(document.getElementById("ResultInd5_t3").value) || 0;
+    var resultInd6_t3 = parseFloat(document.getElementById("ResultInd6_t3").value) || 0;
+    var resultInd7_t3 = parseFloat(document.getElementById("ResultInd7_t3").value) || 0;
+    var resultA4_t3 = parseFloat(document.getElementById("ResultA4_t3").value) || 0;
+
+    // حساب المجموع
+    var totalInd1 = resultInd1_t1 + resultInd1_t2 + resultInd1_t3;
+    var totalInd2 = resultInd2_t1 + resultInd2_t2 + resultInd2_t3;
+    var totalInd3 = resultInd3_t1 + resultInd3_t2 + resultInd3_t3;
+    var totalInd4 = resultInd4_t1 + resultInd4_t2 + resultInd4_t3;
+    var totalInd5 = resultInd5_t1 + resultInd5_t2 + resultInd5_t3;
+    var totalInd6 = resultInd6_t1 + resultInd6_t2 + resultInd6_t3;
+    var totalInd7 = resultInd7_t1 + resultInd7_t2 + resultInd7_t3;
+    var totalA4 = resultA4_t1 + resultA4_t2 + resultA4_t3;
+
+    // عرض النتائج في الحقول الخاصة بالمجموع
+    document.getElementById("TotalResultInd1").value = totalInd1.toFixed(2);
+    document.getElementById("TotalResultInd2").value = totalInd2.toFixed(2);
+    document.getElementById("TotalResultInd3").value = totalInd3.toFixed(2);
+    document.getElementById("TotalResultInd4").value = totalInd4.toFixed(2);
+    document.getElementById("TotalResultInd5").value = totalInd5.toFixed(2);
+    document.getElementById("TotalResultInd6").value = totalInd6.toFixed(2);
+    document.getElementById("TotalResultInd7").value = totalInd7.toFixed(2);
+    document.getElementById("TotalResultA4").value = totalA4.toFixed(2);
+}
+
+
+
+
+
+// Sample data for charts
+const data1 = {
+    labels: ['Item 1', 'Item 2', 'Item 3'],
+    datasets: [{
+        label: 'Design 1',
+        data: [12, 19, 3],
+        backgroundColor: 'rgba(0, 162, 255, 0.2)',
+        borderColor: 'rgba(0, 162, 255, 1)',
+        borderWidth: 1
+    }]
+};
+
+const data2 = {
+    labels: ['Item 1', 'Item 2', 'Item 3'],
+    datasets: [{
+        label: 'Design 2',
+        data: [9, 16, 7],
+        backgroundColor: 'rgba(0, 255, 132, 0.2)',
+        borderColor: 'rgba(0, 255, 132, 1)',
+        borderWidth: 1
+    }]
+};
+
+// Initialize charts
+const ctx1 = document.getElementById('chart1').getContext('2d');
+const ctx2 = document.getElementById('chart2').getContext('2d');
+
+new Chart(ctx1, {
+    type: 'bar',
+    data: data1,
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+new Chart(ctx2, {
+    type: 'bar',
+    data: data2,
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+
+
+
+
+// // منع فتح أدوات المطورين
+// document.addEventListener("keydown", function(e) {
+//     // منع F12 (أدوات المطور)
+//     if (e.keyCode === 123) {
+//         e.preventDefault();
+//     }
+
+//     // منع Ctrl+Shift+I (أدوات المطور)
+//     if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
+//         e.preventDefault();
+//     }
+
+//     // منع Ctrl+U (عرض الصفحة المصدر)
+//     if (e.ctrlKey && e.keyCode === 85) {
+//         e.preventDefault();
+//     }
+// });
+
+// // منع استخدام زر الماوس الأيمن
+// document.addEventListener("contextmenu", function(e) {
+//     e.preventDefault();
+// });
