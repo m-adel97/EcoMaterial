@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,6 +22,7 @@
             transition: transform 0.2s ease;
             /* Smooth transition for zoom effect */
             cursor: pointer;
+            /* Change cursor to pointer */
         }
 
         img:hover {
@@ -100,21 +102,12 @@
             background-color: #003d80;
             transform: scale(0.98);
         }
-        
-         .CellResult, .TotalCell{
-             font-style: italic;
-             font-weight: bold;
-         }
-
-        td{
-            width: fit-content;
-        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h2>Phase One<br>(Classification or Filter)</h2>
+        <h2>Phase One (Classification or Filter)</h2>
         <form>
             <label for="classification">Classification of material</label>
             <select id="classification" onchange="updateMaterialOptions()">
@@ -168,7 +161,7 @@
                 <!-- <label>Google Map Link</label> -->
                 <!-- <input type="text" id="google-map-link" placeholder="Google Map Link" disabled="disabled"> -->
                 <a href="https://www.google.com/maps/@29.9859968,30.916608,13z?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D"
-                    target="_blank">Google Maps to calculate Distances below<i class="fa-solid fa-map"></i></a>
+                    target="_blank">Go to Google Maps <i class="fa-solid fa-map"></i></a>
 
                 <h3>1) Foundation of material</h3>
 
@@ -248,7 +241,7 @@
                                 <td class="blankCell"></td>
                             </tr>
                             <tr>
-                                <td colspan="5" class="CellResult"><label>Result:</label></td>
+                                <td colspan="5"><label>Result:</label></td>
                                 <td><input id="ResultInd1-t1" type="text" placeholder="Result" disabled="disabled"></td>
                                 <td><input id="ResultInd2-t1" type="text" placeholder="Result" disabled="disabled"></td>
                                 <td><input id="ResultInd3-t1" type="text" placeholder="Result" disabled="disabled"></td>
@@ -335,7 +328,7 @@
                                     <td class="blankCell"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="5" class="CellResult"><label>Result:</label></td>
+                                    <td colspan="5"><label>Result:</label></td>
                                     <td><input id="ResultInd1_t2" type="text" placeholder="Result" disabled="disabled">
                                     </td>
                                     <td><input id="ResultInd2_t2" type="text" placeholder="Result" disabled="disabled">
@@ -431,7 +424,7 @@
                                     <td class="blankCell"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="5" class="CellResult"><label>Result:</label></td>
+                                    <td colspan="5"><label>Result:</label></td>
                                     <td><input id="ResultInd1_t3" type="text" placeholder="Result" disabled="disabled">
                                     </td>
                                     <td><input id="ResultInd2_t3" type="text" placeholder="Result" disabled="disabled">
@@ -469,7 +462,7 @@
                                     <td style="border:0;"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="5" class="TotalCell"><label>Total LCA for Foundation:</label></td>
+                                    <td colspan="5"><label>Total LCA for Foundation:</label></td>
                                     <td><input id="TotalResultInd1" type="text" placeholder="Result"
                                             disabled="disabled">
                                     </td>
@@ -575,7 +568,7 @@
                         <td class="blankCell"></td>
                     </tr>
                     <tr>
-                        <td colspan="5" class="CellResult"><label>Result:</label></td>
+                        <td colspan="5"><label>Result:</label></td>
                         <td><input id="ResultInd1_t4" type="text" placeholder="Result" disabled="disabled">
                         </td>
                         <td><input id="ResultInd2_t4" type="text" placeholder="Result" disabled="disabled">
@@ -670,7 +663,7 @@
                         <td class="blankCell"></td>
                     </tr>
                     <tr>
-                        <td colspan="5" class="CellResult"><label>Result:</label></td>
+                        <td colspan="5"><label>Result:</label></td>
                         <td><input id="ResultInd1_t5" type="text" placeholder="Result" disabled="disabled">
                         </td>
                         <td><input id="ResultInd2_t5" type="text" placeholder="Result" disabled="disabled">
@@ -765,7 +758,7 @@
                         <td class="blankCell"></td>
                     </tr>
                     <tr>
-                        <td colspan="5" class="CellResult"><label>Result:</label></td>
+                        <td colspan="5"><label>Result:</label></td>
                         <td><input id="ResultInd1_t6" type="text" placeholder="Result" disabled="disabled">
                         </td>
                         <td><input id="ResultInd2_t6" type="text" placeholder="Result" disabled="disabled">
@@ -803,7 +796,7 @@
                             <td style="border:0;"></td>
                         </tr>
                         <tr>
-                            <td colspan="5" class="TotalCell"><label>Total LCA for Floor & Roofs:</label></td>
+                            <td colspan="5"><label>Total LCA for Floor & Roofs:</label></td>
                             <td><input id="TotalResultInd1_Floor" type="text" placeholder="Result" disabled="disabled">
                             </td>
                             <td><input id="TotalResultInd2_Floor" type="text" placeholder="Result" disabled="disabled">
@@ -900,7 +893,7 @@
                         <td class="blankCell"></td>
                     </tr>
                     <tr>
-                        <td colspan="5" class="CellResult"><label>Result:</label></td>
+                        <td colspan="5"><label>Result:</label></td>
                         <td><input id="ResultInd1_t7" type="text" placeholder="Result" disabled="disabled"></td>
                         <td><input id="ResultInd2_t7" type="text" placeholder="Result" disabled="disabled"></td>
                         <td><input id="ResultInd3_t7" type="text" placeholder="Result" disabled="disabled"></td>
@@ -987,7 +980,7 @@
                         <td class="blankCell"></td>
                     </tr>
                     <tr>
-                        <td colspan="5" class="CellResult"><label>Result:</label></td>
+                        <td colspan="5"><label>Result:</label></td>
                         <td><input id="ResultInd1_t8" type="text" placeholder="Result" disabled="disabled"></td>
                         <td><input id="ResultInd2_t8" type="text" placeholder="Result" disabled="disabled"></td>
                         <td><input id="ResultInd3_t8" type="text" placeholder="Result" disabled="disabled"></td>
@@ -1074,7 +1067,7 @@
                         <td class="blankCell"></td>
                     </tr>
                     <tr>
-                        <td colspan="5" class="CellResult"><label>Result:</label></td>
+                        <td colspan="5"><label>Result:</label></td>
                         <td><input id="ResultInd1_t9" type="text" placeholder="Result" disabled="disabled"></td>
                         <td><input id="ResultInd2_t9" type="text" placeholder="Result" disabled="disabled"></td>
                         <td><input id="ResultInd3_t9" type="text" placeholder="Result" disabled="disabled"></td>
@@ -1105,7 +1098,7 @@
                             <td style="border:0;"></td>
                         </tr>
                         <tr>
-                            <td colspan="5" class="TotalCell"><label>Total LCA for Walls:</label></td>
+                            <td colspan="5"><label>Total LCA for Walls:</label></td>
                             <td><input id="TotalResultInd1_Walls" type="text" placeholder="Result" disabled="disabled">
                             </td>
                             <td><input id="TotalResultInd2_Walls" type="text" placeholder="Result" disabled="disabled">
@@ -1202,7 +1195,7 @@
                         <td class="blankCell"></td>
                     </tr>
                     <tr>
-                        <td colspan="5" class="CellResult"><label>Result:</label></td>
+                        <td colspan="5"><label>Result:</label></td>
                         <td><input id="ResultInd1_t10" type="text" placeholder="Result" disabled="disabled"></td>
                         <td><input id="ResultInd2_t10" type="text" placeholder="Result" disabled="disabled"></td>
                         <td><input id="ResultInd3_t10" type="text" placeholder="Result" disabled="disabled"></td>
@@ -1289,7 +1282,7 @@
                         <td class="blankCell"></td>
                     </tr>
                     <tr>
-                        <td colspan="5" class="CellResult"><label>Result:</label></td>
+                        <td colspan="5"><label>Result:</label></td>
                         <td><input id="ResultInd1_t11" type="text" placeholder="Result" disabled="disabled"></td>
                         <td><input id="ResultInd2_t11" type="text" placeholder="Result" disabled="disabled"></td>
                         <td><input id="ResultInd3_t11" type="text" placeholder="Result" disabled="disabled"></td>
@@ -1376,7 +1369,7 @@
                         <td class="blankCell"></td>
                     </tr>
                     <tr>
-                        <td colspan="5" class="CellResult"><label>Result:</label></td>
+                        <td colspan="5"><label>Result:</label></td>
                         <td><input id="ResultInd1_t12" type="text" placeholder="Result" disabled="disabled"></td>
                         <td><input id="ResultInd2_t12" type="text" placeholder="Result" disabled="disabled"></td>
                         <td><input id="ResultInd3_t12" type="text" placeholder="Result" disabled="disabled"></td>
@@ -1408,7 +1401,7 @@
                             <td style="border:0;"></td>
                         </tr>
                         <tr>
-                            <td colspan="5" class="TotalCell"><label>Total LCA for Window:</label></td>
+                            <td colspan="5"><label>Total LCA for Window:</label></td>
                             <td><input id="TotalResultInd1_Window" type="text" placeholder="Result" disabled="disabled">
                             </td>
                             <td><input id="TotalResultInd2_Window" type="text" placeholder="Result" disabled="disabled">
@@ -1431,8 +1424,7 @@
             </div>
         </div>
 
-        <button id="btnAnalyze" onclick="updateChartBtn()">Analyze Results</button>
-        <button id="btnClear" onclick="Clear()" style="background: maroon">Clear</button>
+        <button id="btnAnalyze" onclick="AnalyzeResult()">Analyze Results</button>
 
         <h2>Phase Three</h2>
         <div class="charts">
