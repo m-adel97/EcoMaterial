@@ -2202,25 +2202,26 @@ function calculateTotalResults_Window(event) {
     document.getElementById("TotalResultA4_Window").value = totalA4.toFixed(2);
 }
 
-// // منع فتح أدوات المطورين
- document.addEventListener("keydown", function(e) {
-     // منع F12 (أدوات المطور)
-     if (e.keyCode === 123) {
-         e.preventDefault();
-     }
 
-// منع Ctrl+Shift+I (أدوات المطور)
+// منع فتح أدوات المطورين
+document.addEventListener("keydown", function(e) {
+    // منع F12 (أدوات المطور)
+    if (e.keyCode === 123) {
+        e.preventDefault();
+    }
+
+    // منع Ctrl+Shift+I (أدوات المطور)
     if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
-         e.preventDefault();
-     }
+        e.preventDefault();
+    }
 
     // منع Ctrl+U (عرض الصفحة المصدر)
-     if (e.ctrlKey && e.keyCode === 85) {
-         e.preventDefault();
-     }
- });
+    if (e.ctrlKey && e.keyCode === 85) {
+        e.preventDefault();
+    }
+});
 
 // منع استخدام زر الماوس الأيمن
- document.addEventListener("contextmenu", function(e) {
-     e.preventDefault();
+document.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
 });
