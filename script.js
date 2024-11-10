@@ -2204,7 +2204,7 @@ function calculateTotalResults_Window(event) {
 
 
 // منع فتح أدوات المطورين
-document.addEventListener("keydown", function(e) {
+document.addEventListener("keydown", function (e) {
     // منع F12 (أدوات المطور)
     if (e.keyCode === 123) {
         e.preventDefault();
@@ -2222,6 +2222,6 @@ document.addEventListener("keydown", function(e) {
 });
 
 // منع استخدام زر الماوس الأيمن
-document.addEventListener("contextmenu", function(e) {
+document.addEventListener("contextmenu", function (e) {
     e.preventDefault();
 });
