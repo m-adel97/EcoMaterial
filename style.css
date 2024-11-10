@@ -162,26 +162,35 @@ table input[type="text"]:not(:has(+ select)) {
 }
 
 
+/* General chart container styles */
 .charts {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
+    padding: 20px;
 }
 
-.charts canvas {
-    flex: 1;
-    max-width: 45%;
-    height: 300px;
+/* Chart container to make the canvas responsive */
+.chart-container {
+    width: 100%;
+    max-width: 500px; /* This can be adjusted depending on your design */
+    height: 400px; /* Adjust height if necessary */
+    position: relative;
+}
+
+/* Making sure the canvas scales properly */
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Optional: You can style the chart container if you want */
+.chart-container {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /*border-radius: 10px;*/
+    overflow: hidden;
+    background: #fff;
     background-color: #e6f7ff;
     border: 2px solid #007bff;
-}
-
-@media (max-width: 587px) {
-    .charts {
-        flex-direction: column;
-    }
-
-    .charts canvas {
-        max-width: 100%;
-    }
 }
