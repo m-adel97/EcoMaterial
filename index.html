@@ -1427,87 +1427,133 @@
 
         <h2>Phase Three</h2>
         <div class="charts">
-            <canvas id="chart1"></canvas>
-            <canvas id="chart2"></canvas>
+            <div class="chart-container">
+                <canvas id="chart1"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="chart2"></canvas>
+            </div>
         </div>
     </div>
+
     <script>
         // Sample data for charts (initially zeroed)
-const data1 = {
-    labels: ['Foundation of material', 'Floor & Roofs', 'Walls', 'Window'],
-    datasets: [{
-        label: 'Design 1',
-        data: [0, 0, 0, 0], // Starting with zeros
-        backgroundColor: 'rgba(0, 162, 255, 0.2)',
-        borderColor: 'rgba(0, 162, 255, 1)',
-        borderWidth: 1
-    }]
-};
+        const data1 = {
+            labels: ['Foundation of material', 'Floor & Roofs', 'Walls', 'Window'],
+            datasets: [{
+                label: 'Design 1',
+                data: [0, 0, 0, 0], // Starting with zeros
+                backgroundColor: 'rgba(0, 162, 255, 0.2)',
+                borderColor: 'rgba(0, 162, 255, 1)',
+                borderWidth: 1
+            }]
+        };
 
-const data2 = {
-    labels: ['Foundation of material', 'Floor & Roofs', 'Walls', 'Window'],
-    datasets: [{
-        label: 'Design 2',
-        data: [0, 0, 0, 0], // Starting with zeros
-        backgroundColor: 'rgba(0, 255, 132, 0.2)',
-        borderColor: 'rgba(0, 255, 132, 1)',
-        borderWidth: 1
-    }]
-};
+        const data2 = {
+            labels: ['Foundation of material', 'Floor & Roofs', 'Walls', 'Window'],
+            datasets: [{
+                label: 'Design 2',
+                data: [0, 0, 0, 0], // Starting with zeros
+                backgroundColor: 'rgba(0, 255, 132, 0.2)',
+                borderColor: 'rgba(0, 255, 132, 1)',
+                borderWidth: 1
+            }]
+        };
 
-// Initialize charts
-const ctx1 = document.getElementById('chart1').getContext('2d');
-const ctx2 = document.getElementById('chart2').getContext('2d');
+        // Initialize charts
+        const ctx1 = document.getElementById('chart1').getContext('2d');
+        const ctx2 = document.getElementById('chart2').getContext('2d');
 
-const chart1 = new Chart(ctx1, {
-    type: 'bar',
-    data: data1,
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
+        const chart1 = new Chart(ctx1, {
+            type: 'bar',
+            data: data1,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false, // Important for responsiveness
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            stepSize: 1,  // Adjust step size if needed
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'top', // Set the legend position
+                        labels: {
+                            font: {
+                                size: 14
+                            }
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.7)',
+                        titleColor: '#fff',
+                        bodyColor: '#fff',
+                    }
+                }
             }
-        }
-    }
-});
+        });
 
-const chart2 = new Chart(ctx2, {
-    type: 'bar',
-    data: data2,
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
+        const chart2 = new Chart(ctx2, {
+            type: 'bar',
+            data: data2,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false, // Important for responsiveness
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            stepSize: 1,  // Adjust step size if needed
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'top', // Set the legend position
+                        labels: {
+                            font: {
+                                size: 14
+                            }
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.7)',
+                        titleColor: '#fff',
+                        bodyColor: '#fff',
+                    }
+                }
             }
-        }
-    }
-});
+        });
 
-// Function to update charts based on the values from the input boxes
-document.getElementById('updateChartBtn').addEventListener('click', function() {
-    // Get values from the textboxes
-    const totalResultInd1 = parseFloat(document.getElementById('TotalResultInd1').value) || 0;
-    const totalResultInd1_Floor = parseFloat(document.getElementById('TotalResultInd1_Floor').value) || 0;
-    const totalResultInd1_Walls = parseFloat(document.getElementById('TotalResultInd1_Walls').value) || 0;
-    const totalResultInd1_Window = parseFloat(document.getElementById('TotalResultInd1_Window').value) || 0;
+        // Function to update charts based on the values from the input boxes
+        document.getElementById('updateChartBtn').addEventListener('click', function () {
+            // Get values from the textboxes
+            const totalResultInd1 = parseFloat(document.getElementById('TotalResultInd1').value) || 0;
+            const totalResultInd1_Floor = parseFloat(document.getElementById('TotalResultInd1_Floor').value) || 0;
+            const totalResultInd1_Walls = parseFloat(document.getElementById('TotalResultInd1_Walls').value) || 0;
+            const totalResultInd1_Window = parseFloat(document.getElementById('TotalResultInd1_Window').value) || 0;
 
-    const newValues = [totalResultInd1, totalResultInd1_Floor, totalResultInd1_Walls, totalResultInd1_Window];
+            const newValues = [totalResultInd1, totalResultInd1_Floor, totalResultInd1_Walls, totalResultInd1_Window];
 
-    // Check if all values in chart1 are zero
-    const isChart1Empty = chart1.data.datasets[0].data.every(value => value === 0);
+            // Check if all values in chart1 are zero
+            const isChart1Empty = chart1.data.datasets[0].data.every(value => value === 0);
 
-    if (isChart1Empty) {
-        // If chart1 is empty, update chart1 with the new values
-        chart1.data.datasets[0].data = newValues;
-        chart1.update();
-    } else {
-        // If chart1 already has values, update chart2 with the new values
-        chart2.data.datasets[0].data = newValues;
-        chart2.update();
-    }
-});
+            if (isChart1Empty) {
+                // If chart1 is empty, update chart1 with the new values
+                chart1.data.datasets[0].data = newValues;
+                chart1.update();
+            } else {
+                // If chart1 already has values, update chart2 with the new values
+                chart2.data.datasets[0].data = newValues;
+                chart2.update();
+            }
+        });
+
     </script>
+
     <script src="script.js"></script>
 </body>
-
 </html>
