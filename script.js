@@ -133,7 +133,6 @@ function updateSubcategories() {
     const txtInd5 = document.getElementById('txtInd5');
     const txtInd6 = document.getElementById('txtInd6');
     const txtInd7 = document.getElementById('txtInd7');
-    const txtA4 = document.getElementById('txtA4');
 
     subcategorySelect.innerHTML = ''; // Clear previous options
 
@@ -235,7 +234,6 @@ function updateSubcategories() {
             txtInd5.value = selectedOption.indicators[4];
             txtInd6.value = selectedOption.indicators[5];
             txtInd7.value = selectedOption.indicators[6];
-            txtA4.value = selectedOption.indicators[7];
         } else {
             // Clear fields if nothing is selected
             txtPlace.value = '';
@@ -247,7 +245,6 @@ function updateSubcategories() {
             txtInd5.value = '';
             txtInd6.value = '';
             txtInd7.value = '';
-            txtA4.value = '';
         }
     });
 }
@@ -281,7 +278,6 @@ function updateSubcategories_t2() {
     const txtInd5_t2 = document.getElementById('txtInd5_t2');
     const txtInd6_t2 = document.getElementById('txtInd6_t2');
     const txtInd7_t2 = document.getElementById('txtInd7_t2');
-    const txtA4_t2 = document.getElementById('txtA4_t2');
 
     subcategorySelect_t2.innerHTML = ''; // Clear previous options
 
@@ -383,7 +379,6 @@ function updateSubcategories_t2() {
             txtInd5_t2.value = selectedOption.indicators[4];
             txtInd6_t2.value = selectedOption.indicators[5];
             txtInd7_t2.value = selectedOption.indicators[6];
-            txtA4_t2.value = selectedOption.indicators[7];
         } else {
             // Clear fields if nothing is selected
             txtPlace_t2.value = '';
@@ -395,7 +390,6 @@ function updateSubcategories_t2() {
             txtInd5_t2.value = '';
             txtInd6_t2.value = '';
             txtInd7_t2.value = '';
-            txtA4_t2.value = '';
         }
     });
 }
@@ -427,7 +421,6 @@ function updateSubcategories_t3() {
     const txtInd5_t3 = document.getElementById('txtInd5_t3');
     const txtInd6_t3 = document.getElementById('txtInd6_t3');
     const txtInd7_t3 = document.getElementById('txtInd7_t3');
-    const txtA4_t3 = document.getElementById('txtA4_t3');
 
     subcategorySelect_t3.innerHTML = ''; // Clear previous options
 
@@ -529,7 +522,6 @@ function updateSubcategories_t3() {
             txtInd5_t3.value = selectedOption.indicators[4];
             txtInd6_t3.value = selectedOption.indicators[5];
             txtInd7_t3.value = selectedOption.indicators[6];
-            txtA4_t3.value = selectedOption.indicators[7];
         } else {
             // Clear fields if nothing is selected
             txtPlace_t3.value = '';
@@ -541,7 +533,6 @@ function updateSubcategories_t3() {
             txtInd5_t3.value = '';
             txtInd6_t3.value = '';
             txtInd7_t3.value = '';
-            txtA4_t3.value = '';
         }
     });
 }
@@ -572,7 +563,6 @@ function updateSubcategories_t4() {
     const txtInd5_t4 = document.getElementById('txtInd5_t4');
     const txtInd6_t4 = document.getElementById('txtInd6_t4');
     const txtInd7_t4 = document.getElementById('txtInd7_t4');
-    const txtA4_t4 = document.getElementById('txtA4_t4');
 
     subcategorySelect_t4.innerHTML = ''; // Clear previous options
 
@@ -674,7 +664,6 @@ function updateSubcategories_t4() {
             txtInd5_t4.value = selectedOption.indicators[4];
             txtInd6_t4.value = selectedOption.indicators[5];
             txtInd7_t4.value = selectedOption.indicators[6];
-            txtA4_t4.value = selectedOption.indicators[7];
         } else {
             // Clear fields if nothing is selected
             txtPlace_t4.value = '';
@@ -686,7 +675,6 @@ function updateSubcategories_t4() {
             txtInd5_t4.value = '';
             txtInd6_t4.value = '';
             txtInd7_t4.value = '';
-            txtA4_t4.value = '';
         }
     });
 }
@@ -718,7 +706,6 @@ function updateSubcategories_t5() {
     const txtInd5_t5 = document.getElementById('txtInd5_t5');
     const txtInd6_t5 = document.getElementById('txtInd6_t5');
     const txtInd7_t5 = document.getElementById('txtInd7_t5');
-    const txtA4_t5 = document.getElementById('txtA4_t5');
 
     subcategorySelect_t5.innerHTML = ''; // Clear previous options
 
@@ -820,7 +807,6 @@ function updateSubcategories_t5() {
             txtInd5_t5.value = selectedOption.indicators[4];
             txtInd6_t5.value = selectedOption.indicators[5];
             txtInd7_t5.value = selectedOption.indicators[6];
-            txtA4_t5.value = selectedOption.indicators[7];
         } else {
             // Clear fields if nothing is selected
             txtPlace_t5.value = '';
@@ -832,7 +818,6 @@ function updateSubcategories_t5() {
             txtInd5_t5.value = '';
             txtInd6_t5.value = '';
             txtInd7_t5.value = '';
-            txtA4_t5.value = '';
         }
     });
 }
@@ -864,7 +849,6 @@ function updateSubcategories_t6() {
     const txtInd5_t6 = document.getElementById('txtInd5_t6');
     const txtInd6_t6 = document.getElementById('txtInd6_t6');
     const txtInd7_t6 = document.getElementById('txtInd7_t6');
-    const txtA4_t6 = document.getElementById('txtA4_t6');
 
     subcategorySelect_t6.innerHTML = ''; // Clear previous options
 
@@ -966,7 +950,6 @@ function updateSubcategories_t6() {
             txtInd5_t6.value = selectedOption.indicators[4];
             txtInd6_t6.value = selectedOption.indicators[5];
             txtInd7_t6.value = selectedOption.indicators[6];
-            txtA4_t6.value = selectedOption.indicators[7];
         } else {
             // Clear fields if nothing is selected
             txtPlace_t6.value = '';
@@ -978,7 +961,6 @@ function updateSubcategories_t6() {
             txtInd5_t6.value = '';
             txtInd6_t6.value = '';
             txtInd7_t6.value = '';
-            txtA4_t6.value = '';
         }
     });
 }
@@ -1010,7 +992,6 @@ function updateSubcategories_t7() {
     const txtInd5_t7 = document.getElementById('txtInd5_t7');
     const txtInd6_t7 = document.getElementById('txtInd6_t7');
     const txtInd7_t7 = document.getElementById('txtInd7_t7');
-    const txtA4_t7 = document.getElementById('txtA4_t7');
 
     subcategorySelect_t7.innerHTML = ''; // Clear previous options
 
@@ -1112,7 +1093,6 @@ function updateSubcategories_t7() {
             txtInd5_t7.value = selectedOption.indicators[4];
             txtInd6_t7.value = selectedOption.indicators[5];
             txtInd7_t7.value = selectedOption.indicators[6];
-            txtA4_t7.value = selectedOption.indicators[7];
         } else {
             // Clear fields if nothing is selected
             txtPlace_t7.value = '';
@@ -1124,7 +1104,6 @@ function updateSubcategories_t7() {
             txtInd5_t7.value = '';
             txtInd6_t7.value = '';
             txtInd7_t7.value = '';
-            txtA4_t7.value = '';
         }
     });
 }
@@ -1155,7 +1134,6 @@ function updateSubcategories_t8() {
     const txtInd5_t8 = document.getElementById('txtInd5_t8');
     const txtInd6_t8 = document.getElementById('txtInd6_t8');
     const txtInd7_t8 = document.getElementById('txtInd7_t8');
-    const txtA4_t8 = document.getElementById('txtA4_t8');
 
     subcategorySelect_t8.innerHTML = ''; // Clear previous options
 
@@ -1257,7 +1235,6 @@ function updateSubcategories_t8() {
             txtInd5_t8.value = selectedOption.indicators[4];
             txtInd6_t8.value = selectedOption.indicators[5];
             txtInd7_t8.value = selectedOption.indicators[6];
-            txtA4_t8.value = selectedOption.indicators[7];
         } else {
             // Clear fields if nothing is selected
             txtPlace_t8.value = '';
@@ -1269,7 +1246,6 @@ function updateSubcategories_t8() {
             txtInd5_t8.value = '';
             txtInd6_t8.value = '';
             txtInd7_t8.value = '';
-            txtA4_t8.value = '';
         }
     });
 }
@@ -1300,7 +1276,6 @@ function updateSubcategories_t9() {
     const txtInd5_t8 = document.getElementById('txtInd5_t8');
     const txtInd6_t8 = document.getElementById('txtInd6_t8');
     const txtInd7_t8 = document.getElementById('txtInd7_t8');
-    const txtA4_t8 = document.getElementById('txtA4_t8');
 
     subcategorySelect_t8.innerHTML = ''; // Clear previous options
 
@@ -1402,7 +1377,6 @@ function updateSubcategories_t9() {
             txtInd5_t8.value = selectedOption.indicators[4];
             txtInd6_t8.value = selectedOption.indicators[5];
             txtInd7_t8.value = selectedOption.indicators[6];
-            txtA4_t8.value = selectedOption.indicators[7];
         } else {
             // Clear fields if nothing is selected
             txtPlace_t8.value = '';
@@ -1414,7 +1388,6 @@ function updateSubcategories_t9() {
             txtInd5_t8.value = '';
             txtInd6_t8.value = '';
             txtInd7_t8.value = '';
-            txtA4_t8.value = '';
         }
     });
 }
@@ -1447,7 +1420,6 @@ function updateSubcategories_t9() {
     const txtInd5_t9 = document.getElementById('txtInd5_t9');
     const txtInd6_t9 = document.getElementById('txtInd6_t9');
     const txtInd7_t9 = document.getElementById('txtInd7_t9');
-    const txtA4_t9 = document.getElementById('txtA4_t9');
 
     subcategorySelect_t9.innerHTML = ''; // Clear previous options
 
@@ -1549,7 +1521,6 @@ function updateSubcategories_t9() {
             txtInd5_t9.value = selectedOption.indicators[4];
             txtInd6_t9.value = selectedOption.indicators[5];
             txtInd7_t9.value = selectedOption.indicators[6];
-            txtA4_t9.value = selectedOption.indicators[7];
         } else {
             // Clear fields if nothing is selected
             txtPlace_t9.value = '';
@@ -1561,7 +1532,6 @@ function updateSubcategories_t9() {
             txtInd5_t9.value = '';
             txtInd6_t9.value = '';
             txtInd7_t9.value = '';
-            txtA4_t9.value = '';
         }
     });
 }
@@ -1595,7 +1565,6 @@ function updateSubcategories_t10() {
     const txtInd5_t10 = document.getElementById('txtInd5_t10');
     const txtInd6_t10 = document.getElementById('txtInd6_t10');
     const txtInd7_t10 = document.getElementById('txtInd7_t10');
-    const txtA4_t10 = document.getElementById('txtA4_t10');
 
     subcategorySelect_t10.innerHTML = ''; // Clear previous options
 
@@ -1697,7 +1666,6 @@ function updateSubcategories_t10() {
             txtInd5_t10.value = selectedOption.indicators[4];
             txtInd6_t10.value = selectedOption.indicators[5];
             txtInd7_t10.value = selectedOption.indicators[6];
-            txtA4_t10.value = selectedOption.indicators[7];
         } else {
             // Clear fields if nothing is selected
             txtPlace_t10.value = '';
@@ -1709,7 +1677,6 @@ function updateSubcategories_t10() {
             txtInd5_t10.value = '';
             txtInd6_t10.value = '';
             txtInd7_t10.value = '';
-            txtA4_t10.value = '';
         }
     });
 }
@@ -1741,7 +1708,6 @@ function updateSubcategories_t11() {
     const txtInd5_t11 = document.getElementById('txtInd5_t11');
     const txtInd6_t11 = document.getElementById('txtInd6_t11');
     const txtInd7_t11 = document.getElementById('txtInd7_t11');
-    const txtA4_t11 = document.getElementById('txtA4_t11');
 
     subcategorySelect_t11.innerHTML = ''; // Clear previous options
 
@@ -1843,7 +1809,6 @@ function updateSubcategories_t11() {
             txtInd5_t11.value = selectedOption.indicators[4];
             txtInd6_t11.value = selectedOption.indicators[5];
             txtInd7_t11.value = selectedOption.indicators[6];
-            txtA4_t11.value = selectedOption.indicators[7];
         } else {
             // Clear fields if nothing is selected
             txtPlace_t11.value = '';
@@ -1855,7 +1820,6 @@ function updateSubcategories_t11() {
             txtInd5_t11.value = '';
             txtInd6_t11.value = '';
             txtInd7_t11.value = '';
-            txtA4_t11.value = '';
         }
     });
 }
@@ -1887,7 +1851,6 @@ function updateSubcategories_t12() {
     const txtInd5_t12 = document.getElementById('txtInd5_t12');
     const txtInd6_t12 = document.getElementById('txtInd6_t12');
     const txtInd7_t12 = document.getElementById('txtInd7_t12');
-    const txtA4_t12 = document.getElementById('txtA4_t12');
 
     subcategorySelect_t12.innerHTML = ''; // Clear previous options
 
@@ -1989,7 +1952,6 @@ function updateSubcategories_t12() {
             txtInd5_t12.value = selectedOption.indicators[4];
             txtInd6_t12.value = selectedOption.indicators[5];
             txtInd7_t12.value = selectedOption.indicators[6];
-            txtA4_t12.value = selectedOption.indicators[7];
         } else {
             // Clear fields if nothing is selected
             txtPlace_t12.value = '';
@@ -2001,7 +1963,6 @@ function updateSubcategories_t12() {
             txtInd5_t12.value = '';
             txtInd6_t12.value = '';
             txtInd7_t12.value = '';
-            txtA4_t12.value = '';
         }
     });
 }
@@ -2241,83 +2202,25 @@ function calculateTotalResults_Window(event) {
     document.getElementById("TotalResultA4_Window").value = totalA4.toFixed(2);
 }
 
-
-
-// Sample data for charts
-const data1 = {
-    labels: ['Foundation of material', 'Floor & Roofs', 'Walls', 'Window'],
-    datasets: [{
-        label: 'Design 1',
-        data: [0, 0, 0, 0], // Starting with zeros
-        backgroundColor: 'rgba(0, 162, 255, 0.2)',
-        borderColor: 'rgba(0, 162, 255, 1)',
-        borderWidth: 1
-    }]
-};
-
-const data2 = {
-    labels: ['Foundation of material', 'Floor & Roofs', 'Walls', 'Window'],
-    datasets: [{
-        label: 'Design 2',
-        data: [0, 0, 0, 0], // Starting with zeros
-        backgroundColor: 'rgba(0, 255, 132, 0.2)',
-        borderColor: 'rgba(0, 255, 132, 1)',
-        borderWidth: 1
-    }]
-};
-
-// Initialize charts
-const ctx1 = document.getElementById('chart1').getContext('2d');
-const ctx2 = document.getElementById('chart2').getContext('2d');
-
-new Chart(ctx1, {
-    type: 'bar',
-    data: data1,
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});
-
-new Chart(ctx2, {
-    type: 'bar',
-    data: data2,
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});
-
-
-
-
-
-
 // // منع فتح أدوات المطورين
-// document.addEventListener("keydown", function(e) {
-//     // منع F12 (أدوات المطور)
-//     if (e.keyCode === 123) {
-//         e.preventDefault();
-//     }
+ document.addEventListener("keydown", function(e) {
+     // منع F12 (أدوات المطور)
+     if (e.keyCode === 123) {
+         e.preventDefault();
+     }
 
-//     // منع Ctrl+Shift+I (أدوات المطور)
-//     if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
-//         e.preventDefault();
-//     }
+// منع Ctrl+Shift+I (أدوات المطور)
+    if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
+         e.preventDefault();
+     }
 
-//     // منع Ctrl+U (عرض الصفحة المصدر)
-//     if (e.ctrlKey && e.keyCode === 85) {
-//         e.preventDefault();
-//     }
-// });
+    // منع Ctrl+U (عرض الصفحة المصدر)
+     if (e.ctrlKey && e.keyCode === 85) {
+         e.preventDefault();
+     }
+ });
 
-// // منع استخدام زر الماوس الأيمن
-// document.addEventListener("contextmenu", function(e) {
-//     e.preventDefault();
-// });
+// منع استخدام زر الماوس الأيمن
+ document.addEventListener("contextmenu", function(e) {
+     e.preventDefault();
+});
