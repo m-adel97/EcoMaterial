@@ -1424,7 +1424,82 @@
             </div>
         </div>
 
-        <button id="updateChartBtn">Analyze Results</button>
+        <button id="updateChartButton">Analyze Results</button>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <script>
+// Sample data for charts
+const data1 = {
+    labels: ['Foundation of material', 'Floor & Roofs', 'Walls', 'Window'],
+    datasets: [{
+        label: 'Design 1',
+        data: [0, 0, 0, 0], // Starting with zeros
+        backgroundColor: 'rgba(0, 162, 255, 0.2)',
+        borderColor: 'rgba(0, 162, 255, 1)',
+        borderWidth: 1
+    }]
+};
+
+const data2 = {
+    labels: ['Foundation of material', 'Floor & Roofs', 'Walls', 'Window'],
+    datasets: [{
+        label: 'Design 2',
+        data: [0, 0, 0, 0], // Starting with zeros
+        backgroundColor: 'rgba(0, 255, 132, 0.2)',
+        borderColor: 'rgba(0, 255, 132, 1)',
+        borderWidth: 1
+    }]
+};
+
+// Initialize charts
+const ctx1 = document.getElementById('chart1').getContext('2d');
+const ctx2 = document.getElementById('chart2').getContext('2d');
+
+const chart1 = new Chart(ctx1, {
+    type: 'bar',
+    data: data1,
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+const chart2 = new Chart(ctx2, {
+    type: 'bar',
+    data: data2,
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+// Function to update the charts
+document.getElementById('updateChartButton').addEventListener('click', function() {
+    // Get values from textboxes
+    const foundationValue = parseFloat(document.getElementById('TotalResultInd1').value);
+    const floorValue = parseFloat(document.getElementById('TotalResultInd1_Floor').value);
+    const wallsValue = parseFloat(document.getElementById('ResultInd1_t10').value);
+    const windowValue = parseFloat(document.getElementById('TotalResultInd1_Window').value);
+
+    // Check if the data on the first chart is all zeros
+    if (data1.datasets[0].data.every(value => value === 0)) {
+        // If the first chart is empty, add values to chart 1
+        data1.datasets[0].data = [foundationValue, floorValue, wallsValue, windowValue];
+        chart1.update();
+    } else {
+        // If the first chart has data, add values to chart 2
+        data2.datasets[0].data = [foundationValue, floorValue, wallsValue, windowValue];
+        chart2.update();
+    }
+});
+</script>
+        
 
         <h2>Phase Three</h2>
         <div class="charts">
