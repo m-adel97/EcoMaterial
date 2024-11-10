@@ -2244,7 +2244,7 @@ function calculateTotalResults_Window(event) {
 
 
 // Sample data for charts (initially zero)
-const data1 = {
+/*const data1 = {
     labels: ['Foundation of material', 'Floor & Roofs', 'Walls', 'Window'],
     datasets: [{
         label: 'Design 1',
@@ -2318,7 +2318,7 @@ document.getElementById('updateChartBtn').addEventListener('click', function() {
     document.getElementById('TotalResultInd1_Floor').value = '';
     document.getElementById('ResultInd1_t10').value = '';
     document.getElementById('TotalResultInd1_Window').value = '';
-});
+});*/
 
 
 
