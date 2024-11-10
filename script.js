@@ -2243,7 +2243,18 @@ function calculateTotalResults_Window(event) {
 
 
 
-// Sample data for charts
+<!-- HTML for the textboxes and button -->
+<input type="text" id="TotalResultInd1" placeholder="Enter value for Foundation of material">
+<input type="text" id="TotalResultInd1_Floor" placeholder="Enter value for Floor & Roofs">
+<input type="text" id="ResultInd1_t10" placeholder="Enter value for Walls">
+<input type="text" id="TotalResultInd1_Window" placeholder="Enter value for Window">
+<button id="updateChartBtn">Update Charts</button>
+
+<canvas id="chart1"></canvas>
+<canvas id="chart2"></canvas>
+
+<script>
+// Sample data for charts (initially zero)
 const data1 = {
     labels: ['Foundation of material', 'Floor & Roofs', 'Walls', 'Window'],
     datasets: [{
@@ -2270,7 +2281,7 @@ const data2 = {
 const ctx1 = document.getElementById('chart1').getContext('2d');
 const ctx2 = document.getElementById('chart2').getContext('2d');
 
-new Chart(ctx1, {
+const chart1 = new Chart(ctx1, {
     type: 'bar',
     data: data1,
     options: {
@@ -2282,7 +2293,7 @@ new Chart(ctx1, {
     }
 });
 
-new Chart(ctx2, {
+const chart2 = new Chart(ctx2, {
     type: 'bar',
     data: data2,
     options: {
@@ -2292,6 +2303,32 @@ new Chart(ctx2, {
             }
         }
     }
+});
+
+// Handle button click to update charts
+document.getElementById('updateChartBtn').addEventListener('click', function() {
+    // Get values from the input fields
+    const val1 = parseFloat(document.getElementById('TotalResultInd1').value) || 0;
+    const val2 = parseFloat(document.getElementById('TotalResultInd1_Floor').value) || 0;
+    const val3 = parseFloat(document.getElementById('ResultInd1_t10').value) || 0;
+    const val4 = parseFloat(document.getElementById('TotalResultInd1_Window').value) || 0;
+
+    // Check if chart1 has data (if it's not still zeros)
+    if (data1.datasets[0].data.some(val => val !== 0)) {
+        // If chart1 has data, update chart2 with the new values
+        data2.datasets[0].data = [val1, val2, val3, val4];
+        chart2.update(); // Update chart2
+    } else {
+        // If chart1 has no data, update chart1 with the new values
+        data1.datasets[0].data = [val1, val2, val3, val4];
+        chart1.update(); // Update chart1
+    }
+
+    // Optionally, clear the input fields
+    document.getElementById('TotalResultInd1').value = '';
+    document.getElementById('TotalResultInd1_Floor').value = '';
+    document.getElementById('ResultInd1_t10').value = '';
+    document.getElementById('TotalResultInd1_Window').value = '';
 });
 
 
