@@ -20,7 +20,16 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Old Dimension .container { max-width: 900px; margin: 20px auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }*/
+/* Old Dimension
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}*/
+
 h2 {
     font-size: 24px;
     color: #007bff;
@@ -75,6 +84,7 @@ form {
     /* Light blue on hover */
 }
 
+
 label {
     display: block;
     font-size: 14px;
@@ -95,8 +105,19 @@ table input[type="text"]:not(:has(+ select)) {
     text-align: center;
 }
 
-/*.quantity-table { margin: 20px 0; }*/
-/*.quantity-table th, .quantity-table td { padding: 10px; border: 1px solid #ddd; text-align: center; }*/
+/*.quantity-table {
+    margin: 20px 0;
+}*/
+
+
+
+/*.quantity-table th,
+.quantity-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}*/
+
 .quantity-table table {
     width: 100%;
     margin-bottom: 20px;
@@ -135,9 +156,11 @@ table input[type="text"]:not(:has(+ select)) {
     color: #999;
 }
 
+
 .quantity-table td {
     min-width: 150px;
 }
+
 
 .charts {
     display: flex;
