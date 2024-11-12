@@ -161,7 +161,6 @@ table input[type="text"]:not(:has(+ select)) {
     min-width: 150px;
 }
 
-
 /* General chart container styles */
 .charts {
     display: flex;
@@ -174,10 +173,11 @@ table input[type="text"]:not(:has(+ select)) {
 /* Chart container styles */
 .chart-container {
     display: flex;
-    flex-direction: column; /* يجعل العناصر في العمود في الوضع الافتراضي */
+    flex-direction: column;
     width: 100%;
-    max-width: 500px; /* Adjust max-width as per design */
-    height: 400px; /* Adjust height as needed */
+    max-width: 500px;
+    height: 400px;
+    min-height: 300px; /* لضمان أن الشارتات تظهر بطول مناسب */
     position: relative;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     background-color: #e6f7ff;
@@ -196,24 +196,25 @@ canvas {
 /* For screens larger than 768px (laptop/desktop) */
 @media (min-width: 768px) {
     .charts {
-        flex-direction: row; /* Make sure charts are side by side on larger screens */
+        flex-direction: row;
     }
 
     .chart-container {
-        flex: 1; /* Allow the containers to take up equal space in row layout */
-        max-width: 500px; /* Ensure the container doesn't exceed this width */
+        flex: 1;
+        max-width: 500px;
     }
 }
 
 /* For screens smaller than 768px (tablet, mobile) */
 @media (max-width: 768px) {
     .charts {
-        flex-direction: column; /* Stack charts on top of each other */
+        flex-direction: column;
     }
 
     .chart-container {
-        width: 100%; /* Allow the container to take full width on smaller screens */
-        max-width: none; /* Remove the max-width restriction on smaller screens */
-        height: auto; /* Adjust height to be responsive */
+        width: 100%;
+        max-width: none;
+        height: auto;
+        min-height: 300px; /* لتحديد ارتفاع أدنى للشارتات على شاشات الموبايل */
     }
 }
