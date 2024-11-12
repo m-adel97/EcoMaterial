@@ -177,7 +177,8 @@ table input[type="text"]:not(:has(+ select)) {
     width: 100%;
     max-width: 500px;
     height: 400px;
-    min-height: 300px; /* لضمان أن الشارتات تظهر بطول مناسب */
+    min-height: 300px;
+    max-height: 500px; /* تقييد أقصى ارتفاع */
     position: relative;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     background-color: #e6f7ff;
@@ -202,6 +203,7 @@ canvas {
     .chart-container {
         flex: 1;
         max-width: 500px;
+        max-height: 400px; /* تحديد أقصى ارتفاع للشاشات الأكبر */
     }
 }
 
@@ -215,6 +217,7 @@ canvas {
         width: 100%;
         max-width: none;
         height: auto;
-        min-height: 300px; /* لتحديد ارتفاع أدنى للشارتات على شاشات الموبايل */
+        min-height: 300px;
+        max-height: 500px; /* تقييد أقصى ارتفاع لمنع التمدد المفرط */
     }
 }
