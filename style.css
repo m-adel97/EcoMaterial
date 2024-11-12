@@ -174,7 +174,7 @@ table input[type="text"]:not(:has(+ select)) {
 /* Chart container to make the canvas responsive */
 .chart-container {
     width: 100%;
-    max-width: 500px; /* This can be adjusted depending on your design */
+    max-width: 500px; /* Keep the max width for larger screens */
     height: 400px; /* Adjust height if necessary */
     position: relative;
 }
@@ -185,12 +185,24 @@ canvas {
     height: 100% !important;
 }
 
-/* Optional: You can style the chart container if you want */
+/* Optional: Styling the chart container */
 .chart-container {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    /*border-radius: 10px;*/
     overflow: hidden;
     background: #fff;
     background-color: #e6f7ff;
     border: 2px solid #007bff;
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 768px) {
+    .chart-container {
+        max-width: 100%; /* Remove max-width constraint on smaller screens */
+        height: 250px;   /* Reduce the height if needed on mobile */
+    }
+
+    .charts {
+        gap: 10px; /* Reduce gap between charts on mobile */
+        padding: 10px; /* Reduce padding on mobile */
+    }
 }
