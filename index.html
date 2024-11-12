@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -101,6 +103,14 @@
             background-color: #003d80;
             transform: scale(0.98);
         }
+
+	  .btnClear{
+		background: rgba(255, 0, 60, 1);
+	  }
+
+	  .btnClear:hover{
+		background: maroon;
+	  }
     </style>
 </head>
 
@@ -1424,7 +1434,7 @@
         </div>
 
         <button id="updateChartBtn">Update Charts</button>
-
+        <button id="btnClear" class="btnClear" onclick="Clear()">Clear</button>
         <h2>Phase Three</h2>
         <div class="charts">
             <div class="chart-container">
@@ -1551,6 +1561,40 @@
                 chart2.update();
             }
         });
+	
+
+function Clear() {
+  // مسح كل القيم في الـ TextBoxes
+  const textboxes = document.querySelectorAll('input[type="text"]');
+  textboxes.forEach(box => box.value = '');
+
+  // تحديث القوائم المنسدلة
+  const selectElements = document.querySelectorAll('select');
+  selectElements.forEach(select => {
+    // تحديد الخيار "Select classification" إذا موجود
+    const classificationOption = [...select.options].find(opt => opt.textContent === 'Select classification');
+    if (classificationOption) {
+      select.value = classificationOption.value;  // تحديد الخيار المطلوب
+    }
+
+    // تحديد الخيار "Select name of material" إذا موجود
+    const materialOption = [...select.options].find(opt => opt.textContent === 'Select name of material');
+    if (materialOption) {
+      select.value = materialOption.value;  // تحديد الخيار المطلوب
+    }
+  });
+
+  // إخفاء الصور الظاهرة في الصفحة
+  const images = document.querySelectorAll('img');
+  images.forEach(img => {
+    if (img.style.display !== 'none') {
+      img.setAttribute('data-src', img.src); // حفظ مصدر الصورة مؤقتاً
+      img.style.display = 'none';  // إخفاء الصورة
+    }
+  });
+
+}
+
 
     </script>
 
