@@ -55,7 +55,13 @@ function updateMaterialOptions() {
     } else if (classification === 'glass') {
         options = [
             { name: 'Select name of material' },
-            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', manufacturer: 'Saint-Gobain Glass EGYPT, Building 12B4,Cairo Festival City, 2nd Floor, New Cairo', image: 'img/glass/0.png' }
+            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', manufacturer: 'Saint-Gobain Glass EGYPT, Building 12B4,Cairo Festival City, 2nd Floor, New Cairo', image: 'img/glass/0.png' },
+            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-5mm', manufacturer: 'Saint-Gobain Glass EGYPT, Building 12B4,Cairo Festival City, 2nd Floor, New Cairo', image: 'img/glass/1.png' },
+            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-6mm', manufacturer: 'Saint-Gobain Glass EGYPT, Building 12B4,Cairo Festival City, 2nd Floor, New Cairo', image: 'img/glass/2.png' },
+            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-8mm', manufacturer: 'Saint-Gobain Glass EGYPT, Building 12B4,Cairo Festival City, 2nd Floor, New Cairo', image: 'img/glass/3.png' },
+            { name: 'REFLECTASOL on PARSOL 4 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', manufacturer: 'Saint-Gobain Glass EGYPT, Building 12B4,Cairo Festival City, 2nd Floor, New Cairo', image: 'img/glass/4.png' },
+            { name: 'REFLECTASOL on PARSOL 5 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', manufacturer: 'Saint-Gobain Glass EGYPT, Building 12B4,Cairo Festival City, 2nd Floor, New Cairo', image: 'img/glass/5.png' },
+            { name: 'REFLECTASOL on PARSOL 6 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', manufacturer: ' Saint-Gobain Glass EGYPT, Building 12B4,Cairo Festival City, 2nd Floor, New Cairo ', image: 'img/glass/6.png' }
         ];
     } else if (classification === 'steel') {
         options = [
@@ -183,8 +189,13 @@ function updateSubcategories() {
         ];
     } else if (classification === 'glass') {
         suboptions = [
-            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
-            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['16', '15.9', '0.0542', '0.00504', '0.145', '0.00000086', '0.0931', 'A4'] }
+{ name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-5mm', place: 'Ain Sokhna-Egypt', unit: '1 m2', indicators: ['19.3', '19.2', '0.0672', '0.00629', '0.18', '0.00000103', '0.116', 'A4']},
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-6mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['22.6', '22.5', '0.0802', '0.00753', '0.215', '0.0000012', '0.138', 'A4']},
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-8mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['29.2', '29.1', '0.106', '0.01', '0.284', '0.00000154', '0.183', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 4 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['29.2', '29.2', '0.0122', '0.00762', '0.159', '0.00000186', '0.102', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 5 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['35.8', '35.8', '0.0148', '0.00952', '0.197', '0.00000228', '0.126', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 6 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['42.4', '42.4', '0.0173', '0.0114', '0.235', '0.0000027', '0.151', 'A4']},
         ];
     } else if (classification === 'steel') {
         suboptions = [
@@ -328,8 +339,13 @@ function updateSubcategories_t2() {
         ];
     } else if (classification_t2 === 'glass') {
         suboptions = [
-            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
-            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['16', '15.9', '0.0542', '0.00504', '0.145', '0.00000086', '0.0931', 'A4'] }
+{ name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-5mm', place: 'Ain Sokhna-Egypt', unit: '1 m2', indicators: ['19.3', '19.2', '0.0672', '0.00629', '0.18', '0.00000103', '0.116', 'A4']},
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-6mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['22.6', '22.5', '0.0802', '0.00753', '0.215', '0.0000012', '0.138', 'A4']},
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-8mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['29.2', '29.1', '0.106', '0.01', '0.284', '0.00000154', '0.183', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 4 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['29.2', '29.2', '0.0122', '0.00762', '0.159', '0.00000186', '0.102', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 5 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['35.8', '35.8', '0.0148', '0.00952', '0.197', '0.00000228', '0.126', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 6 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['42.4', '42.4', '0.0173', '0.0114', '0.235', '0.0000027', '0.151', 'A4']}
         ];
     } else if (classification_t2 === 'steel') {
         suboptions = [
@@ -471,8 +487,13 @@ function updateSubcategories_t3() {
         ];
     } else if (classification_t3 === 'glass') {
         suboptions = [
-            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
-            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['16', '15.9', '0.0542', '0.00504', '0.145', '0.00000086', '0.0931', 'A4'] }
+{ name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-5mm', place: 'Ain Sokhna-Egypt', unit: '1 m2', indicators: ['19.3', '19.2', '0.0672', '0.00629', '0.18', '0.00000103', '0.116', 'A4']},
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-6mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['22.6', '22.5', '0.0802', '0.00753', '0.215', '0.0000012', '0.138', 'A4']},
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-8mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['29.2', '29.1', '0.106', '0.01', '0.284', '0.00000154', '0.183', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 4 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['29.2', '29.2', '0.0122', '0.00762', '0.159', '0.00000186', '0.102', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 5 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['35.8', '35.8', '0.0148', '0.00952', '0.197', '0.00000228', '0.126', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 6 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['42.4', '42.4', '0.0173', '0.0114', '0.235', '0.0000027', '0.151', 'A4']}
         ];
     } else if (classification_t3 === 'steel') {
         suboptions = [
@@ -613,9 +634,13 @@ function updateSubcategories_t4() {
         ];
     } else if (classification_t4 === 'glass') {
         suboptions = [
-            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
-            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['16', '15.9', '0.0542', '0.00504', '0.145', '0.00000086', '0.0931', 'A4'] }
-        ];
+{ name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-5mm', place: 'Ain Sokhna-Egypt', unit: '1 m2', indicators: ['19.3', '19.2', '0.0672', '0.00629', '0.18', '0.00000103', '0.116', 'A4']},
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-6mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['22.6', '22.5', '0.0802', '0.00753', '0.215', '0.0000012', '0.138', 'A4']},
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-8mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['29.2', '29.1', '0.106', '0.01', '0.284', '0.00000154', '0.183', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 4 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['29.2', '29.2', '0.0122', '0.00762', '0.159', '0.00000186', '0.102', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 5 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['35.8', '35.8', '0.0148', '0.00952', '0.197', '0.00000228', '0.126', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 6 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['42.4', '42.4', '0.0173', '0.0114', '0.235', '0.0000027', '0.151', 'A4']}        ];
     } else if (classification_t4 === 'steel') {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
@@ -756,9 +781,13 @@ function updateSubcategories_t5() {
         ];
     } else if (classification_t5 === 'glass') {
         suboptions = [
-            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
-            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['16', '15.9', '0.0542', '0.00504', '0.145', '0.00000086', '0.0931', 'A4'] }
-        ];
+{ name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-5mm', place: 'Ain Sokhna-Egypt', unit: '1 m2', indicators: ['19.3', '19.2', '0.0672', '0.00629', '0.18', '0.00000103', '0.116', 'A4']},
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-6mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['22.6', '22.5', '0.0802', '0.00753', '0.215', '0.0000012', '0.138', 'A4']},
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-8mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['29.2', '29.1', '0.106', '0.01', '0.284', '0.00000154', '0.183', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 4 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['29.2', '29.2', '0.0122', '0.00762', '0.159', '0.00000186', '0.102', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 5 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['35.8', '35.8', '0.0148', '0.00952', '0.197', '0.00000228', '0.126', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 6 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['42.4', '42.4', '0.0173', '0.0114', '0.235', '0.0000027', '0.151', 'A4']}        ];
     } else if (classification_t5 === 'steel') {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
@@ -899,8 +928,13 @@ function updateSubcategories_t6() {
         ];
     } else if (classification_t6 === 'glass') {
         suboptions = [
-            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
-            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['16', '15.9', '0.0542', '0.00504', '0.145', '0.00000086', '0.0931', 'A4'] }
+{ name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-5mm', place: 'Ain Sokhna-Egypt', unit: '1 m2', indicators: ['19.3', '19.2', '0.0672', '0.00629', '0.18', '0.00000103', '0.116', 'A4']},
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-6mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['22.6', '22.5', '0.0802', '0.00753', '0.215', '0.0000012', '0.138', 'A4']},
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-8mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['29.2', '29.1', '0.106', '0.01', '0.284', '0.00000154', '0.183', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 4 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['29.2', '29.2', '0.0122', '0.00762', '0.159', '0.00000186', '0.102', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 5 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['35.8', '35.8', '0.0148', '0.00952', '0.197', '0.00000228', '0.126', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 6 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['42.4', '42.4', '0.0173', '0.0114', '0.235', '0.0000027', '0.151', 'A4']}
         ];
     } else if (classification_t6 === 'steel') {
         suboptions = [
@@ -1042,8 +1076,13 @@ function updateSubcategories_t7() {
         ];
     } else if (classification_t7 === 'glass') {
         suboptions = [
-            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
-            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['16', '15.9', '0.0542', '0.00504', '0.145', '0.00000086', '0.0931', 'A4'] }
+{ name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-5mm', place: 'Ain Sokhna-Egypt', unit: '1 m2', indicators: ['19.3', '19.2', '0.0672', '0.00629', '0.18', '0.00000103', '0.116', 'A4']},
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-6mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['22.6', '22.5', '0.0802', '0.00753', '0.215', '0.0000012', '0.138', 'A4']},
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-8mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['29.2', '29.1', '0.106', '0.01', '0.284', '0.00000154', '0.183', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 4 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['29.2', '29.2', '0.0122', '0.00762', '0.159', '0.00000186', '0.102', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 5 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['35.8', '35.8', '0.0148', '0.00952', '0.197', '0.00000228', '0.126', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 6 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['42.4', '42.4', '0.0173', '0.0114', '0.235', '0.0000027', '0.151', 'A4']}
         ];
     } else if (classification_t7 === 'steel') {
         suboptions = [
@@ -1184,8 +1223,13 @@ function updateSubcategories_t8() {
         ];
     } else if (classification_t8 === 'glass') {
         suboptions = [
-            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
-            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['16', '15.9', '0.0542', '0.00504', '0.145', '0.00000086', '0.0931', 'A4'] }
+{ name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-5mm', place: 'Ain Sokhna-Egypt', unit: '1 m2', indicators: ['19.3', '19.2', '0.0672', '0.00629', '0.18', '0.00000103', '0.116', 'A4']},
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-6mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['22.6', '22.5', '0.0802', '0.00753', '0.215', '0.0000012', '0.138', 'A4']},
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-8mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['29.2', '29.1', '0.106', '0.01', '0.284', '0.00000154', '0.183', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 4 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['29.2', '29.2', '0.0122', '0.00762', '0.159', '0.00000186', '0.102', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 5 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['35.8', '35.8', '0.0148', '0.00952', '0.197', '0.00000228', '0.126', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 6 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['42.4', '42.4', '0.0173', '0.0114', '0.235', '0.0000027', '0.151', 'A4']}
         ];
     } else if (classification_t8 === 'steel') {
         suboptions = [
@@ -1327,7 +1371,13 @@ function updateSubcategories_t9() {
     } else if (classification_t8 === 'glass') {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
-            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['16', '15.9', '0.0542', '0.00504', '0.145', '0.00000086', '0.0931', 'A4'] }
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', place: 'Ain Sokhna-Egypt', unit: '1 m2', indicators: ['16', '15.9', '0.0542', '0.00504', '0.145', '0.00000086', '0.0931', 'A4']},
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-5mm', place: 'Ain Sokhna-Egypt', unit: '1 m2', indicators: ['19.3', '19.2', '0.0672', '0.00629', '0.18', '0.00000103', '0.116', 'A4']},
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-6mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['22.6', '22.5', '0.0802', '0.00753', '0.215', '0.0000012', '0.138', 'A4']},
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-8mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['29.2', '29.1', '0.106', '0.01', '0.284', '0.00000154', '0.183', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 4 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['29.2', '29.2', '0.0122', '0.00762', '0.159', '0.00000186', '0.102', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 5 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['35.8', '35.8', '0.0148', '0.00952', '0.197', '0.00000228', '0.126', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 6 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['42.4', '42.4', '0.0173', '0.0114', '0.235', '0.0000027', '0.151', 'A4']}
         ];
     } else if (classification_t8 === 'steel') {
         suboptions = [
@@ -1470,8 +1520,14 @@ function updateSubcategories_t9() {
         ];
     } else if (classification_t9 === 'glass') {
         suboptions = [
-            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
-            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['16', '15.9', '0.0542', '0.00504', '0.145', '0.00000086', '0.0931', 'A4'] }
+{ name: 'Select name of material' },
+            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', manufacturer: 'Saint-Gobain Glass EGYPT, Building 12B4,Cairo Festival City, 2nd Floor, New Cairo', image: 'img/glass/0.png' },
+            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-5mm', manufacturer: 'Saint-Gobain Glass EGYPT, Building 12B4,Cairo Festival City, 2nd Floor, New Cairo', image: 'img/glass/1.png' },
+            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-6mm', manufacturer: 'Saint-Gobain Glass EGYPT, Building 12B4,Cairo Festival City, 2nd Floor, New Cairo', image: 'img/glass/2.png' },
+            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-8mm', manufacturer: 'Saint-Gobain Glass EGYPT, Building 12B4,Cairo Festival City, 2nd Floor, New Cairo', image: 'img/glass/3.png' },
+            { name: 'REFLECTASOL on PARSOL 4 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', manufacturer: 'Saint-Gobain Glass EGYPT, Building 12B4,Cairo Festival City, 2nd Floor, New Cairo', image: 'img/glass/4.png' },
+            { name: 'REFLECTASOL on PARSOL 5 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', manufacturer: 'Saint-Gobain Glass EGYPT, Building 12B4,Cairo Festival City, 2nd Floor, New Cairo', image: 'img/glass/5.png' },
+            { name: 'REFLECTASOL on PARSOL 6 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', manufacturer: ' Saint-Gobain Glass EGYPT, Building 12B4,Cairo Festival City, 2nd Floor, New Cairo ', image: 'img/glass/6.png' }
         ];
     } else if (classification_t9 === 'steel') {
         suboptions = [
@@ -1615,8 +1671,13 @@ function updateSubcategories_t10() {
         ];
     } else if (classification_t10 === 'glass') {
         suboptions = [
-            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
-            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['16', '15.9', '0.0542', '0.00504', '0.145', '0.00000086', '0.0931', 'A4'] }
+{ name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-5mm', place: 'Ain Sokhna-Egypt', unit: '1 m2', indicators: ['19.3', '19.2', '0.0672', '0.00629', '0.18', '0.00000103', '0.116', 'A4']},
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-6mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['22.6', '22.5', '0.0802', '0.00753', '0.215', '0.0000012', '0.138', 'A4']},
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-8mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['29.2', '29.1', '0.106', '0.01', '0.284', '0.00000154', '0.183', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 4 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['29.2', '29.2', '0.0122', '0.00762', '0.159', '0.00000186', '0.102', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 5 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['35.8', '35.8', '0.0148', '0.00952', '0.197', '0.00000228', '0.126', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 6 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['42.4', '42.4', '0.0173', '0.0114', '0.235', '0.0000027', '0.151', 'A4']}
         ];
     } else if (classification_t10 === 'steel') {
         suboptions = [
@@ -1758,8 +1819,13 @@ function updateSubcategories_t11() {
         ];
     } else if (classification_t11 === 'glass') {
         suboptions = [
-            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
-            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['16', '15.9', '0.0542', '0.00504', '0.145', '0.00000086', '0.0931', 'A4'] }
+{ name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-5mm', place: 'Ain Sokhna-Egypt', unit: '1 m2', indicators: ['19.3', '19.2', '0.0672', '0.00629', '0.18', '0.00000103', '0.116', 'A4']},
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-6mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['22.6', '22.5', '0.0802', '0.00753', '0.215', '0.0000012', '0.138', 'A4']},
+{ name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-8mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['29.2', '29.1', '0.106', '0.01', '0.284', '0.00000154', '0.183', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 4 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['29.2', '29.2', '0.0122', '0.00762', '0.159', '0.00000186', '0.102', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 5 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['35.8', '35.8', '0.0148', '0.00952', '0.197', '0.00000228', '0.126', 'A4']},
+{ name: 'REFLECTASOL on PARSOL 6 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['42.4', '42.4', '0.0173', '0.0114', '0.235', '0.0000027', '0.151', 'A4']}
         ];
     } else if (classification_t11 === 'steel') {
         suboptions = [
@@ -1901,8 +1967,14 @@ function updateSubcategories_t12() {
         ];
     } else if (classification_t12 === 'glass') {
         suboptions = [
-            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
-            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', place: 'El Sokhna plant, Bagged', unit: '1 m2', indicators: ['16', '15.9', '0.0542', '0.00504', '0.145', '0.00000086', '0.0931', 'A4'] }
+{ name: 'Select name of material' },
+            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-4mm', manufacturer: 'Saint-Gobain Glass EGYPT, Building 12B4,Cairo Festival City, 2nd Floor, New Cairo', image: 'img/glass/0.png' },
+            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-5mm', manufacturer: 'Saint-Gobain Glass EGYPT, Building 12B4,Cairo Festival City, 2nd Floor, New Cairo', image: 'img/glass/1.png' },
+            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-6mm', manufacturer: 'Saint-Gobain Glass EGYPT, Building 12B4,Cairo Festival City, 2nd Floor, New Cairo', image: 'img/glass/2.png' },
+            { name: 'REFLECTASOL Clear (on PLANILUX)-Pyrolytic CVD coated glass-8mm', manufacturer: 'Saint-Gobain Glass EGYPT, Building 12B4,Cairo Festival City, 2nd Floor, New Cairo', image: 'img/glass/3.png' },
+            { name: 'REFLECTASOL on PARSOL 4 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', manufacturer: 'Saint-Gobain Glass EGYPT, Building 12B4,Cairo Festival City, 2nd Floor, New Cairo', image: 'img/glass/4.png' },
+            { name: 'REFLECTASOL on PARSOL 5 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', manufacturer: 'Saint-Gobain Glass EGYPT, Building 12B4,Cairo Festival City, 2nd Floor, New Cairo', image: 'img/glass/5.png' },
+            { name: 'REFLECTASOL on PARSOL 6 mm (Bronze, Green, Grey, Saphire Blue, Dark Blue)', manufacturer: ' Saint-Gobain Glass EGYPT, Building 12B4,Cairo Festival City, 2nd Floor, New Cairo ', image: 'img/glass/6.png' }
         ];
     } else if (classification_t12 === 'steel') {
         suboptions = [
