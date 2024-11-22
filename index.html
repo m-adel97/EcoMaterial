@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-    <title>Material Classification</title>
+    <title>Eco Metric</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="style.css">
     <style>
@@ -102,20 +102,20 @@
             transform: scale(0.98);
         }
 
-	  .btnClear{
-		background: rgba(255, 0, 60, 1);
-	  }
+        .btnClear {
+            background: rgba(255, 0, 60, 1);
+        }
 
-	  .btnClear:hover{
-		background: maroon;
-	  }
+        .btnClear:hover {
+            background: maroon;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h2>Phase One<br>(Classification or Filter)</h2>
-        <form>
+        <div class="phase-one">
+            <h2>Phase One<br>(Classification or Filter)</h2>
             <label for="classification">Classification of material</label>
             <select id="classification" onchange="updateMaterialOptions()">
                 <option value="none">Select classification</option>
@@ -137,8 +137,7 @@
             <p>1- Name of manufacture</p>
             <input type="text" id="manufacture" placeholder="Manufacturer" readonly />
             <p>2- life cycle & environmental impact indicator:</p>
-            <center><img id="material-image" src="" alt="Material Image"
-                    style="display:none; width: 200px; height: auto;"></center>
+            <img id="material-image" src="" alt="Material Image" style="display:none; width: 200px; height: auto;">
 
             <!-- Modal for enlarged image -->
             <div id="myModal" class="modal">
@@ -147,10 +146,11 @@
                     <img id="enlarged-image" src="" alt="Enlarged Material Image" class="zoomed">
                 </div>
             </div>
-        </form>
+        </div><!--End of Phase One-->
 
-        <h2>Phase Two</h2>
-        <form>
+        <div class="phase-two">
+            <h2>Phase Two</h2>
+
             <div class="indicators">
                 <h3>LCA Indicator A1-A3</h3>
                 <ul>
@@ -164,42 +164,40 @@
                 </ul>
             </div>
 
-            <div>
-                <!-- <label>Google Map Link</label> -->
-                <!-- <input type="text" id="google-map-link" placeholder="Google Map Link" disabled="disabled"> -->
-                <a href="https://www.google.com/maps/@29.9859968,30.916608,13z?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D"
-                    target="_blank">Google Maps to calculate distance below</a>
+            <a href="https://www.google.com/maps/@29.9859968,30.916608,13z?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank" style="margin-right: 20px;">Google Maps to calculate distance below</a>
+            <a href="Distances.pdf" target="_blank">Distance Guide</a>
 
+
+            <div class="form-section foundation">
                 <h3>1) Foundation of material</h3>
+                <!--Table 1-->
+                <div class="matDetails">
+                    <div class="material-selector">
+                        <label for="material">Classification of material</label>
+                        <select id="material" onchange="updateSubcategories()">
+                            <option value="none">Select classification</option>
+                            <option value="concrete">Concrete</option>
+                            <option value="bricks">Bricks</option>
+                            <option value="plaster">Plaster</option>
+                            <option value="insulation">Insulation</option>
+                            <option value="cement">Cement</option>
+                            <option value="glass">Glass</option>
+                            <option value="steel">Steel</option>
+                            <option value="sand">Sand</option>
+                            <option value="paint">Paint</option>
+                            <option value="aluminium">Aluminium</option>
+                            <option value="timber">Timber</option>
+                        </select>
 
-                <!-- First Table -->
-                <form>
-                    <label for="material">Classification of material</label>
-                    <select id="material" onchange="updateSubcategories()">
-                        <option value="none">Select classification</option>
-                        <option value="concrete">Concrete</option>
-                        <option value="bricks">Bricks</option>
-                        <option value="plaster">Plaster</option>
-                        <option value="insulation">Insulation</option>
-                        <option value="cement">Cement</option>
-                        <option value="glass">Glass</option>
-                        <option value="steel">Steel</option>
-                        <option value="sand">Sand</option>
-                        <option value="paint">Paint</option>
-                        <option value="aluminium">Aluminium</option>
-                        <option value="timber">Timber</option>
-                    </select>
+                        <label for="subcategory">Name of material</label>
+                        <select id="subcategory">
+                            <option value="">Select name of material</option>
+                        </select>
+                    </div>
 
-                    <label for="subcategory">Name of material</label>
-                    <select id="subcategory">
-                        <option value="">Select name of material</option>
-                    </select>
-
-                </form>
-
-                <div class="quantity-table">
-                    <p>Quantity, Unit, Distance (m), Indicator values:</p>
-                    <div style="overflow-x: auto">
+                    <div class="quantity-table">
+                        <p>Quantity, Unit, Distance (m), Indicator values:</p>
                         <table>
                             <tr>
                                 <th>Qty</th>
@@ -218,7 +216,8 @@
                             </tr>
 
                             <tr>
-                                <td><input id="txtQty" type="text" placeholder="Qty" oninput="calculateResults()"></td>
+                                <td><input id="txtQty" type="text" placeholder="Qty" oninput="calculateResults()">
+                                </td>
                                 <td><input id="txtDist" type="text" placeholder="Distance" oninput="calculateResults()">
                                 </td>
                                 <td>
@@ -249,543 +248,585 @@
                             </tr>
                             <tr>
                                 <td colspan="5"><label>Result:</label></td>
-                                <td><input id="ResultInd1-t1" type="text" placeholder="Result" disabled="disabled"></td>
-                                <td><input id="ResultInd2-t1" type="text" placeholder="Result" disabled="disabled"></td>
-                                <td><input id="ResultInd3-t1" type="text" placeholder="Result" disabled="disabled"></td>
-                                <td><input id="ResultInd4-t1" type="text" placeholder="Result" disabled="disabled"></td>
-                                <td><input id="ResultInd5-t1" type="text" placeholder="Result" disabled="disabled"></td>
-                                <td><input id="ResultInd6-t1" type="text" placeholder="Result" disabled="disabled"></td>
-                                <td><input id="ResultInd7-t1" type="text" placeholder="Result" disabled="disabled"></td>
-                                <td><input id="ResultA4-t1" type="text" placeholder="Result" disabled="disabled"></td>
+                                <td><input id="ResultInd1-t1" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd2-t1" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd3-t1" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd4-t1" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd5-t1" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd6-t1" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd7-t1" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultA4-t1" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                            </tr>
+                        </table>
+
+
+                    </div>
+                </div>
+
+                <!--Table 2-->
+                <div class="matDetails">
+                    <div class="material-selector">
+                        <label for="material_t2">Classification of material</label>
+                        <select id="material_t2" onchange="updateSubcategories_t2()">
+                            <option value="none">Select classification</option>
+                            <option value="concrete">Concrete</option>
+                            <option value="bricks">Bricks</option>
+                            <option value="plaster">Plaster</option>
+                            <option value="insulation">Insulation</option>
+                            <option value="cement">Cement</option>
+                            <option value="glass">Glass</option>
+                            <option value="steel">Steel</option>
+                            <option value="sand">Sand</option>
+                            <option value="paint">Paint</option>
+                            <option value="aluminium">Aluminium</option>
+                            <option value="timber">Timber</option>
+                        </select>
+
+                        <label for="subcategory_t2">Name of material</label>
+                        <select id="subcategory_t2">
+                            <option value="">Select name of material</option>
+                        </select>
+                    </div>
+
+                    <div class="quantity-table">
+                        <p>Quantity, Unit, Distance (m), Indicator values:</p>
+                        <table>
+                            <tr>
+                                <th>Qty</th>
+                                <th>Dist (m)</th>
+                                <th>Fuel Type</th>
+                                <th>Place of production</th>
+                                <th>Unit</th>
+                                <th>(GWP)</th>
+                                <th>(ODP)</th>
+                                <th>(AP)</th>
+                                <th>(EP)</th>
+                                <th>(POPC)</th>
+                                <th>(ADP)</th>
+                                <th>(ADP-fossil fuels)</th>
+                                <th>A4</th>
+                            </tr>
+
+                            <tr>
+                                <td><input id="txtQty_t2" type="text" placeholder="Qty" oninput="calculateResults_t2()">
+                                </td>
+                                <td><input id="txtDist_t2" type="text" placeholder="Distance"
+                                        oninput="calculateResults_t2()"></td>
+                                <td>
+                                    <select id="Fuel_Type_t2" onchange="calculateResults_t2()">
+                                        <option value="0.26">Light Oil</option>
+                                        <option value="0.18">Natural Gas</option>
+                                        <option value="2.6">Diesel</option>
+                                    </select>
+                                </td>
+                                <td><input id="txtPlace_t2" type="text" placeholder="PlaceOfProduction"
+                                        disabled="disabled"></td>
+                                <td><input id="txtUnit_t2" type="text" placeholder="Unit" disabled="disabled"></td>
+                                <td><input id="txtInd1_t2" type="text" placeholder="Ind(1)" disabled="disabled"
+                                        oninput="calculateResults_t2()"></td>
+                                <td><input id="txtInd2_t2" type="text" placeholder="Ind(2)" disabled="disabled"
+                                        oninput="calculateResults_t2()"></td>
+                                <td><input id="txtInd3_t2" type="text" placeholder="Ind(3)" disabled="disabled"
+                                        oninput="calculateResults_t2()"></td>
+                                <td><input id="txtInd4_t2" type="text" placeholder="Ind(4)" disabled="disabled"
+                                        oninput="calculateResults_t2()"></td>
+                                <td><input id="txtInd5_t2" type="text" placeholder="Ind(5)" disabled="disabled"
+                                        oninput="calculateResults_t2()"></td>
+                                <td><input id="txtInd6_t2" type="text" placeholder="Ind(6)" disabled="disabled"
+                                        oninput="calculateResults_t2()"></td>
+                                <td><input id="txtInd7_t2" type="text" placeholder="Ind(7)" disabled="disabled"
+                                        oninput="calculateResults_t2()"></td>
+                                <td class="blankCell"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="5"><label>Result:</label></td>
+                                <td><input id="ResultInd1_t2" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd2_t2" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd3_t2" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd4_t2" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd5_t2" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd6_t2" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd7_t2" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultA4_t2" type="text" placeholder="Result" disabled="disabled">
+                                </td>
                             </tr>
                         </table>
                     </div>
+                </div>
 
-                    <!-- Second Table -->
-                    <label for="material_t2">Classification of material</label>
-                    <select id="material_t2" onchange="updateSubcategories_t2()">
-                        <option value="none">Select classification</option>
-                        <option value="concrete">Concrete</option>
-                        <option value="bricks">Bricks</option>
-                        <option value="plaster">Plaster</option>
-                        <option value="insulation">Insulation</option>
-                        <option value="cement">Cement</option>
-                        <option value="glass">Glass</option>
-                        <option value="steel">Steel</option>
-                        <option value="sand">Sand</option>
-                        <option value="paint">Paint</option>
-                        <option value="aluminium">Aluminium</option>
-                        <option value="timber">Timber</option>
-                    </select>
+                <!--table 3-->
+                <div class="matDetails">
+                    <div class="material-selector">
+                        <label for="material_t3">Classification of material</label>
+                        <select id="material_t3" onchange="updateSubcategories_t3()">
+                            <option value="none">Select classification</option>
+                            <option value="concrete">Concrete</option>
+                            <option value="bricks">Bricks</option>
+                            <option value="plaster">Plaster</option>
+                            <option value="insulation">Insulation</option>
+                            <option value="cement">Cement</option>
+                            <option value="glass">Glass</option>
+                            <option value="steel">Steel</option>
+                            <option value="sand">Sand</option>
+                            <option value="paint">Paint</option>
+                            <option value="aluminium">Aluminium</option>
+                            <option value="timber">Timber</option>
+                        </select>
 
-                    <label for="subcategory_t2">Name of material</label>
-                    <select id="subcategory_t2">
-                        <option value="">Select name of material</option>
-                    </select>
-
-                    <div class="quantity-table">
-                        <p>Quantity, Unit, Distance (m), Indicator values:</p>
-                        <div style="overflow-x: auto">
-                            <table>
-                                <tr>
-                                    <th>Qty</th>
-                                    <th>Dist (m)</th>
-                                    <th>Fuel Type</th>
-                                    <th>Place of production</th>
-                                    <th>Unit</th>
-                                    <th>(GWP)</th>
-                                    <th>(ODP)</th>
-                                    <th>(AP)</th>
-                                    <th>(EP)</th>
-                                    <th>(POPC)</th>
-                                    <th>(ADP)</th>
-                                    <th>(ADP-fossil fuels)</th>
-                                    <th>A4</th>
-                                </tr>
-
-                                <tr>
-                                    <td><input id="txtQty_t2" type="text" placeholder="Qty"
-                                            oninput="calculateResults_t2()"></td>
-                                    <td><input id="txtDist_t2" type="text" placeholder="Distance"
-                                            oninput="calculateResults_t2()"></td>
-                                    <td>
-                                        <select id="Fuel_Type_t2" onchange="calculateResults_t2()">
-                                            <option value="0.26">Light Oil</option>
-                                            <option value="0.18">Natural Gas</option>
-                                            <option value="2.6">Diesel</option>
-                                        </select>
-                                    </td>
-                                    <td><input id="txtPlace_t2" type="text" placeholder="PlaceOfProduction"
-                                            disabled="disabled"></td>
-                                    <td><input id="txtUnit_t2" type="text" placeholder="Unit" disabled="disabled"></td>
-                                    <td><input id="txtInd1_t2" type="text" placeholder="Ind(1)" disabled="disabled"
-                                            oninput="calculateResults_t2()"></td>
-                                    <td><input id="txtInd2_t2" type="text" placeholder="Ind(2)" disabled="disabled"
-                                            oninput="calculateResults_t2()"></td>
-                                    <td><input id="txtInd3_t2" type="text" placeholder="Ind(3)" disabled="disabled"
-                                            oninput="calculateResults_t2()"></td>
-                                    <td><input id="txtInd4_t2" type="text" placeholder="Ind(4)" disabled="disabled"
-                                            oninput="calculateResults_t2()"></td>
-                                    <td><input id="txtInd5_t2" type="text" placeholder="Ind(5)" disabled="disabled"
-                                            oninput="calculateResults_t2()"></td>
-                                    <td><input id="txtInd6_t2" type="text" placeholder="Ind(6)" disabled="disabled"
-                                            oninput="calculateResults_t2()"></td>
-                                    <td><input id="txtInd7_t2" type="text" placeholder="Ind(7)" disabled="disabled"
-                                            oninput="calculateResults_t2()"></td>
-                                    <td class="blankCell"></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="5"><label>Result:</label></td>
-                                    <td><input id="ResultInd1_t2" type="text" placeholder="Result" disabled="disabled">
-                                    </td>
-                                    <td><input id="ResultInd2_t2" type="text" placeholder="Result" disabled="disabled">
-                                    </td>
-                                    <td><input id="ResultInd3_t2" type="text" placeholder="Result" disabled="disabled">
-                                    </td>
-                                    <td><input id="ResultInd4_t2" type="text" placeholder="Result" disabled="disabled">
-                                    </td>
-                                    <td><input id="ResultInd5_t2" type="text" placeholder="Result" disabled="disabled">
-                                    </td>
-                                    <td><input id="ResultInd6_t2" type="text" placeholder="Result" disabled="disabled">
-                                    </td>
-                                    <td><input id="ResultInd7_t2" type="text" placeholder="Result" disabled="disabled">
-                                    </td>
-                                    <td><input id="ResultA4_t2" type="text" placeholder="Result" disabled="disabled">
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
+                        <label for="subcategory_t3">Name of material</label>
+                        <select id="subcategory_t3">
+                            <option value="">Select name of material</option>
+                        </select>
                     </div>
 
-                    <!-- Third Table -->
-                    <label for="material_t3">Classification of material</label>
-                    <select id="material_t3" onchange="updateSubcategories_t3()">
-                        <option value="none">Select classification</option>
-                        <option value="concrete">Concrete</option>
-                        <option value="bricks">Bricks</option>
-                        <option value="plaster">Plaster</option>
-                        <option value="insulation">Insulation</option>
-                        <option value="cement">Cement</option>
-                        <option value="glass">Glass</option>
-                        <option value="steel">Steel</option>
-                        <option value="sand">Sand</option>
-                        <option value="paint">Paint</option>
-                        <option value="aluminium">Aluminium</option>
-                        <option value="timber">Timber</option>
-                    </select>
-
-                    <label for="subcategory_t3">Name of material</label>
-                    <select id="subcategory_t3">
-                        <option value="">Select name of material</option>
-                    </select>
-
                     <div class="quantity-table">
                         <p>Quantity, Unit, Distance (m), Indicator values:</p>
-                        <div style="overflow-x: auto">
-                            <table>
-                                <tr>
-                                    <th>Qty</th>
-                                    <th>Dist (m)</th>
-                                    <th>Fuel Type</th>
-                                    <th>Place of production</th>
-                                    <th>Unit</th>
-                                    <th>(GWP)</th>
-                                    <th>(ODP)</th>
-                                    <th>(AP)</th>
-                                    <th>(EP)</th>
-                                    <th>(POPC)</th>
-                                    <th>(ADP)</th>
-                                    <th>(ADP-fossil fuels)</th>
-                                    <th>A4</th>
-                                </tr>
+                        <table>
+                            <tr>
+                                <th>Qty</th>
+                                <th>Dist (m)</th>
+                                <th>Fuel Type</th>
+                                <th>Place of production</th>
+                                <th>Unit</th>
+                                <th>(GWP)</th>
+                                <th>(ODP)</th>
+                                <th>(AP)</th>
+                                <th>(EP)</th>
+                                <th>(POPC)</th>
+                                <th>(ADP)</th>
+                                <th>(ADP-fossil fuels)</th>
+                                <th>A4</th>
+                            </tr>
 
-                                <tr>
-                                    <td><input id="txtQty_t3" type="text" placeholder="Qty"
-                                            oninput="calculateResults_t3()"></td>
-                                    <td><input id="txtDist_t3" type="text" placeholder="Distance"
-                                            oninput="calculateResults_t3()"></td>
-                                    <td>
-                                        <select id="Fuel_Type_t3" onchange="calculateResults_t3()">
-                                            <option value="0.26">Light Oil</option>
-                                            <option value="0.18">Natural Gas</option>
-                                            <option value="2.6">Diesel</option>
-                                        </select>
-                                    </td>
-                                    <td><input id="txtPlace_t3" type="text" placeholder="PlaceOfProduction"
-                                            disabled="disabled"></td>
-                                    <td><input id="txtUnit_t3" type="text" placeholder="Unit" disabled="disabled"></td>
-                                    <td><input id="txtInd1_t3" type="text" placeholder="Ind(1)" disabled="disabled"
-                                            oninput="calculateResults_t3()"></td>
-                                    <td><input id="txtInd2_t3" type="text" placeholder="Ind(2)" disabled="disabled"
-                                            oninput="calculateResults_t3()"></td>
-                                    <td><input id="txtInd3_t3" type="text" placeholder="Ind(3)" disabled="disabled"
-                                            oninput="calculateResults_t3()"></td>
-                                    <td><input id="txtInd4_t3" type="text" placeholder="Ind(4)" disabled="disabled"
-                                            oninput="calculateResults_t3()"></td>
-                                    <td><input id="txtInd5_t3" type="text" placeholder="Ind(5)" disabled="disabled"
-                                            oninput="calculateResults_t3()"></td>
-                                    <td><input id="txtInd6_t3" type="text" placeholder="Ind(6)" disabled="disabled"
-                                            oninput="calculateResults_t3()"></td>
-                                    <td><input id="txtInd7_t3" type="text" placeholder="Ind(7)" disabled="disabled"
-                                            oninput="calculateResults_t3()"></td>
-                                    <td class="blankCell"></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="5"><label>Result:</label></td>
-                                    <td><input id="ResultInd1_t3" type="text" placeholder="Result" disabled="disabled">
-                                    </td>
-                                    <td><input id="ResultInd2_t3" type="text" placeholder="Result" disabled="disabled">
-                                    </td>
-                                    <td><input id="ResultInd3_t3" type="text" placeholder="Result" disabled="disabled">
-                                    </td>
-                                    <td><input id="ResultInd4_t3" type="text" placeholder="Result" disabled="disabled">
-                                    </td>
-                                    <td><input id="ResultInd5_t3" type="text" placeholder="Result" disabled="disabled">
-                                    </td>
-                                    <td><input id="ResultInd6_t3" type="text" placeholder="Result" disabled="disabled">
-                                    </td>
-                                    <td><input id="ResultInd7_t3" type="text" placeholder="Result" disabled="disabled">
-                                    </td>
-                                    <td><input id="ResultA4_t3" type="text" placeholder="Result" disabled="disabled">
-                                    </td>
-                                </tr>
-                            </table>
-                            <center><button onclick="calculateTotalResults(event)">Calculate</button></center>
-
-                            <table>
-                                <tr style="background-color: white;">
-                                    <td style="border:0;"></td>
-                                    <td style="border:0;"></td>
-                                    <td style="border:0;"></td>
-                                    <td style="border:0;"></td>
-                                    <td style="border:0;"></td>
-                                    <td style="border:0;"></td>
-                                    <td style="border:0;"></td>
-                                    <td style="border:0;"></td>
-                                    <td style="border:0;"></td>
-                                    <td style="border:0;"></td>
-                                    <td style="border:0;"></td>
-                                    <td style="border:0;"></td>
-                                    <td style="border:0;"></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="5"><label>Total LCA for Foundation:</label></td>
-                                    <td><input id="TotalResultInd1" type="text" placeholder="Result"
-                                            disabled="disabled">
-                                    </td>
-                                    <td><input id="TotalResultInd2" type="text" placeholder="Result"
-                                            disabled="disabled">
-                                    </td>
-                                    <td><input id="TotalResultInd3" type="text" placeholder="Result"
-                                            disabled="disabled">
-                                    </td>
-                                    <td><input id="TotalResultInd4" type="text" placeholder="Result"
-                                            disabled="disabled">
-                                    </td>
-                                    <td><input id="TotalResultInd5" type="text" placeholder="Result"
-                                            disabled="disabled">
-                                    </td>
-                                    <td><input id="TotalResultInd6" type="text" placeholder="Result"
-                                            disabled="disabled">
-                                    </td>
-                                    <td><input id="TotalResultInd7" type="text" placeholder="Result"
-                                            disabled="disabled">
-                                    </td>
-                                    <td><input id="TotalResultA4" type="text" placeholder="Result" disabled="disabled">
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
+                            <tr>
+                                <td><input id="txtQty_t3" type="text" placeholder="Qty" oninput="calculateResults_t3()">
+                                </td>
+                                <td><input id="txtDist_t3" type="text" placeholder="Distance"
+                                        oninput="calculateResults_t3()"></td>
+                                <td>
+                                    <select id="Fuel_Type_t3" onchange="calculateResults_t3()">
+                                        <option value="0.26">Light Oil</option>
+                                        <option value="0.18">Natural Gas</option>
+                                        <option value="2.6">Diesel</option>
+                                    </select>
+                                </td>
+                                <td><input id="txtPlace_t3" type="text" placeholder="PlaceOfProduction"
+                                        disabled="disabled"></td>
+                                <td><input id="txtUnit_t3" type="text" placeholder="Unit" disabled="disabled"></td>
+                                <td><input id="txtInd1_t3" type="text" placeholder="Ind(1)" disabled="disabled"
+                                        oninput="calculateResults_t3()"></td>
+                                <td><input id="txtInd2_t3" type="text" placeholder="Ind(2)" disabled="disabled"
+                                        oninput="calculateResults_t3()"></td>
+                                <td><input id="txtInd3_t3" type="text" placeholder="Ind(3)" disabled="disabled"
+                                        oninput="calculateResults_t3()"></td>
+                                <td><input id="txtInd4_t3" type="text" placeholder="Ind(4)" disabled="disabled"
+                                        oninput="calculateResults_t3()"></td>
+                                <td><input id="txtInd5_t3" type="text" placeholder="Ind(5)" disabled="disabled"
+                                        oninput="calculateResults_t3()"></td>
+                                <td><input id="txtInd6_t3" type="text" placeholder="Ind(6)" disabled="disabled"
+                                        oninput="calculateResults_t3()"></td>
+                                <td><input id="txtInd7_t3" type="text" placeholder="Ind(7)" disabled="disabled"
+                                        oninput="calculateResults_t3()"></td>
+                                <td class="blankCell"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="5"><label>Result:</label></td>
+                                <td><input id="ResultInd1_t3" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd2_t3" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd3_t3" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd4_t3" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd5_t3" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd6_t3" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd7_t3" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultA4_t3" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
-            </div>
-        </form>
 
-        <h3>2) Floor & Roofs</h3>
-        <!-- Fourth Table -->
-        <label for="material_t4">Classification of material</label>
-        <select id="material_t4" onchange="updateSubcategories_t4()">
-            <option value="none">Select classification</option>
-            <option value="concrete">Concrete</option>
-            <option value="bricks">Bricks</option>
-            <option value="plaster">Plaster</option>
-            <option value="insulation">Insulation</option>
-            <option value="cement">Cement</option>
-            <option value="glass">Glass</option>
-            <option value="steel">Steel</option>
-            <option value="sand">Sand</option>
-            <option value="paint">Paint</option>
-            <option value="aluminium">Aluminium</option>
-            <option value="timber">Timber</option>
-        </select>
+                <!--Total for Foundation-->
+                <div class="total-table total-foundation">
+                    <button onclick="calculateTotalResults(event)">Calculate</button>
+                    <div class="quantity-table">
+                        <table>
+                            <tr style="background-color: white;">
+                                <td style="border:0;"></td>
+                                <td style="border:0;"></td>
+                                <td style="border:0;"></td>
+                                <td style="border:0;"></td>
+                                <td style="border:0;"></td>
+                                <td style="border:0;"></td>
+                                <td style="border:0;"></td>
+                                <td style="border:0;"></td>
+                                <td style="border:0;"></td>
+                                <td style="border:0;"></td>
+                                <td style="border:0;"></td>
+                                <td style="border:0;"></td>
+                                <td style="border:0;"></td>
+                            </tr>
 
-        <label for="subcategory_t4">Name of material</label>
-        <select id="subcategory_t4">
-            <option value="">Select name of material</option>
-        </select>
 
-        <div class="quantity-table">
-            <p>Quantity, Unit, Distance (m), Indicator values:</p>
-            <div style="overflow-x: auto">
-                <table>
-                    <tr>
-                        <th>Qty</th>
-                        <th>Dist (m)</th>
-                        <th>Fuel Type</th>
-                        <th>Place of production</th>
-                        <th>Unit</th>
-                        <th>(GWP)</th>
-                        <th>(ODP)</th>
-                        <th>(AP)</th>
-                        <th>(EP)</th>
-                        <th>(POPC)</th>
-                        <th>(ADP)</th>
-                        <th>(ADP-fossil fuels)</th>
-                        <th>A4</th>
-                    </tr>
+                            <tr>
+                                <td colspan="5"><label>Total LCA for Foundation:</label></td>
+                                <td><input id="TotalResultInd1" type="text" placeholder="Result"
+                                        disabled="disabled">
+                                </td>
+                                <td><input id="TotalResultInd2" type="text" placeholder="Result"
+                                        disabled="disabled">
+                                </td>
+                                <td><input id="TotalResultInd3" type="text" placeholder="Result"
+                                        disabled="disabled">
+                                </td>
+                                <td><input id="TotalResultInd4" type="text" placeholder="Result"
+                                        disabled="disabled">
+                                </td>
+                                <td><input id="TotalResultInd5" type="text" placeholder="Result"
+                                        disabled="disabled">
+                                </td>
+                                <td><input id="TotalResultInd6" type="text" placeholder="Result"
+                                        disabled="disabled">
+                                </td>
+                                <td><input id="TotalResultInd7" type="text" placeholder="Result"
+                                        disabled="disabled">
+                                </td>
+                                <td><input id="TotalResultA4" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div><!--End of foundation-->
 
-                    <tr>
-                        <td><input id="txtQty_t4" type="text" placeholder="Qty" oninput="calculateResults_t4()"></td>
-                        <td><input id="txtDist_t4" type="text" placeholder="Distance" oninput="calculateResults_t4()">
-                        </td>
-                        <td>
-                            <select id="Fuel_Type_t4" onchange="calculateResults_t4()">
-                                <option value="0.26">Light Oil</option>
-                                <option value="0.18">Natural Gas</option>
-                                <option value="2.6">Diesel</option>
-                            </select>
-                        </td>
-                        <td><input id="txtPlace_t4" type="text" placeholder="PlaceOfProduction" disabled="disabled">
-                        </td>
-                        <td><input id="txtUnit_t4" type="text" placeholder="Unit" disabled="disabled"></td>
-                        <td><input id="txtInd1_t4" type="text" placeholder="Ind(1)" disabled="disabled"
-                                oninput="calculateResults_t4()"></td>
-                        <td><input id="txtInd2_t4" type="text" placeholder="Ind(2)" disabled="disabled"
-                                oninput="calculateResults_t4()"></td>
-                        <td><input id="txtInd3_t4" type="text" placeholder="Ind(3)" disabled="disabled"
-                                oninput="calculateResults_t4()"></td>
-                        <td><input id="txtInd4_t4" type="text" placeholder="Ind(4)" disabled="disabled"
-                                oninput="calculateResults_t4()"></td>
-                        <td><input id="txtInd5_t4" type="text" placeholder="Ind(5)" disabled="disabled"
-                                oninput="calculateResults_t4()"></td>
-                        <td><input id="txtInd6_t4" type="text" placeholder="Ind(6)" disabled="disabled"
-                                oninput="calculateResults_t4()"></td>
-                        <td><input id="txtInd7_t4" type="text" placeholder="Ind(7)" disabled="disabled"
-                                oninput="calculateResults_t4()"></td>
-                        <td class="blankCell"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="5"><label>Result:</label></td>
-                        <td><input id="ResultInd1_t4" type="text" placeholder="Result" disabled="disabled">
-                        </td>
-                        <td><input id="ResultInd2_t4" type="text" placeholder="Result" disabled="disabled">
-                        </td>
-                        <td><input id="ResultInd3_t4" type="text" placeholder="Result" disabled="disabled">
-                        </td>
-                        <td><input id="ResultInd4_t4" type="text" placeholder="Result" disabled="disabled">
-                        </td>
-                        <td><input id="ResultInd5_t4" type="text" placeholder="Result" disabled="disabled">
-                        </td>
-                        <td><input id="ResultInd6_t4" type="text" placeholder="Result" disabled="disabled">
-                        </td>
-                        <td><input id="ResultInd7_t4" type="text" placeholder="Result" disabled="disabled">
-                        </td>
-                        <td><input id="ResultA4_t4" type="text" placeholder="Result" disabled="disabled">
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+            <!--**********************************************************************************************************-->
 
-        <!-- Fifth Table -->
-        <label for="material_t5">Classification of material</label>
-        <select id="material_t5" onchange="updateSubcategories_t5()">
-            <option value="none">Select classification</option>
-            <option value="concrete">Concrete</option>
-            <option value="bricks">Bricks</option>
-            <option value="plaster">Plaster</option>
-            <option value="insulation">Insulation</option>
-            <option value="cement">Cement</option>
-            <option value="glass">Glass</option>
-            <option value="steel">Steel</option>
-            <option value="sand">Sand</option>
-            <option value="paint">Paint</option>
-            <option value="aluminium">Aluminium</option>
-            <option value="timber">Timber</option>
-        </select>
+            <div class="form-section floor">
+                <h3>2) Floor & Roofs</h3>
 
-        <label for="subcategory_t5">Name of material</label>
-        <select id="subcategory_t5">
-            <option value="">Select name of material</option>
-        </select>
+                <!--table 4-->
+                <div class="matDetails">
+                    <div class="material-selector">
+                        <label for="material_t4">Classification of material</label>
+                        <select id="material_t4" onchange="updateSubcategories_t4()">
+                            <option value="none">Select classification</option>
+                            <option value="concrete">Concrete</option>
+                            <option value="bricks">Bricks</option>
+                            <option value="plaster">Plaster</option>
+                            <option value="insulation">Insulation</option>
+                            <option value="cement">Cement</option>
+                            <option value="glass">Glass</option>
+                            <option value="steel">Steel</option>
+                            <option value="sand">Sand</option>
+                            <option value="paint">Paint</option>
+                            <option value="aluminium">Aluminium</option>
+                            <option value="timber">Timber</option>
+                        </select>
 
-        <div class="quantity-table">
-            <p>Quantity, Unit, Distance (m), Indicator values:</p>
-            <div style="overflow-x: auto">
-                <table>
-                    <tr>
-                        <th>Qty</th>
-                        <th>Dist (m)</th>
-                        <th>Fuel Type</th>
-                        <th>Place of production</th>
-                        <th>Unit</th>
-                        <th>(GWP)</th>
-                        <th>(ODP)</th>
-                        <th>(AP)</th>
-                        <th>(EP)</th>
-                        <th>(POPC)</th>
-                        <th>(ADP)</th>
-                        <th>(ADP-fossil fuels)</th>
-                        <th>A4</th>
-                    </tr>
+                        <label for="subcategory_t4">Name of material</label>
+                        <select id="subcategory_t4">
+                            <option value="">Select name of material</option>
+                        </select>
+                    </div>
 
-                    <tr>
-                        <td><input id="txtQty_t5" type="text" placeholder="Qty" oninput="calculateResults_t5()"></td>
-                        <td><input id="txtDist_t5" type="text" placeholder="Distance" oninput="calculateResults_t5()">
-                        </td>
-                        <td>
-                            <select id="Fuel_Type_t5" onchange="calculateResults_t5()">
-                                <option value="0.26">Light Oil</option>
-                                <option value="0.18">Natural Gas</option>
-                                <option value="2.6">Diesel</option>
-                            </select>
-                        </td>
-                        <td><input id="txtPlace_t5" type="text" placeholder="PlaceOfProduction" disabled="disabled">
-                        </td>
-                        <td><input id="txtUnit_t5" type="text" placeholder="Unit" disabled="disabled"></td>
-                        <td><input id="txtInd1_t5" type="text" placeholder="Ind(1)" disabled="disabled"
-                                oninput="calculateResults_t5()"></td>
-                        <td><input id="txtInd2_t5" type="text" placeholder="Ind(2)" disabled="disabled"
-                                oninput="calculateResults_t5()"></td>
-                        <td><input id="txtInd3_t5" type="text" placeholder="Ind(3)" disabled="disabled"
-                                oninput="calculateResults_t5()"></td>
-                        <td><input id="txtInd4_t5" type="text" placeholder="Ind(4)" disabled="disabled"
-                                oninput="calculateResults_t5()"></td>
-                        <td><input id="txtInd5_t5" type="text" placeholder="Ind(5)" disabled="disabled"
-                                oninput="calculateResults_t5()"></td>
-                        <td><input id="txtInd6_t5" type="text" placeholder="Ind(6)" disabled="disabled"
-                                oninput="calculateResults_t5()"></td>
-                        <td><input id="txtInd7_t5" type="text" placeholder="Ind(7)" disabled="disabled"
-                                oninput="calculateResults_t5()"></td>
-                        <td class="blankCell"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="5"><label>Result:</label></td>
-                        <td><input id="ResultInd1_t5" type="text" placeholder="Result" disabled="disabled">
-                        </td>
-                        <td><input id="ResultInd2_t5" type="text" placeholder="Result" disabled="disabled">
-                        </td>
-                        <td><input id="ResultInd3_t5" type="text" placeholder="Result" disabled="disabled">
-                        </td>
-                        <td><input id="ResultInd4_t5" type="text" placeholder="Result" disabled="disabled">
-                        </td>
-                        <td><input id="ResultInd5_t5" type="text" placeholder="Result" disabled="disabled">
-                        </td>
-                        <td><input id="ResultInd6_t5" type="text" placeholder="Result" disabled="disabled">
-                        </td>
-                        <td><input id="ResultInd7_t5" type="text" placeholder="Result" disabled="disabled">
-                        </td>
-                        <td><input id="ResultA4_t5" type="text" placeholder="Result" disabled="disabled">
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+                    <div class="quantity-table">
+                        <p>Quantity, Unit, Distance (m), Indicator values:</p>
+                        <table>
+                            <tr>
+                                <th>Qty</th>
+                                <th>Dist (m)</th>
+                                <th>Fuel Type</th>
+                                <th>Place of production</th>
+                                <th>Unit</th>
+                                <th>(GWP)</th>
+                                <th>(ODP)</th>
+                                <th>(AP)</th>
+                                <th>(EP)</th>
+                                <th>(POPC)</th>
+                                <th>(ADP)</th>
+                                <th>(ADP-fossil fuels)</th>
+                                <th>A4</th>
+                            </tr>
 
-        <!-- Sixth Table -->
-        <label for="material_t6">Classification of material</label>
-        <select id="material_t6" onchange="updateSubcategories_t6()">
-            <option value="none">Select classification</option>
-            <option value="concrete">Concrete</option>
-            <option value="bricks">Bricks</option>
-            <option value="plaster">Plaster</option>
-            <option value="insulation">Insulation</option>
-            <option value="cement">Cement</option>
-            <option value="glass">Glass</option>
-            <option value="steel">Steel</option>
-            <option value="sand">Sand</option>
-            <option value="paint">Paint</option>
-            <option value="aluminium">Aluminium</option>
-            <option value="timber">Timber</option>
-        </select>
+                            <tr>
+                                <td><input id="txtQty_t4" type="text" placeholder="Qty" oninput="calculateResults_t4()">
+                                </td>
+                                <td><input id="txtDist_t4" type="text" placeholder="Distance"
+                                        oninput="calculateResults_t4()">
+                                </td>
+                                <td>
+                                    <select id="Fuel_Type_t4" onchange="calculateResults_t4()">
+                                        <option value="0.26">Light Oil</option>
+                                        <option value="0.18">Natural Gas</option>
+                                        <option value="2.6">Diesel</option>
+                                    </select>
+                                </td>
+                                <td><input id="txtPlace_t4" type="text" placeholder="PlaceOfProduction"
+                                        disabled="disabled">
+                                </td>
+                                <td><input id="txtUnit_t4" type="text" placeholder="Unit" disabled="disabled"></td>
+                                <td><input id="txtInd1_t4" type="text" placeholder="Ind(1)" disabled="disabled"
+                                        oninput="calculateResults_t4()"></td>
+                                <td><input id="txtInd2_t4" type="text" placeholder="Ind(2)" disabled="disabled"
+                                        oninput="calculateResults_t4()"></td>
+                                <td><input id="txtInd3_t4" type="text" placeholder="Ind(3)" disabled="disabled"
+                                        oninput="calculateResults_t4()"></td>
+                                <td><input id="txtInd4_t4" type="text" placeholder="Ind(4)" disabled="disabled"
+                                        oninput="calculateResults_t4()"></td>
+                                <td><input id="txtInd5_t4" type="text" placeholder="Ind(5)" disabled="disabled"
+                                        oninput="calculateResults_t4()"></td>
+                                <td><input id="txtInd6_t4" type="text" placeholder="Ind(6)" disabled="disabled"
+                                        oninput="calculateResults_t4()"></td>
+                                <td><input id="txtInd7_t4" type="text" placeholder="Ind(7)" disabled="disabled"
+                                        oninput="calculateResults_t4()"></td>
+                                <td class="blankCell"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="5"><label>Result:</label></td>
+                                <td><input id="ResultInd1_t4" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd2_t4" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd3_t4" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd4_t4" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd5_t4" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd6_t4" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd7_t4" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultA4_t4" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
 
-        <label for="subcategory_t6">Name of material</label>
-        <select id="subcategory_t6">
-            <option value="">Select name of material</option>
-        </select>
+                <!--table 5-->
+                <div class="matDetails">
+                    <div class="material-selector">
+                        <label for="material_t5">Classification of material</label>
+                        <select id="material_t5" onchange="updateSubcategories_t5()">
+                            <option value="none">Select classification</option>
+                            <option value="concrete">Concrete</option>
+                            <option value="bricks">Bricks</option>
+                            <option value="plaster">Plaster</option>
+                            <option value="insulation">Insulation</option>
+                            <option value="cement">Cement</option>
+                            <option value="glass">Glass</option>
+                            <option value="steel">Steel</option>
+                            <option value="sand">Sand</option>
+                            <option value="paint">Paint</option>
+                            <option value="aluminium">Aluminium</option>
+                            <option value="timber">Timber</option>
+                        </select>
 
-        <div class="quantity-table">
-            <p>Quantity, Unit, Distance (m), Indicator values:</p>
-            <div style="overflow-x: auto">
-                <table>
-                    <tr>
-                        <th>Qty</th>
-                        <th>Dist (m)</th>
-                        <th>Fuel Type</th>
-                        <th>Place of production</th>
-                        <th>Unit</th>
-                        <th>(GWP)</th>
-                        <th>(ODP)</th>
-                        <th>(AP)</th>
-                        <th>(EP)</th>
-                        <th>(POPC)</th>
-                        <th>(ADP)</th>
-                        <th>(ADP-fossil fuels)</th>
-                        <th>A4</th>
-                    </tr>
+                        <label for="subcategory_t5">Name of material</label>
+                        <select id="subcategory_t5">
+                            <option value="">Select name of material</option>
+                        </select>
+                    </div>
 
-                    <tr>
-                        <td><input id="txtQty_t6" type="text" placeholder="Qty" oninput="calculateResults_t6()"></td>
-                        <td><input id="txtDist_t6" type="text" placeholder="Distance" oninput="calculateResults_t6()">
-                        </td>
-                        <td>
-                            <select id="Fuel_Type_t6" onchange="calculateResults_t6()">
-                                <option value="0.26">Light Oil</option>
-                                <option value="0.18">Natural Gas</option>
-                                <option value="2.6">Diesel</option>
-                            </select>
-                        </td>
-                        <td><input id="txtPlace_t6" type="text" placeholder="PlaceOfProduction" disabled="disabled">
-                        </td>
-                        <td><input id="txtUnit_t6" type="text" placeholder="Unit" disabled="disabled"></td>
-                        <td><input id="txtInd1_t6" type="text" placeholder="Ind(1)" disabled="disabled"
-                                oninput="calculateResults_t6()"></td>
-                        <td><input id="txtInd2_t6" type="text" placeholder="Ind(2)" disabled="disabled"
-                                oninput="calculateResults_t6()"></td>
-                        <td><input id="txtInd3_t6" type="text" placeholder="Ind(3)" disabled="disabled"
-                                oninput="calculateResults_t6()"></td>
-                        <td><input id="txtInd4_t6" type="text" placeholder="Ind(4)" disabled="disabled"
-                                oninput="calculateResults_t6()"></td>
-                        <td><input id="txtInd5_t6" type="text" placeholder="Ind(5)" disabled="disabled"
-                                oninput="calculateResults_t6()"></td>
-                        <td><input id="txtInd6_t6" type="text" placeholder="Ind(6)" disabled="disabled"
-                                oninput="calculateResults_t6()"></td>
-                        <td><input id="txtInd7_t6" type="text" placeholder="Ind(7)" disabled="disabled"
-                                oninput="calculateResults_t6()"></td>
-                        <td class="blankCell"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="5"><label>Result:</label></td>
-                        <td><input id="ResultInd1_t6" type="text" placeholder="Result" disabled="disabled">
-                        </td>
-                        <td><input id="ResultInd2_t6" type="text" placeholder="Result" disabled="disabled">
-                        </td>
-                        <td><input id="ResultInd3_t6" type="text" placeholder="Result" disabled="disabled">
-                        </td>
-                        <td><input id="ResultInd4_t6" type="text" placeholder="Result" disabled="disabled">
-                        </td>
-                        <td><input id="ResultInd5_t6" type="text" placeholder="Result" disabled="disabled">
-                        </td>
-                        <td><input id="ResultInd6_t6" type="text" placeholder="Result" disabled="disabled">
-                        </td>
-                        <td><input id="ResultInd7_t6" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultA4_t6" type="text" placeholder="Result" disabled="disabled">
-                        </td>
-                    </tr>
-                </table>
-                <form>
-                    <center><button onclick="calculateTotalResults_Floor(event)">Calculate</button></center>
+                    <div class="quantity-table">
+                        <p>Quantity, Unit, Distance (m), Indicator values:</p>
+                        <table>
+                            <tr>
+                                <th>Qty</th>
+                                <th>Dist (m)</th>
+                                <th>Fuel Type</th>
+                                <th>Place of production</th>
+                                <th>Unit</th>
+                                <th>(GWP)</th>
+                                <th>(ODP)</th>
+                                <th>(AP)</th>
+                                <th>(EP)</th>
+                                <th>(POPC)</th>
+                                <th>(ADP)</th>
+                                <th>(ADP-fossil fuels)</th>
+                                <th>A4</th>
+                            </tr>
 
+                            <tr>
+                                <td><input id="txtQty_t5" type="text" placeholder="Qty" oninput="calculateResults_t5()">
+                                </td>
+                                <td><input id="txtDist_t5" type="text" placeholder="Distance"
+                                        oninput="calculateResults_t5()">
+                                </td>
+                                <td>
+                                    <select id="Fuel_Type_t5" onchange="calculateResults_t5()">
+                                        <option value="0.26">Light Oil</option>
+                                        <option value="0.18">Natural Gas</option>
+                                        <option value="2.6">Diesel</option>
+                                    </select>
+                                </td>
+                                <td><input id="txtPlace_t5" type="text" placeholder="PlaceOfProduction"
+                                        disabled="disabled">
+                                </td>
+                                <td><input id="txtUnit_t5" type="text" placeholder="Unit" disabled="disabled"></td>
+                                <td><input id="txtInd1_t5" type="text" placeholder="Ind(1)" disabled="disabled"
+                                        oninput="calculateResults_t5()"></td>
+                                <td><input id="txtInd2_t5" type="text" placeholder="Ind(2)" disabled="disabled"
+                                        oninput="calculateResults_t5()"></td>
+                                <td><input id="txtInd3_t5" type="text" placeholder="Ind(3)" disabled="disabled"
+                                        oninput="calculateResults_t5()"></td>
+                                <td><input id="txtInd4_t5" type="text" placeholder="Ind(4)" disabled="disabled"
+                                        oninput="calculateResults_t5()"></td>
+                                <td><input id="txtInd5_t5" type="text" placeholder="Ind(5)" disabled="disabled"
+                                        oninput="calculateResults_t5()"></td>
+                                <td><input id="txtInd6_t5" type="text" placeholder="Ind(6)" disabled="disabled"
+                                        oninput="calculateResults_t5()"></td>
+                                <td><input id="txtInd7_t5" type="text" placeholder="Ind(7)" disabled="disabled"
+                                        oninput="calculateResults_t5()"></td>
+                                <td class="blankCell"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="5"><label>Result:</label></td>
+                                <td><input id="ResultInd1_t5" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd2_t5" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd3_t5" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd4_t5" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd5_t5" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd6_t5" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd7_t5" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultA4_t5" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!--table 6-->
+                <div class="matDetails">
+                    <div class="material-selector">
+                        <label for="material_t6">Classification of material</label>
+                        <select id="material_t6" onchange="updateSubcategories_t6()">
+                            <option value="none">Select classification</option>
+                            <option value="concrete">Concrete</option>
+                            <option value="bricks">Bricks</option>
+                            <option value="plaster">Plaster</option>
+                            <option value="insulation">Insulation</option>
+                            <option value="cement">Cement</option>
+                            <option value="glass">Glass</option>
+                            <option value="steel">Steel</option>
+                            <option value="sand">Sand</option>
+                            <option value="paint">Paint</option>
+                            <option value="aluminium">Aluminium</option>
+                            <option value="timber">Timber</option>
+                        </select>
+
+                        <label for="subcategory_t6">Name of material</label>
+                        <select id="subcategory_t6">
+                            <option value="">Select name of material</option>
+                        </select>
+                    </div>
+
+                    <div class="quantity-table">
+                        <p>Quantity, Unit, Distance (m), Indicator values:</p>
+                        <table>
+                            <tr>
+                                <th>Qty</th>
+                                <th>Dist (m)</th>
+                                <th>Fuel Type</th>
+                                <th>Place of production</th>
+                                <th>Unit</th>
+                                <th>(GWP)</th>
+                                <th>(ODP)</th>
+                                <th>(AP)</th>
+                                <th>(EP)</th>
+                                <th>(POPC)</th>
+                                <th>(ADP)</th>
+                                <th>(ADP-fossil fuels)</th>
+                                <th>A4</th>
+                            </tr>
+
+                            <tr>
+                                <td><input id="txtQty_t6" type="text" placeholder="Qty" oninput="calculateResults_t6()">
+                                </td>
+                                <td><input id="txtDist_t6" type="text" placeholder="Distance"
+                                        oninput="calculateResults_t6()">
+                                </td>
+                                <td>
+                                    <select id="Fuel_Type_t6" onchange="calculateResults_t6()">
+                                        <option value="0.26">Light Oil</option>
+                                        <option value="0.18">Natural Gas</option>
+                                        <option value="2.6">Diesel</option>
+                                    </select>
+                                </td>
+                                <td><input id="txtPlace_t6" type="text" placeholder="PlaceOfProduction"
+                                        disabled="disabled">
+                                </td>
+                                <td><input id="txtUnit_t6" type="text" placeholder="Unit" disabled="disabled"></td>
+                                <td><input id="txtInd1_t6" type="text" placeholder="Ind(1)" disabled="disabled"
+                                        oninput="calculateResults_t6()"></td>
+                                <td><input id="txtInd2_t6" type="text" placeholder="Ind(2)" disabled="disabled"
+                                        oninput="calculateResults_t6()"></td>
+                                <td><input id="txtInd3_t6" type="text" placeholder="Ind(3)" disabled="disabled"
+                                        oninput="calculateResults_t6()"></td>
+                                <td><input id="txtInd4_t6" type="text" placeholder="Ind(4)" disabled="disabled"
+                                        oninput="calculateResults_t6()"></td>
+                                <td><input id="txtInd5_t6" type="text" placeholder="Ind(5)" disabled="disabled"
+                                        oninput="calculateResults_t6()"></td>
+                                <td><input id="txtInd6_t6" type="text" placeholder="Ind(6)" disabled="disabled"
+                                        oninput="calculateResults_t6()"></td>
+                                <td><input id="txtInd7_t6" type="text" placeholder="Ind(7)" disabled="disabled"
+                                        oninput="calculateResults_t6()"></td>
+                                <td class="blankCell"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="5"><label>Result:</label></td>
+                                <td><input id="ResultInd1_t6" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd2_t6" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd3_t6" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd4_t6" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd5_t6" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd6_t6" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd7_t6" type="text" placeholder="Result" disabled="disabled"></td>
+                                <td><input id="ResultA4_t6" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <button onclick="calculateTotalResults_Floor(event)">Calculate</button>
+
+                <div class="quantity-table">
                     <table>
                         <tr style="background-color: white;">
                             <td style="border:0;"></td>
@@ -822,272 +863,293 @@
                             </td>
                         </tr>
                     </table>
-                </form>
-            </div>
-        </div>
+                </div>
+            </div><!--End of floor-->
 
-        <h3>3) Walls</h3>
-        <!-- Seventh Table -->
-        <label for="material_t7">Classification of material</label>
-        <select id="material_t7" onchange="updateSubcategories_t7()">
-            <option value="none">Select classification</option>
-            <option value="concrete">Concrete</option>
-            <option value="bricks">Bricks</option>
-            <option value="plaster">Plaster</option>
-            <option value="insulation">Insulation</option>
-            <option value="cement">Cement</option>
-            <option value="glass">Glass</option>
-            <option value="steel">Steel</option>
-            <option value="sand">Sand</option>
-            <option value="paint">Paint</option>
-            <option value="aluminium">Aluminium</option>
-            <option value="timber">Timber</option>
-        </select>
+            <!--**********************************************************************************************************-->
 
-        <label for="subcategory_t7">Name of material</label>
-        <select id="subcategory_t7">
-            <option value="">Select name of material</option>
-        </select>
+            <div class="form-section walls">
+                <h3>3) Walls</h3>
 
-        <div class="quantity-table">
-            <p>Quantity, Unit, Distance (m), Indicator values:</p>
-            <div style="overflow-x: auto">
-                <table>
-                    <tr>
-                        <th>Qty</th>
-                        <th>Dist (m)</th>
-                        <th>Fuel Type</th>
-                        <th>Place of production</th>
-                        <th>Unit</th>
-                        <th>(GWP)</th>
-                        <th>(ODP)</th>
-                        <th>(AP)</th>
-                        <th>(EP)</th>
-                        <th>(POPC)</th>
-                        <th>(ADP)</th>
-                        <th>(ADP-fossil fuels)</th>
-                        <th>A4</th>
-                    </tr>
+                <!--table 7-->
+                <div class="matDetails">
+                    <div class="material-selector">
+                        <label for="material_t7">Classification of material</label>
+                        <select id="material_t7" onchange="updateSubcategories_t7()">
+                            <option value="none">Select classification</option>
+                            <option value="concrete">Concrete</option>
+                            <option value="bricks">Bricks</option>
+                            <option value="plaster">Plaster</option>
+                            <option value="insulation">Insulation</option>
+                            <option value="cement">Cement</option>
+                            <option value="glass">Glass</option>
+                            <option value="steel">Steel</option>
+                            <option value="sand">Sand</option>
+                            <option value="paint">Paint</option>
+                            <option value="aluminium">Aluminium</option>
+                            <option value="timber">Timber</option>
+                        </select>
 
-                    <tr>
-                        <td><input id="txtQty_t7" type="text" placeholder="Qty" oninput="calculateResults_t7()"></td>
-                        <td><input id="txtDist_t7" type="text" placeholder="Distance" oninput="calculateResults_t7()">
-                        </td>
-                        <td>
-                            <select id="Fuel_Type_t7" onchange="calculateResults_t7()">
-                                <option value="0.26">Light Oil</option>
-                                <option value="0.18">Natural Gas</option>
-                                <option value="2.6">Diesel</option>
-                            </select>
-                        </td>
-                        <td><input id="txtPlace_t7" type="text" placeholder="PlaceOfProduction" disabled="disabled">
-                        </td>
-                        <td><input id="txtUnit_t7" type="text" placeholder="Unit" disabled="disabled"></td>
-                        <td><input id="txtInd1_t7" type="text" placeholder="Ind(1)" disabled="disabled"
-                                oninput="calculateResults_t7()"></td>
-                        <td><input id="txtInd2_t7" type="text" placeholder="Ind(2)" disabled="disabled"
-                                oninput="calculateResults_t7()"></td>
-                        <td><input id="txtInd3_t7" type="text" placeholder="Ind(3)" disabled="disabled"
-                                oninput="calculateResults_t7()"></td>
-                        <td><input id="txtInd4_t7" type="text" placeholder="Ind(4)" disabled="disabled"
-                                oninput="calculateResults_t7()"></td>
-                        <td><input id="txtInd5_t7" type="text" placeholder="Ind(5)" disabled="disabled"
-                                oninput="calculateResults_t7()"></td>
-                        <td><input id="txtInd6_t7" type="text" placeholder="Ind(6)" disabled="disabled"
-                                oninput="calculateResults_t7()"></td>
-                        <td><input id="txtInd7_t7" type="text" placeholder="Ind(7)" disabled="disabled"
-                                oninput="calculateResults_t7()"></td>
-                        <td class="blankCell"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="5"><label>Result:</label></td>
-                        <td><input id="ResultInd1_t7" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd2_t7" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd3_t7" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd4_t7" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd5_t7" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd6_t7" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd7_t7" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultA4_t7" type="text" placeholder="Result" disabled="disabled"></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+                        <label for="subcategory_t7">Name of material</label>
+                        <select id="subcategory_t7">
+                            <option value="">Select name of material</option>
+                        </select>
+                    </div>
 
-        <!-- Eighth Table -->
-        <label for="material_t8">Classification of material</label>
-        <select id="material_t8" onchange="updateSubcategories_t8()">
-            <option value="none">Select classification</option>
-            <option value="concrete">Concrete</option>
-            <option value="bricks">Bricks</option>
-            <option value="plaster">Plaster</option>
-            <option value="insulation">Insulation</option>
-            <option value="cement">Cement</option>
-            <option value="glass">Glass</option>
-            <option value="steel">Steel</option>
-            <option value="sand">Sand</option>
-            <option value="paint">Paint</option>
-            <option value="aluminium">Aluminium</option>
-            <option value="timber">Timber</option>
-        </select>
+                    <div class="quantity-table">
+                        <p>Quantity, Unit, Distance (m), Indicator values:</p>
+                        <table>
+                            <tr>
+                                <th>Qty</th>
+                                <th>Dist (m)</th>
+                                <th>Fuel Type</th>
+                                <th>Place of production</th>
+                                <th>Unit</th>
+                                <th>(GWP)</th>
+                                <th>(ODP)</th>
+                                <th>(AP)</th>
+                                <th>(EP)</th>
+                                <th>(POPC)</th>
+                                <th>(ADP)</th>
+                                <th>(ADP-fossil fuels)</th>
+                                <th>A4</th>
+                            </tr>
 
-        <label for="subcategory_t8">Name of material</label>
-        <select id="subcategory_t8">
-            <option value="">Select name of material</option>
-        </select>
+                            <tr>
+                                <td><input id="txtQty_t7" type="text" placeholder="Qty" oninput="calculateResults_t7()">
+                                </td>
+                                <td><input id="txtDist_t7" type="text" placeholder="Distance"
+                                        oninput="calculateResults_t7()">
+                                </td>
+                                <td>
+                                    <select id="Fuel_Type_t7" onchange="calculateResults_t7()">
+                                        <option value="0.26">Light Oil</option>
+                                        <option value="0.18">Natural Gas</option>
+                                        <option value="2.6">Diesel</option>
+                                    </select>
+                                </td>
+                                <td><input id="txtPlace_t7" type="text" placeholder="PlaceOfProduction"
+                                        disabled="disabled">
+                                </td>
+                                <td><input id="txtUnit_t7" type="text" placeholder="Unit" disabled="disabled"></td>
+                                <td><input id="txtInd1_t7" type="text" placeholder="Ind(1)" disabled="disabled"
+                                        oninput="calculateResults_t7()"></td>
+                                <td><input id="txtInd2_t7" type="text" placeholder="Ind(2)" disabled="disabled"
+                                        oninput="calculateResults_t7()"></td>
+                                <td><input id="txtInd3_t7" type="text" placeholder="Ind(3)" disabled="disabled"
+                                        oninput="calculateResults_t7()"></td>
+                                <td><input id="txtInd4_t7" type="text" placeholder="Ind(4)" disabled="disabled"
+                                        oninput="calculateResults_t7()"></td>
+                                <td><input id="txtInd5_t7" type="text" placeholder="Ind(5)" disabled="disabled"
+                                        oninput="calculateResults_t7()"></td>
+                                <td><input id="txtInd6_t7" type="text" placeholder="Ind(6)" disabled="disabled"
+                                        oninput="calculateResults_t7()"></td>
+                                <td><input id="txtInd7_t7" type="text" placeholder="Ind(7)" disabled="disabled"
+                                        oninput="calculateResults_t7()"></td>
+                                <td class="blankCell"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="5"><label>Result:</label></td>
+                                <td><input id="ResultInd1_t7" type="text" placeholder="Result" disabled="disabled"></td>
+                                <td><input id="ResultInd2_t7" type="text" placeholder="Result" disabled="disabled"></td>
+                                <td><input id="ResultInd3_t7" type="text" placeholder="Result" disabled="disabled"></td>
+                                <td><input id="ResultInd4_t7" type="text" placeholder="Result" disabled="disabled"></td>
+                                <td><input id="ResultInd5_t7" type="text" placeholder="Result" disabled="disabled"></td>
+                                <td><input id="ResultInd6_t7" type="text" placeholder="Result" disabled="disabled"></td>
+                                <td><input id="ResultInd7_t7" type="text" placeholder="Result" disabled="disabled"></td>
+                                <td><input id="ResultA4_t7" type="text" placeholder="Result" disabled="disabled"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
 
-        <div class="quantity-table">
-            <p>Quantity, Unit, Distance (m), Indicator values:</p>
-            <div style="overflow-x: auto">
-                <table>
-                    <tr>
-                        <th>Qty</th>
-                        <th>Dist (m)</th>
-                        <th>Fuel Type</th>
-                        <th>Place of production</th>
-                        <th>Unit</th>
-                        <th>(GWP)</th>
-                        <th>(ODP)</th>
-                        <th>(AP)</th>
-                        <th>(EP)</th>
-                        <th>(POPC)</th>
-                        <th>(ADP)</th>
-                        <th>(ADP-fossil fuels)</th>
-                        <th>A4</th>
-                    </tr>
+                <!--table 8-->
+                <div class="matDetails">
+                    <div class="material-selector">
+                        <label for="material_t8">Classification of material</label>
+                        <select id="material_t8" onchange="updateSubcategories_t8()">
+                            <option value="none">Select classification</option>
+                            <option value="concrete">Concrete</option>
+                            <option value="bricks">Bricks</option>
+                            <option value="plaster">Plaster</option>
+                            <option value="insulation">Insulation</option>
+                            <option value="cement">Cement</option>
+                            <option value="glass">Glass</option>
+                            <option value="steel">Steel</option>
+                            <option value="sand">Sand</option>
+                            <option value="paint">Paint</option>
+                            <option value="aluminium">Aluminium</option>
+                            <option value="timber">Timber</option>
+                        </select>
 
-                    <tr>
-                        <td><input id="txtQty_t8" type="text" placeholder="Qty" oninput="calculateResults_t8()"></td>
-                        <td><input id="txtDist_t8" type="text" placeholder="Distance" oninput="calculateResults_t8()">
-                        </td>
-                        <td>
-                            <select id="Fuel_Type_t8" onchange="calculateResults_t8()">
-                                <option value="0.26">Light Oil</option>
-                                <option value="0.18">Natural Gas</option>
-                                <option value="2.6">Diesel</option>
-                            </select>
-                        </td>
-                        <td><input id="txtPlace_t8" type="text" placeholder="PlaceOfProduction" disabled="disabled">
-                        </td>
-                        <td><input id="txtUnit_t8" type="text" placeholder="Unit" disabled="disabled"></td>
-                        <td><input id="txtInd1_t8" type="text" placeholder="Ind(1)" disabled="disabled"
-                                oninput="calculateResults_t8()"></td>
-                        <td><input id="txtInd2_t8" type="text" placeholder="Ind(2)" disabled="disabled"
-                                oninput="calculateResults_t8()"></td>
-                        <td><input id="txtInd3_t8" type="text" placeholder="Ind(3)" disabled="disabled"
-                                oninput="calculateResults_t8()"></td>
-                        <td><input id="txtInd4_t8" type="text" placeholder="Ind(4)" disabled="disabled"
-                                oninput="calculateResults_t8()"></td>
-                        <td><input id="txtInd5_t8" type="text" placeholder="Ind(5)" disabled="disabled"
-                                oninput="calculateResults_t8()"></td>
-                        <td><input id="txtInd6_t8" type="text" placeholder="Ind(6)" disabled="disabled"
-                                oninput="calculateResults_t8()"></td>
-                        <td><input id="txtInd7_t8" type="text" placeholder="Ind(7)" disabled="disabled"
-                                oninput="calculateResults_t8()"></td>
-                        <td class="blankCell"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="5"><label>Result:</label></td>
-                        <td><input id="ResultInd1_t8" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd2_t8" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd3_t8" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd4_t8" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd5_t8" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd6_t8" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd7_t8" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultA4_t8" type="text" placeholder="Result" disabled="disabled"></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+                        <label for="subcategory_t8">Name of material</label>
+                        <select id="subcategory_t8">
+                            <option value="">Select name of material</option>
+                        </select>
+                    </div>
 
-        <!-- Ninth Table -->
-        <label for="material_t9">Classification of material</label>
-        <select id="material_t9" onchange="updateSubcategories_t9()">
-            <option value="none">Select classification</option>
-            <option value="concrete">Concrete</option>
-            <option value="bricks">Bricks</option>
-            <option value="plaster">Plaster</option>
-            <option value="insulation">Insulation</option>
-            <option value="cement">Cement</option>
-            <option value="glass">Glass</option>
-            <option value="steel">Steel</option>
-            <option value="sand">Sand</option>
-            <option value="paint">Paint</option>
-            <option value="aluminium">Aluminium</option>
-            <option value="timber">Timber</option>
-        </select>
+                    <div class="quantity-table">
+                        <p>Quantity, Unit, Distance (m), Indicator values:</p>
+                        <table>
+                            <tr>
+                                <th>Qty</th>
+                                <th>Dist (m)</th>
+                                <th>Fuel Type</th>
+                                <th>Place of production</th>
+                                <th>Unit</th>
+                                <th>(GWP)</th>
+                                <th>(ODP)</th>
+                                <th>(AP)</th>
+                                <th>(EP)</th>
+                                <th>(POPC)</th>
+                                <th>(ADP)</th>
+                                <th>(ADP-fossil fuels)</th>
+                                <th>A4</th>
+                            </tr>
 
-        <label for="subcategory_t9">Name of material</label>
-        <select id="subcategory_t9">
-            <option value="">Select name of material</option>
-        </select>
+                            <tr>
+                                <td><input id="txtQty_t8" type="text" placeholder="Qty" oninput="calculateResults_t8()">
+                                </td>
+                                <td><input id="txtDist_t8" type="text" placeholder="Distance"
+                                        oninput="calculateResults_t8()">
+                                </td>
+                                <td>
+                                    <select id="Fuel_Type_t8" onchange="calculateResults_t8()">
+                                        <option value="0.26">Light Oil</option>
+                                        <option value="0.18">Natural Gas</option>
+                                        <option value="2.6">Diesel</option>
+                                    </select>
+                                </td>
+                                <td><input id="txtPlace_t8" type="text" placeholder="PlaceOfProduction"
+                                        disabled="disabled">
+                                </td>
+                                <td><input id="txtUnit_t8" type="text" placeholder="Unit" disabled="disabled"></td>
+                                <td><input id="txtInd1_t8" type="text" placeholder="Ind(1)" disabled="disabled"
+                                        oninput="calculateResults_t8()"></td>
+                                <td><input id="txtInd2_t8" type="text" placeholder="Ind(2)" disabled="disabled"
+                                        oninput="calculateResults_t8()"></td>
+                                <td><input id="txtInd3_t8" type="text" placeholder="Ind(3)" disabled="disabled"
+                                        oninput="calculateResults_t8()"></td>
+                                <td><input id="txtInd4_t8" type="text" placeholder="Ind(4)" disabled="disabled"
+                                        oninput="calculateResults_t8()"></td>
+                                <td><input id="txtInd5_t8" type="text" placeholder="Ind(5)" disabled="disabled"
+                                        oninput="calculateResults_t8()"></td>
+                                <td><input id="txtInd6_t8" type="text" placeholder="Ind(6)" disabled="disabled"
+                                        oninput="calculateResults_t8()"></td>
+                                <td><input id="txtInd7_t8" type="text" placeholder="Ind(7)" disabled="disabled"
+                                        oninput="calculateResults_t8()"></td>
+                                <td class="blankCell"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="5"><label>Result:</label></td>
+                                <td><input id="ResultInd1_t8" type="text" placeholder="Result" disabled="disabled"></td>
+                                <td><input id="ResultInd2_t8" type="text" placeholder="Result" disabled="disabled"></td>
+                                <td><input id="ResultInd3_t8" type="text" placeholder="Result" disabled="disabled"></td>
+                                <td><input id="ResultInd4_t8" type="text" placeholder="Result" disabled="disabled"></td>
+                                <td><input id="ResultInd5_t8" type="text" placeholder="Result" disabled="disabled"></td>
+                                <td><input id="ResultInd6_t8" type="text" placeholder="Result" disabled="disabled"></td>
+                                <td><input id="ResultInd7_t8" type="text" placeholder="Result" disabled="disabled"></td>
+                                <td><input id="ResultA4_t8" type="text" placeholder="Result" disabled="disabled"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
 
-        <div class="quantity-table">
-            <p>Quantity, Unit, Distance (m), Indicator values:</p>
-            <div style="overflow-x: auto">
-                <table>
-                    <tr>
-                        <th>Qty</th>
-                        <th>Dist (m)</th>
-                        <th>Fuel Type</th>
-                        <th>Place of production</th>
-                        <th>Unit</th>
-                        <th>(GWP)</th>
-                        <th>(ODP)</th>
-                        <th>(AP)</th>
-                        <th>(EP)</th>
-                        <th>(POPC)</th>
-                        <th>(ADP)</th>
-                        <th>(ADP-fossil fuels)</th>
-                        <th>A4</th>
-                    </tr>
+                <!--table 9-->
+                <div class="matDetails">
+                    <div class="material-selector">
+                        <label for="material_t9">Classification of material</label>
+                        <select id="material_t9" onchange="updateSubcategories_t9()">
+                            <option value="none">Select classification</option>
+                            <option value="concrete">Concrete</option>
+                            <option value="bricks">Bricks</option>
+                            <option value="plaster">Plaster</option>
+                            <option value="insulation">Insulation</option>
+                            <option value="cement">Cement</option>
+                            <option value="glass">Glass</option>
+                            <option value="steel">Steel</option>
+                            <option value="sand">Sand</option>
+                            <option value="paint">Paint</option>
+                            <option value="aluminium">Aluminium</option>
+                            <option value="timber">Timber</option>
+                        </select>
 
-                    <tr>
-                        <td><input id="txtQty_t9" type="text" placeholder="Qty" oninput="calculateResults_t9()"></td>
-                        <td><input id="txtDist_t9" type="text" placeholder="Distance" oninput="calculateResults_t9()">
-                        </td>
-                        <td>
-                            <select id="Fuel_Type_t9" onchange="calculateResults_t9()">
-                                <option value="0.26">Light Oil</option>
-                                <option value="0.18">Natural Gas</option>
-                                <option value="2.6">Diesel</option>
-                            </select>
-                        </td>
-                        <td><input id="txtPlace_t9" type="text" placeholder="PlaceOfProduction" disabled="disabled">
-                        </td>
-                        <td><input id="txtUnit_t9" type="text" placeholder="Unit" disabled="disabled"></td>
-                        <td><input id="txtInd1_t9" type="text" placeholder="Ind(1)" disabled="disabled"
-                                oninput="calculateResults_t9()"></td>
-                        <td><input id="txtInd2_t9" type="text" placeholder="Ind(2)" disabled="disabled"
-                                oninput="calculateResults_t9()"></td>
-                        <td><input id="txtInd3_t9" type="text" placeholder="Ind(3)" disabled="disabled"
-                                oninput="calculateResults_t9()"></td>
-                        <td><input id="txtInd4_t9" type="text" placeholder="Ind(4)" disabled="disabled"
-                                oninput="calculateResults_t9()"></td>
-                        <td><input id="txtInd5_t9" type="text" placeholder="Ind(5)" disabled="disabled"
-                                oninput="calculateResults_t9()"></td>
-                        <td><input id="txtInd6_t9" type="text" placeholder="Ind(6)" disabled="disabled"
-                                oninput="calculateResults_t9()"></td>
-                        <td><input id="txtInd7_t9" type="text" placeholder="Ind(7)" disabled="disabled"
-                                oninput="calculateResults_t9()"></td>
-                        <td class="blankCell"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="5"><label>Result:</label></td>
-                        <td><input id="ResultInd1_t9" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd2_t9" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd3_t9" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd4_t9" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd5_t9" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd6_t9" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd7_t9" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultA4_t9" type="text" placeholder="Result" disabled="disabled"></td>
-                    </tr>
-                </table>
-                <form>
-                    <center><button onclick="calculateTotalResults_Walls(event)">Calculate</button></center>
+                        <label for="subcategory_t9">Name of material</label>
+                        <select id="subcategory_t9">
+                            <option value="">Select name of material</option>
+                        </select>
+                    </div>
 
+                    <div class="quantity-table">
+                        <p>Quantity, Unit, Distance (m), Indicator values:</p>
+                        <table>
+                            <tr>
+                                <th>Qty</th>
+                                <th>Dist (m)</th>
+                                <th>Fuel Type</th>
+                                <th>Place of production</th>
+                                <th>Unit</th>
+                                <th>(GWP)</th>
+                                <th>(ODP)</th>
+                                <th>(AP)</th>
+                                <th>(EP)</th>
+                                <th>(POPC)</th>
+                                <th>(ADP)</th>
+                                <th>(ADP-fossil fuels)</th>
+                                <th>A4</th>
+                            </tr>
+
+                            <tr>
+                                <td><input id="txtQty_t9" type="text" placeholder="Qty" oninput="calculateResults_t9()">
+                                </td>
+                                <td><input id="txtDist_t9" type="text" placeholder="Distance"
+                                        oninput="calculateResults_t9()">
+                                </td>
+                                <td>
+                                    <select id="Fuel_Type_t9" onchange="calculateResults_t9()">
+                                        <option value="0.26">Light Oil</option>
+                                        <option value="0.18">Natural Gas</option>
+                                        <option value="2.6">Diesel</option>
+                                    </select>
+                                </td>
+                                <td><input id="txtPlace_t9" type="text" placeholder="PlaceOfProduction"
+                                        disabled="disabled">
+                                </td>
+                                <td><input id="txtUnit_t9" type="text" placeholder="Unit" disabled="disabled"></td>
+                                <td><input id="txtInd1_t9" type="text" placeholder="Ind(1)" disabled="disabled"
+                                        oninput="calculateResults_t9()"></td>
+                                <td><input id="txtInd2_t9" type="text" placeholder="Ind(2)" disabled="disabled"
+                                        oninput="calculateResults_t9()"></td>
+                                <td><input id="txtInd3_t9" type="text" placeholder="Ind(3)" disabled="disabled"
+                                        oninput="calculateResults_t9()"></td>
+                                <td><input id="txtInd4_t9" type="text" placeholder="Ind(4)" disabled="disabled"
+                                        oninput="calculateResults_t9()"></td>
+                                <td><input id="txtInd5_t9" type="text" placeholder="Ind(5)" disabled="disabled"
+                                        oninput="calculateResults_t9()"></td>
+                                <td><input id="txtInd6_t9" type="text" placeholder="Ind(6)" disabled="disabled"
+                                        oninput="calculateResults_t9()"></td>
+                                <td><input id="txtInd7_t9" type="text" placeholder="Ind(7)" disabled="disabled"
+                                        oninput="calculateResults_t9()"></td>
+                                <td class="blankCell"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="5"><label>Result:</label></td>
+                                <td><input id="ResultInd1_t9" type="text" placeholder="Result" disabled="disabled"></td>
+                                <td><input id="ResultInd2_t9" type="text" placeholder="Result" disabled="disabled"></td>
+                                <td><input id="ResultInd3_t9" type="text" placeholder="Result" disabled="disabled"></td>
+                                <td><input id="ResultInd4_t9" type="text" placeholder="Result" disabled="disabled"></td>
+                                <td><input id="ResultInd5_t9" type="text" placeholder="Result" disabled="disabled"></td>
+                                <td><input id="ResultInd6_t9" type="text" placeholder="Result" disabled="disabled"></td>
+                                <td><input id="ResultInd7_t9" type="text" placeholder="Result" disabled="disabled"></td>
+                                <td><input id="ResultA4_t9" type="text" placeholder="Result" disabled="disabled"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <button onclick="calculateTotalResults_Walls(event)">Calculate</button>
+
+                <div class="quantity-table">
                     <table>
                         <tr style="background-color: white;">
                             <td style="border:0;"></td>
@@ -1124,273 +1186,315 @@
                             </td>
                         </tr>
                     </table>
-                </form>
-            </div>
-        </div>
 
-        <h3>4) Window</h3>
-        <!-- Tenth Table -->
-        <label for="material_t10">Classification of material</label>
-        <select id="material_t10" onchange="updateSubcategories_t10()">
-            <option value="none">Select classification</option>
-            <option value="concrete">Concrete</option>
-            <option value="bricks">Bricks</option>
-            <option value="plaster">Plaster</option>
-            <option value="insulation">Insulation</option>
-            <option value="cement">Cement</option>
-            <option value="glass">Glass</option>
-            <option value="steel">Steel</option>
-            <option value="sand">Sand</option>
-            <option value="paint">Paint</option>
-            <option value="aluminium">Aluminium</option>
-            <option value="timber">Timber</option>
-        </select>
+                </div>
 
-        <label for="subcategory_t10">Name of material</label>
-        <select id="subcategory_t10">
-            <option value="">Select name of material</option>
-        </select>
+            </div><!--End of walls-->
 
-        <div class="quantity-table">
-            <p>Quantity, Unit, Distance (m), Indicator values:</p>
-            <div style="overflow-x: auto">
-                <table>
-                    <tr>
-                        <th>Qty</th>
-                        <th>Dist (m)</th>
-                        <th>Fuel Type</th>
-                        <th>Place of production</th>
-                        <th>Unit</th>
-                        <th>(GWP)</th>
-                        <th>(ODP)</th>
-                        <th>(AP)</th>
-                        <th>(EP)</th>
-                        <th>(POPC)</th>
-                        <th>(ADP)</th>
-                        <th>(ADP-fossil fuels)</th>
-                        <th>A4</th>
-                    </tr>
+            <!--**********************************************************************************************************-->
 
-                    <tr>
-                        <td><input id="txtQty_t10" type="text" placeholder="Qty" oninput="calculateResults_t10()"></td>
-                        <td><input id="txtDist_t10" type="text" placeholder="Distance" oninput="calculateResults_t10()">
-                        </td>
-                        <td>
-                            <select id="Fuel_Type_t10" onchange="calculateResults_t10()">
-                                <option value="0.26">Light Oil</option>
-                                <option value="0.18">Natural Gas</option>
-                                <option value="2.6">Diesel</option>
-                            </select>
-                        </td>
-                        <td><input id="txtPlace_t10" type="text" placeholder="PlaceOfProduction" disabled="disabled">
-                        </td>
-                        <td><input id="txtUnit_t10" type="text" placeholder="Unit" disabled="disabled"></td>
-                        <td><input id="txtInd1_t10" type="text" placeholder="Ind(1)" disabled="disabled"
-                                oninput="calculateResults_t10()"></td>
-                        <td><input id="txtInd2_t10" type="text" placeholder="Ind(2)" disabled="disabled"
-                                oninput="calculateResults_t10()"></td>
-                        <td><input id="txtInd3_t10" type="text" placeholder="Ind(3)" disabled="disabled"
-                                oninput="calculateResults_t10()"></td>
-                        <td><input id="txtInd4_t10" type="text" placeholder="Ind(4)" disabled="disabled"
-                                oninput="calculateResults_t10()"></td>
-                        <td><input id="txtInd5_t10" type="text" placeholder="Ind(5)" disabled="disabled"
-                                oninput="calculateResults_t10()"></td>
-                        <td><input id="txtInd6_t10" type="text" placeholder="Ind(6)" disabled="disabled"
-                                oninput="calculateResults_t10()"></td>
-                        <td><input id="txtInd7_t10" type="text" placeholder="Ind(7)" disabled="disabled"
-                                oninput="calculateResults_t10()"></td>
-                        <td class="blankCell"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="5"><label>Result:</label></td>
-                        <td><input id="ResultInd1_t10" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd2_t10" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd3_t10" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd4_t10" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd5_t10" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd6_t10" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd7_t10" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultA4_t10" type="text" placeholder="Result" disabled="disabled"></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+            <div class="form-section window">
+                <h3>4) Window</h3>
 
-        <!-- Eleventh Table -->
-        <label for="material_t11">Classification of material</label>
-        <select id="material_t11" onchange="updateSubcategories_t11()">
-            <option value="none">Select classification</option>
-            <option value="concrete">Concrete</option>
-            <option value="bricks">Bricks</option>
-            <option value="plaster">Plaster</option>
-            <option value="insulation">Insulation</option>
-            <option value="cement">Cement</option>
-            <option value="glass">Glass</option>
-            <option value="steel">Steel</option>
-            <option value="sand">Sand</option>
-            <option value="paint">Paint</option>
-            <option value="aluminium">Aluminium</option>
-            <option value="timber">Timber</option>
-        </select>
+                <!--table 10-->
+                <div class="matDetails">
+                    <div class="material-selector">
+                        <label for="material_t10">Classification of material</label>
+                        <select id="material_t10" onchange="updateSubcategories_t10()">
+                            <option value="none">Select classification</option>
+                            <option value="concrete">Concrete</option>
+                            <option value="bricks">Bricks</option>
+                            <option value="plaster">Plaster</option>
+                            <option value="insulation">Insulation</option>
+                            <option value="cement">Cement</option>
+                            <option value="glass">Glass</option>
+                            <option value="steel">Steel</option>
+                            <option value="sand">Sand</option>
+                            <option value="paint">Paint</option>
+                            <option value="aluminium">Aluminium</option>
+                            <option value="timber">Timber</option>
+                        </select>
 
-        <label for="subcategory_t11">Name of material</label>
-        <select id="subcategory_t11">
-            <option value="">Select name of material</option>
-        </select>
+                        <label for="subcategory_t10">Name of material</label>
+                        <select id="subcategory_t10">
+                            <option value="">Select name of material</option>
+                        </select>
+                    </div>
 
-        <div class="quantity-table">
-            <p>Quantity, Unit, Distance (m), Indicator values:</p>
-            <div style="overflow-x: auto">
-                <table>
-                    <tr>
-                        <th>Qty</th>
-                        <th>Dist (m)</th>
-                        <th>Fuel Type</th>
-                        <th>Place of production</th>
-                        <th>Unit</th>
-                        <th>(GWP)</th>
-                        <th>(ODP)</th>
-                        <th>(AP)</th>
-                        <th>(EP)</th>
-                        <th>(POPC)</th>
-                        <th>(ADP)</th>
-                        <th>(ADP-fossil fuels)</th>
-                        <th>A4</th>
-                    </tr>
+                    <div class="quantity-table">
+                        <p>Quantity, Unit, Distance (m), Indicator values:</p>
+                        <table>
+                            <tr>
+                                <th>Qty</th>
+                                <th>Dist (m)</th>
+                                <th>Fuel Type</th>
+                                <th>Place of production</th>
+                                <th>Unit</th>
+                                <th>(GWP)</th>
+                                <th>(ODP)</th>
+                                <th>(AP)</th>
+                                <th>(EP)</th>
+                                <th>(POPC)</th>
+                                <th>(ADP)</th>
+                                <th>(ADP-fossil fuels)</th>
+                                <th>A4</th>
+                            </tr>
 
-                    <tr>
-                        <td><input id="txtQty_t11" type="text" placeholder="Qty" oninput="calculateResults_t11()"></td>
-                        <td><input id="txtDist_t11" type="text" placeholder="Distance" oninput="calculateResults_t11()">
-                        </td>
-                        <td>
-                            <select id="Fuel_Type_t11" onchange="calculateResults_t11()">
-                                <option value="0.26">Light Oil</option>
-                                <option value="0.18">Natural Gas</option>
-                                <option value="2.6">Diesel</option>
-                            </select>
-                        </td>
-                        <td><input id="txtPlace_t11" type="text" placeholder="PlaceOfProduction" disabled="disabled">
-                        </td>
-                        <td><input id="txtUnit_t11" type="text" placeholder="Unit" disabled="disabled"></td>
-                        <td><input id="txtInd1_t11" type="text" placeholder="Ind(1)" disabled="disabled"
-                                oninput="calculateResults_t11()"></td>
-                        <td><input id="txtInd2_t11" type="text" placeholder="Ind(2)" disabled="disabled"
-                                oninput="calculateResults_t11()"></td>
-                        <td><input id="txtInd3_t11" type="text" placeholder="Ind(3)" disabled="disabled"
-                                oninput="calculateResults_t11()"></td>
-                        <td><input id="txtInd4_t11" type="text" placeholder="Ind(4)" disabled="disabled"
-                                oninput="calculateResults_t11()"></td>
-                        <td><input id="txtInd5_t11" type="text" placeholder="Ind(5)" disabled="disabled"
-                                oninput="calculateResults_t11()"></td>
-                        <td><input id="txtInd6_t11" type="text" placeholder="Ind(6)" disabled="disabled"
-                                oninput="calculateResults_t11()"></td>
-                        <td><input id="txtInd7_t11" type="text" placeholder="Ind(7)" disabled="disabled"
-                                oninput="calculateResults_t11()"></td>
-                        <td class="blankCell"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="5"><label>Result:</label></td>
-                        <td><input id="ResultInd1_t11" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd2_t11" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd3_t11" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd4_t11" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd5_t11" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd6_t11" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd7_t11" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultA4_t11" type="text" placeholder="Result" disabled="disabled"></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+                            <tr>
+                                <td><input id="txtQty_t10" type="text" placeholder="Qty"
+                                        oninput="calculateResults_t10()"></td>
+                                <td><input id="txtDist_t10" type="text" placeholder="Distance"
+                                        oninput="calculateResults_t10()">
+                                </td>
+                                <td>
+                                    <select id="Fuel_Type_t10" onchange="calculateResults_t10()">
+                                        <option value="0.26">Light Oil</option>
+                                        <option value="0.18">Natural Gas</option>
+                                        <option value="2.6">Diesel</option>
+                                    </select>
+                                </td>
+                                <td><input id="txtPlace_t10" type="text" placeholder="PlaceOfProduction"
+                                        disabled="disabled">
+                                </td>
+                                <td><input id="txtUnit_t10" type="text" placeholder="Unit" disabled="disabled"></td>
+                                <td><input id="txtInd1_t10" type="text" placeholder="Ind(1)" disabled="disabled"
+                                        oninput="calculateResults_t10()"></td>
+                                <td><input id="txtInd2_t10" type="text" placeholder="Ind(2)" disabled="disabled"
+                                        oninput="calculateResults_t10()"></td>
+                                <td><input id="txtInd3_t10" type="text" placeholder="Ind(3)" disabled="disabled"
+                                        oninput="calculateResults_t10()"></td>
+                                <td><input id="txtInd4_t10" type="text" placeholder="Ind(4)" disabled="disabled"
+                                        oninput="calculateResults_t10()"></td>
+                                <td><input id="txtInd5_t10" type="text" placeholder="Ind(5)" disabled="disabled"
+                                        oninput="calculateResults_t10()"></td>
+                                <td><input id="txtInd6_t10" type="text" placeholder="Ind(6)" disabled="disabled"
+                                        oninput="calculateResults_t10()"></td>
+                                <td><input id="txtInd7_t10" type="text" placeholder="Ind(7)" disabled="disabled"
+                                        oninput="calculateResults_t10()"></td>
+                                <td class="blankCell"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="5"><label>Result:</label></td>
+                                <td><input id="ResultInd1_t10" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd2_t10" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd3_t10" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd4_t10" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd5_t10" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd6_t10" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd7_t10" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultA4_t10" type="text" placeholder="Result" disabled="disabled"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
 
-        <!-- Twelfth Table -->
-        <label for="material_t12">Classification of material</label>
-        <select id="material_t12" onchange="updateSubcategories_t12()">
-            <option value="none">Select classification</option>
-            <option value="concrete">Concrete</option>
-            <option value="bricks">Bricks</option>
-            <option value="plaster">Plaster</option>
-            <option value="insulation">Insulation</option>
-            <option value="cement">Cement</option>
-            <option value="glass">Glass</option>
-            <option value="steel">Steel</option>
-            <option value="sand">Sand</option>
-            <option value="paint">Paint</option>
-            <option value="aluminium">Aluminium</option>
-            <option value="timber">Timber</option>
-        </select>
+                <!--table 11-->
+                <div class="matDetails">
+                    <div class="material-selector">
+                        <label for="material_t11">Classification of material</label>
+                        <select id="material_t11" onchange="updateSubcategories_t11()">
+                            <option value="none">Select classification</option>
+                            <option value="concrete">Concrete</option>
+                            <option value="bricks">Bricks</option>
+                            <option value="plaster">Plaster</option>
+                            <option value="insulation">Insulation</option>
+                            <option value="cement">Cement</option>
+                            <option value="glass">Glass</option>
+                            <option value="steel">Steel</option>
+                            <option value="sand">Sand</option>
+                            <option value="paint">Paint</option>
+                            <option value="aluminium">Aluminium</option>
+                            <option value="timber">Timber</option>
+                        </select>
 
-        <label for="subcategory_t12">Name of material</label>
-        <select id="subcategory_t12">
-            <option value="">Select name of material</option>
-        </select>
+                        <label for="subcategory_t11">Name of material</label>
+                        <select id="subcategory_t11">
+                            <option value="">Select name of material</option>
+                        </select>
+                    </div>
 
-        <div class="quantity-table">
-            <p>Quantity, Unit, Distance (m), Indicator values:</p>
-            <div style="overflow-x: auto">
-                <table>
-                    <tr>
-                        <th>Qty</th>
-                        <th>Dist (m)</th>
-                        <th>Fuel Type</th>
-                        <th>Place of production</th>
-                        <th>Unit</th>
-                        <th>(GWP)</th>
-                        <th>(ODP)</th>
-                        <th>(AP)</th>
-                        <th>(EP)</th>
-                        <th>(POPC)</th>
-                        <th>(ADP)</th>
-                        <th>(ADP-fossil fuels)</th>
-                        <th>A4</th>
-                    </tr>
+                    <div class="quantity-table">
+                        <p>Quantity, Unit, Distance (m), Indicator values:</p>
+                        <table>
+                            <tr>
+                                <th>Qty</th>
+                                <th>Dist (m)</th>
+                                <th>Fuel Type</th>
+                                <th>Place of production</th>
+                                <th>Unit</th>
+                                <th>(GWP)</th>
+                                <th>(ODP)</th>
+                                <th>(AP)</th>
+                                <th>(EP)</th>
+                                <th>(POPC)</th>
+                                <th>(ADP)</th>
+                                <th>(ADP-fossil fuels)</th>
+                                <th>A4</th>
+                            </tr>
 
-                    <tr>
-                        <td><input id="txtQty_t12" type="text" placeholder="Qty" oninput="calculateResults_t12()"></td>
-                        <td><input id="txtDist_t12" type="text" placeholder="Distance" oninput="calculateResults_t12()">
-                        </td>
-                        <td>
-                            <select id="Fuel_Type_t12" onchange="calculateResults_t12()">
-                                <option value="0.26">Light Oil</option>
-                                <option value="0.18">Natural Gas</option>
-                                <option value="2.6">Diesel</option>
-                            </select>
-                        </td>
-                        <td><input id="txtPlace_t12" type="text" placeholder="PlaceOfProduction" disabled="disabled">
-                        </td>
-                        <td><input id="txtUnit_t12" type="text" placeholder="Unit" disabled="disabled"></td>
-                        <td><input id="txtInd1_t12" type="text" placeholder="Ind(1)" disabled="disabled"
-                                oninput="calculateResults_t12()"></td>
-                        <td><input id="txtInd2_t12" type="text" placeholder="Ind(2)" disabled="disabled"
-                                oninput="calculateResults_t12()"></td>
-                        <td><input id="txtInd3_t12" type="text" placeholder="Ind(3)" disabled="disabled"
-                                oninput="calculateResults_t12()"></td>
-                        <td><input id="txtInd4_t12" type="text" placeholder="Ind(4)" disabled="disabled"
-                                oninput="calculateResults_t12()"></td>
-                        <td><input id="txtInd5_t12" type="text" placeholder="Ind(5)" disabled="disabled"
-                                oninput="calculateResults_t12()"></td>
-                        <td><input id="txtInd6_t12" type="text" placeholder="Ind(6)" disabled="disabled"
-                                oninput="calculateResults_t12()"></td>
-                        <td><input id="txtInd7_t12" type="text" placeholder="Ind(7)" disabled="disabled"
-                                oninput="calculateResults_t12()"></td>
-                        <td class="blankCell"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="5"><label>Result:</label></td>
-                        <td><input id="ResultInd1_t12" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd2_t12" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd3_t12" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd4_t12" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd5_t12" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd6_t12" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultInd7_t12" type="text" placeholder="Result" disabled="disabled"></td>
-                        <td><input id="ResultA4_t12" type="text" placeholder="Result" disabled="disabled"></td>
-                    </tr>
-                </table>
+                            <tr>
+                                <td><input id="txtQty_t11" type="text" placeholder="Qty"
+                                        oninput="calculateResults_t11()"></td>
+                                <td><input id="txtDist_t11" type="text" placeholder="Distance"
+                                        oninput="calculateResults_t11()">
+                                </td>
+                                <td>
+                                    <select id="Fuel_Type_t11" onchange="calculateResults_t11()">
+                                        <option value="0.26">Light Oil</option>
+                                        <option value="0.18">Natural Gas</option>
+                                        <option value="2.6">Diesel</option>
+                                    </select>
+                                </td>
+                                <td><input id="txtPlace_t11" type="text" placeholder="PlaceOfProduction"
+                                        disabled="disabled">
+                                </td>
+                                <td><input id="txtUnit_t11" type="text" placeholder="Unit" disabled="disabled"></td>
+                                <td><input id="txtInd1_t11" type="text" placeholder="Ind(1)" disabled="disabled"
+                                        oninput="calculateResults_t11()"></td>
+                                <td><input id="txtInd2_t11" type="text" placeholder="Ind(2)" disabled="disabled"
+                                        oninput="calculateResults_t11()"></td>
+                                <td><input id="txtInd3_t11" type="text" placeholder="Ind(3)" disabled="disabled"
+                                        oninput="calculateResults_t11()"></td>
+                                <td><input id="txtInd4_t11" type="text" placeholder="Ind(4)" disabled="disabled"
+                                        oninput="calculateResults_t11()"></td>
+                                <td><input id="txtInd5_t11" type="text" placeholder="Ind(5)" disabled="disabled"
+                                        oninput="calculateResults_t11()"></td>
+                                <td><input id="txtInd6_t11" type="text" placeholder="Ind(6)" disabled="disabled"
+                                        oninput="calculateResults_t11()"></td>
+                                <td><input id="txtInd7_t11" type="text" placeholder="Ind(7)" disabled="disabled"
+                                        oninput="calculateResults_t11()"></td>
+                                <td class="blankCell"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="5"><label>Result:</label></td>
+                                <td><input id="ResultInd1_t11" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd2_t11" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd3_t11" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd4_t11" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd5_t11" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd6_t11" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd7_t11" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultA4_t11" type="text" placeholder="Result" disabled="disabled"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
 
-                <form>
-                    <center><button onclick="calculateTotalResults_Window(event)">Calculate</button></center>
+                <!--table 12-->
+                <div class="matDetails">
+                    <div class="material-selector">
+                        <label for="material_t12">Classification of material</label>
+                        <select id="material_t12" onchange="updateSubcategories_t12()">
+                            <option value="none">Select classification</option>
+                            <option value="concrete">Concrete</option>
+                            <option value="bricks">Bricks</option>
+                            <option value="plaster">Plaster</option>
+                            <option value="insulation">Insulation</option>
+                            <option value="cement">Cement</option>
+                            <option value="glass">Glass</option>
+                            <option value="steel">Steel</option>
+                            <option value="sand">Sand</option>
+                            <option value="paint">Paint</option>
+                            <option value="aluminium">Aluminium</option>
+                            <option value="timber">Timber</option>
+                        </select>
 
+                        <label for="subcategory_t12">Name of material</label>
+                        <select id="subcategory_t12">
+                            <option value="">Select name of material</option>
+                        </select>
+                    </div>
+
+                    <div class="quantity-table">
+                        <p>Quantity, Unit, Distance (m), Indicator values:</p>
+                        <table>
+                            <tr>
+                                <th>Qty</th>
+                                <th>Dist (m)</th>
+                                <th>Fuel Type</th>
+                                <th>Place of production</th>
+                                <th>Unit</th>
+                                <th>(GWP)</th>
+                                <th>(ODP)</th>
+                                <th>(AP)</th>
+                                <th>(EP)</th>
+                                <th>(POPC)</th>
+                                <th>(ADP)</th>
+                                <th>(ADP-fossil fuels)</th>
+                                <th>A4</th>
+                            </tr>
+
+                            <tr>
+                                <td><input id="txtQty_t12" type="text" placeholder="Qty"
+                                        oninput="calculateResults_t12()"></td>
+                                <td><input id="txtDist_t12" type="text" placeholder="Distance"
+                                        oninput="calculateResults_t12()">
+                                </td>
+                                <td>
+                                    <select id="Fuel_Type_t12" onchange="calculateResults_t12()">
+                                        <option value="0.26">Light Oil</option>
+                                        <option value="0.18">Natural Gas</option>
+                                        <option value="2.6">Diesel</option>
+                                    </select>
+                                </td>
+                                <td><input id="txtPlace_t12" type="text" placeholder="PlaceOfProduction"
+                                        disabled="disabled">
+                                </td>
+                                <td><input id="txtUnit_t12" type="text" placeholder="Unit" disabled="disabled"></td>
+                                <td><input id="txtInd1_t12" type="text" placeholder="Ind(1)" disabled="disabled"
+                                        oninput="calculateResults_t12()"></td>
+                                <td><input id="txtInd2_t12" type="text" placeholder="Ind(2)" disabled="disabled"
+                                        oninput="calculateResults_t12()"></td>
+                                <td><input id="txtInd3_t12" type="text" placeholder="Ind(3)" disabled="disabled"
+                                        oninput="calculateResults_t12()"></td>
+                                <td><input id="txtInd4_t12" type="text" placeholder="Ind(4)" disabled="disabled"
+                                        oninput="calculateResults_t12()"></td>
+                                <td><input id="txtInd5_t12" type="text" placeholder="Ind(5)" disabled="disabled"
+                                        oninput="calculateResults_t12()"></td>
+                                <td><input id="txtInd6_t12" type="text" placeholder="Ind(6)" disabled="disabled"
+                                        oninput="calculateResults_t12()"></td>
+                                <td><input id="txtInd7_t12" type="text" placeholder="Ind(7)" disabled="disabled"
+                                        oninput="calculateResults_t12()"></td>
+                                <td class="blankCell"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="5"><label>Result:</label></td>
+                                <td><input id="ResultInd1_t12" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd2_t12" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd3_t12" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd4_t12" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd5_t12" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd6_t12" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultInd7_t12" type="text" placeholder="Result" disabled="disabled">
+                                </td>
+                                <td><input id="ResultA4_t12" type="text" placeholder="Result" disabled="disabled"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <button onclick="calculateTotalResults_Window(event)">Calculate</button>
+                <div class="quantity-table">
                     <table>
                         <tr style="background-color: white;">
                             <td style="border:0;"></td>
@@ -1427,21 +1531,22 @@
                             </td>
                         </tr>
                     </table>
-                </form>
-            </div>
-        </div>
+                </div>
 
-        <button id="updateChartBtn">Update Charts</button>
-        <button id="btnClear" class="btnClear" onclick="Clear()">Clear</button>
-        <h2>Phase Three</h2>
-        <div class="charts">
-            <div class="chart-container">
-                <canvas id="chart1"></canvas>
+            </div><!--End of window-->
+
+            <button id="updateChartBtn">Update Charts</button>
+            <button id="btnClear" class="btnClear" onclick="Clear()">Clear</button>
+            <h2>Phase Three</h2>
+            <div class="charts">
+                <div class="chart-container">
+                    <canvas id="chart1"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="chart2"></canvas>
+                </div>
             </div>
-            <div class="chart-container">
-                <canvas id="chart2"></canvas>
-            </div>
-        </div>
+        </div><!--End of Phase Two-->
     </div>
 
     <script>
@@ -1559,43 +1664,42 @@
                 chart2.update();
             }
         });
-	
-
-function Clear() {
-  // مسح كل القيم في الـ TextBoxes
-  const textboxes = document.querySelectorAll('input[type="text"]');
-  textboxes.forEach(box => box.value = '');
-
-  // تحديث القوائم المنسدلة
-  const selectElements = document.querySelectorAll('select');
-  selectElements.forEach(select => {
-    // تحديد الخيار "Select classification" إذا موجود
-    const classificationOption = [...select.options].find(opt => opt.textContent === 'Select classification');
-    if (classificationOption) {
-      select.value = classificationOption.value;  // تحديد الخيار المطلوب
-    }
-
-    // تحديد الخيار "Select name of material" إذا موجود
-    const materialOption = [...select.options].find(opt => opt.textContent === 'Select name of material');
-    if (materialOption) {
-      select.value = materialOption.value;  // تحديد الخيار المطلوب
-    }
-  });
-
-  // إخفاء الصور الظاهرة في الصفحة
-  const images = document.querySelectorAll('img');
-  images.forEach(img => {
-    if (img.style.display !== 'none') {
-      img.setAttribute('data-src', img.src); // حفظ مصدر الصورة مؤقتاً
-      img.style.display = 'none';  // إخفاء الصورة
-    }
-  });
-
-}
 
 
+        function Clear() {
+            // مسح كل القيم في الـ TextBoxes
+            const textboxes = document.querySelectorAll('input[type="text"]');
+            textboxes.forEach(box => box.value = '');
+
+            // تحديث القوائم المنسدلة
+            const selectElements = document.querySelectorAll('select');
+            selectElements.forEach(select => {
+                // تحديد الخيار "Select classification" إذا موجود
+                const classificationOption = [...select.options].find(opt => opt.textContent === 'Select classification');
+                if (classificationOption) {
+                    select.value = classificationOption.value;  // تحديد الخيار المطلوب
+                }
+
+                // تحديد الخيار "Select name of material" إذا موجود
+                const materialOption = [...select.options].find(opt => opt.textContent === 'Select name of material');
+                if (materialOption) {
+                    select.value = materialOption.value;  // تحديد الخيار المطلوب
+                }
+            });
+
+            // إخفاء الصور الظاهرة في الصفحة
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                if (img.style.display !== 'none') {
+                    img.setAttribute('data-src', img.src); // حفظ مصدر الصورة مؤقتاً
+                    img.style.display = 'none';  // إخفاء الصورة
+                }
+            });
+
+        }
     </script>
 
     <script src="script.js"></script>
 </body>
+
 </html>
