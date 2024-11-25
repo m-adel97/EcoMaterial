@@ -2277,9 +2277,8 @@ function calculateTotalResults_Window(event) {
 
 
 // حساب القيم في آخر صف الخاص بالـ Total Impact
-document.getElementById("btnTtotalImpact").addEventListener("click", function () {
-      event.preventDefault();
-
+document.getElementById("btnTotalImpact").addEventListener("click", function () {
+    event.preventDefault();
     // Function to calculate the total for a given set of IDs
     function calculateTotal(impactId, resultIds) {
         let total = 0;
