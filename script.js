@@ -2274,11 +2274,9 @@ function calculateTotalResults_Window(event) {
     document.getElementById("TotalResultA4_Window").value = totalA4.toFixed(2);
 }
 
-
-
 // حساب القيم في آخر صف الخاص بالـ Total Impact
 document.getElementById("btnTtotalImpact").addEventListener("click", function () {
-      /*event.preventDefault();
+      event.preventDefault();
 
     // Function to calculate the total for a given set of IDs
     function calculateTotal(impactId, resultIds) {
@@ -2305,29 +2303,8 @@ document.getElementById("btnTtotalImpact").addEventListener("click", function ()
     // Iterate over the mappings and calculate totals
     for (const [impactId, resultIds] of Object.entries(mappings)) {
         calculateTotal(impactId, resultIds);
-    }*/
-
-
-
-        document.getElementById("btnTtotalImpact").addEventListener("click", function (event) {
-        event.preventDefault();
-
-        // Function to calculate the total for a given set of IDs
-        function calculateTotal(impactId, resultIds) {
-            let total = 0;
-            resultIds.forEach(id => {
-                let value = parseFloat(document.getElementById(id).value) || 0; // Default to 0 if value is empty
-                total += value;
-            });
-            document.getElementById(impactId).value = total.toFixed(2); // Update the TotalImpact field
-        }
-
-        // Call the calculateTotal function with the correct IDs
-        calculateTotal("TotalImpact1", ["TotalImpact2", "TotalImpact3", "TotalImpact4", "TotalImpact5", "TotalImpact6", "TotalImpact7", "TotalImpactA4"]);
-    });
-
+    }
 });
-
 
 
 
