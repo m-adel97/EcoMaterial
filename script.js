@@ -2274,6 +2274,8 @@ function calculateTotalResults_Window(event) {
     document.getElementById("TotalResultA4_Window").value = totalA4.toFixed(2);
 }
 
+
+
 // حساب القيم في آخر صف الخاص بالـ Total Impact
 document.getElementById("btnTtotalImpact").addEventListener("click", function () {
       event.preventDefault();
@@ -2305,6 +2307,7 @@ document.getElementById("btnTtotalImpact").addEventListener("click", function ()
         calculateTotal(impactId, resultIds);
     }
 });
+
 
 
 
