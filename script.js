@@ -69,8 +69,7 @@ function updateMaterialOptions() {
             { name: 'Select name of material' },
             { name: 'Reinforcing steel bars', manufacturer: 'Al Ezz Dekheila Steel Co. - Alexandria (EZDK) El Dekheila', image: 'img/steel/0.png' }
         ];
-    }
-    else if (classification === 'ceramic') {
+    } else if (classification === 'Ceramic') {
         options = [
             { name: 'Select name of material' },
             { name: 'Ceramic tiles', manufacturer: 'ALFANAR FACTORY FOR CERAMIC & PORCELAIN', image: 'img/steel/0.png' }
