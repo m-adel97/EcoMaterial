@@ -45,7 +45,8 @@ function updateMaterialOptions() {
         options = [
             { name: 'Select name of material' },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', manufacturer: 'Marmox Egypt - CMB', image: 'img/insulation/0.png' },
-            { name: 'EPS', manufacturer: 'N/A', image: 'img/insulation/1.png' }
+            { name: 'EPS', manufacturer: 'N/A', image: 'img/insulation/1.png' },
+            { name: 'mineral wool', manufacturer: 'Saudi International Insulation manufacturing company (SIIMCO)', image: 'img/insulation/2.png' }
         ];
     } else if (classification === 'cement') {
         options = [
@@ -187,7 +188,8 @@ function updateSubcategories() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
             { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
-            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] }
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification === 'cement') {
         suboptions = [
@@ -344,7 +346,8 @@ function updateSubcategories_t2() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
             { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
-            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] }
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification_t2 === 'cement') {
         suboptions = [
@@ -499,7 +502,8 @@ function updateSubcategories_t3() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
             { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
-            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] }
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification_t3 === 'cement') {
         suboptions = [
@@ -653,7 +657,8 @@ function updateSubcategories_t4() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
             { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
-            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] }
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification_t4 === 'cement') {
         suboptions = [
@@ -807,7 +812,8 @@ function updateSubcategories_t5() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
             { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
-            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] }
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification_t5 === 'cement') {
         suboptions = [
@@ -961,7 +967,8 @@ function updateSubcategories_t6() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
             { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
-            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] }
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification_t6 === 'cement') {
         suboptions = [
@@ -1116,7 +1123,8 @@ function updateSubcategories_t7() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
             { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
-            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] }
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification_t7 === 'cement') {
         suboptions = [
@@ -1270,7 +1278,8 @@ function updateSubcategories_t8() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
             { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
-            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] }
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification_t8 === 'cement') {
         suboptions = [
@@ -1424,7 +1433,8 @@ function updateSubcategories_t9() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
             { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
-            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] }
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification_t8 === 'cement') {
         suboptions = [
@@ -1581,7 +1591,8 @@ function updateSubcategories_t9() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
             { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
-            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] }
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification_t9 === 'cement') {
         suboptions = [
@@ -1739,7 +1750,8 @@ function updateSubcategories_t10() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
             { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
-            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] }
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification_t10 === 'cement') {
         suboptions = [
@@ -1894,7 +1906,8 @@ function updateSubcategories_t11() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
             { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
-            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] }
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification_t11 === 'cement') {
         suboptions = [
@@ -2049,7 +2062,8 @@ function updateSubcategories_t12() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
             { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
-            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] }
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification_t12 === 'cement') {
         suboptions = [
