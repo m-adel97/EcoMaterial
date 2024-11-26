@@ -164,6 +164,7 @@ function updateSubcategories() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'AAC blocks', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification === 'plaster') {
         suboptions = [
@@ -314,6 +315,7 @@ function updateSubcategories_t2() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'AAC blocks', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification_t2 === 'plaster') {
         suboptions = [
@@ -462,6 +464,7 @@ function updateSubcategories_t3() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'AAC blocks', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification_t3 === 'plaster') {
         suboptions = [
@@ -609,6 +612,7 @@ function updateSubcategories_t4() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'AAC blocks', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification_t4 === 'plaster') {
         suboptions = [
@@ -756,6 +760,7 @@ function updateSubcategories_t5() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'National Industries Company', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification_t5 === 'plaster') {
         suboptions = [
@@ -903,6 +908,7 @@ function updateSubcategories_t6() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'National Industries Company', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification_t6 === 'plaster') {
         suboptions = [
@@ -1051,6 +1057,7 @@ function updateSubcategories_t7() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'AAC blocks', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification_t7 === 'plaster') {
         suboptions = [
@@ -1198,6 +1205,7 @@ function updateSubcategories_t8() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'AAC blocks', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification_t8 === 'plaster') {
         suboptions = [
@@ -1345,6 +1353,7 @@ function updateSubcategories_t9() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'AAC blocks', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification_t8 === 'plaster') {
         suboptions = [
@@ -1495,6 +1504,7 @@ function updateSubcategories_t9() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'AAC blocks', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification_t9 === 'plaster') {
         suboptions = [
@@ -1646,6 +1656,7 @@ function updateSubcategories_t10() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'AAC blocks', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification_t10 === 'plaster') {
         suboptions = [
@@ -1794,6 +1805,7 @@ function updateSubcategories_t11() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'AAC blocks', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification_t11 === 'plaster') {
         suboptions = [
@@ -1942,6 +1954,7 @@ function updateSubcategories_t12() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'AAC blocks', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification_t12 === 'plaster') {
         suboptions = [
