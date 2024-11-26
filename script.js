@@ -31,7 +31,7 @@ function updateMaterialOptions() {
         options = [
             { name: 'Select name of material' },
             { name: 'Concrete Paving Solid and hollow Bricks', manufacturer: 'ERTEKAA (The enhancement of integrated services and waste recycling company)-Www.ertekaa.org', image: 'img/bricks/0.png' },
-            { name: 'Marmox Thermoblock 14/10', manufacturer: 'Marmox Egypt - CMB', image: 'img/bricks/1.png' }
+            { name: 'Marmox Thermoblock 14/10', manufacturer: 'Marmox Egypt - CMB', image: 'img/bricks/1.png' },
             { name: 'AAC blocks', manufacturer: 'National Industries Company', image: 'img/bricks/2.png' }
         ];
     } else if (classification === 'plaster') {
