@@ -70,7 +70,7 @@ function updateMaterialOptions() {
             { name: 'Reinforcing steel bars', manufacturer: 'Al Ezz Dekheila Steel Co. - Alexandria (EZDK) El Dekheila', image: 'img/steel/0.png' }
         ];
     }
-    else if (classification === 'Ceramic') {
+    else if (classification === 'ceramic') {
         options = [
             { name: 'Select name of material' },
             { name: 'Ceramic tiles', manufacturer: 'ALFANAR FACTORY FOR CERAMIC & PORCELAIN', image: 'img/steel/0.png' }
@@ -230,7 +230,7 @@ function updateSubcategories() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
         ];
-    } else if (classification === 'Ceramic') {
+    } else if (classification === 'ceramic') {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
@@ -386,7 +386,7 @@ function updateSubcategories_t2() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
         ];
-    } else if (classification_t2 === 'Ceramic') {
+    } else if (classification_t2 === 'ceramic') {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
@@ -540,7 +540,7 @@ function updateSubcategories_t3() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
         ];
-    } else if (classification_t3 === 'Ceramic') {
+    } else if (classification_t3 === 'ceramic') {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
@@ -692,7 +692,7 @@ function updateSubcategories_t4() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
         ];
-    } else if (classification_t4 === 'Ceramic') {
+    } else if (classification_t4 === 'ceramic') {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
@@ -845,7 +845,7 @@ function updateSubcategories_t5() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
         ];
-    } else if (classification_t5 === 'Ceramic') {
+    } else if (classification_t5 === 'ceramic') {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
@@ -999,7 +999,7 @@ function updateSubcategories_t6() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
         ];
-    } else if (classification_t6 === 'Ceramic') {
+    } else if (classification_t6 === 'ceramic') {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
@@ -1153,7 +1153,7 @@ function updateSubcategories_t7() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
         ];
-    } else if (classification_t7 === 'Ceramic') {
+    } else if (classification_t7 === 'ceramic') {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
@@ -1306,7 +1306,7 @@ function updateSubcategories_t8() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
         ];
-    } else if (classification_t8 === 'Ceramic') {
+    } else if (classification_t8 === 'ceramic') {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
@@ -1460,7 +1460,7 @@ function updateSubcategories_t9() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
         ];
-    } else if (classification_t8 === 'Ceramic') {
+    } else if (classification_t8 === 'ceramic') {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
@@ -1616,7 +1616,7 @@ function updateSubcategories_t9() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
         ];
-    } else if (classification_t9 === 'Ceramic') {
+    } else if (classification_t9 === 'ceramic') {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
@@ -1772,7 +1772,7 @@ function updateSubcategories_t10() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
         ];
-    } else if (classification_t10 === 'Ceramic') {
+    } else if (classification_t10 === 'ceramic') {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
@@ -1926,7 +1926,7 @@ function updateSubcategories_t11() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
         ];
-    } else if (classification_t11 === 'Ceramic') {
+    } else if (classification_t11 === 'ceramic') {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
@@ -2081,7 +2081,7 @@ function updateSubcategories_t12() {
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
         ];
-    } else if (classification_t12 === 'Ceramic') {
+    } else if (classification_t12 === 'ceramic') {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
