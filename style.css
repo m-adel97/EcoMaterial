@@ -90,10 +90,11 @@ label, p {
 select,
 input[type="text"] {
     width: 100%;
-    padding: 6px;
-    margin-bottom: 10px;
+    padding: 4px;
+    margin-bottom: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 12px;  /* تقليل حجم الخط */
 }
 
 table input[type="text"]:not(:has(+ select)) {
@@ -106,7 +107,8 @@ table input[type="text"]:not(:has(+ select)) {
 
 .quantity-table table {
     width: 100%;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
+    margin-bottom: 15px;
     border-collapse: collapse;
 }
 
@@ -253,7 +255,7 @@ body {
     width: 100%;
     padding: 14px;
     margin: 10px 0;
-    font-size: 1em;
+    font-size: 0.9em;
     background-color: #f7f9fc;
     border: 1px solid #d1d8e3;
     border-radius: 8px;
