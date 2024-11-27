@@ -35,12 +35,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-h3 {
-    font-size: 10px;
-    color: #333;
-    margin-top: 20px;
-}
-
 .phase-one {
     margin-bottom: 40px;
 }
@@ -391,4 +385,11 @@ table .blankCell {
     .material-selector select {
         padding: 10px;
     }
+}
+
+
+h3 {
+    font-size: 15px;
+    color: #333;
+    margin-top: 20px;
 }
