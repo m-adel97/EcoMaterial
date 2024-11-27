@@ -337,19 +337,19 @@ table tr:hover td {
 }
 
 .foundation th{
-    background: #abdbe3;
+    background: #007bff;
 }
 
 .floor th{
-    background: rgb(149, 179, 215);
+    background: #00c7ff;
 }
 
 .walls th{
-    background: rgb(184, 204, 228);
+    background: #00fff8;
 }
 
 .window th{
-    background: rgb(197, 217, 241);
+    background: #00ffa8;
 }
 
 
