@@ -340,6 +340,11 @@ table tr:hover td {
     cursor: pointer;
 }
 
+.foundation th{
+    background: #1e81b0;
+}
+
+
 /* Result Input Fields */
 input[disabled] {
     background-color: #f0f0f0;
