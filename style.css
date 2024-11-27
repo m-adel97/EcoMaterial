@@ -341,15 +341,15 @@ table tr:hover td {
 }
 
 .floor th{
-    background: #00c7ff;
+    background: #0069ff;
 }
 
 .walls th{
-    background: #00fff8;
+    background: #009aff;
 }
 
 .window th{
-    background: #00ffa8;
+    background: #00b5ff;
 }
 
 
