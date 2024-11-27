@@ -76,6 +76,7 @@ h3 {
     border-radius: 4px;
     border: 1px solid #007bff;
     transition: background-color 0.2s;
+    font-size: 12px;
     /* Smooth transition for hover */
 }
 
