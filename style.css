@@ -312,16 +312,18 @@ table {
 }
 
 table th, table td {
-    padding: 14px;
+    padding: 10px; /* تقليل الحشو */
     text-align: center;
     border: 1px solid #ddd;
-    font-size: 1.1em;
+    font-size: 1em; /* تعديل حجم الخط ليكون متوازن */
+    word-wrap: break-word; /* لمنع النص من الخروج من الخلية */
 }
 
 table th {
     background-color: #3498db;
     color: white;
     font-weight: 600;
+    width: 15%; /* تحديد عرض الـ th بنسبة معينة إذا كانت البيانات ثابتة */
 }
 
 table td {
@@ -392,4 +394,14 @@ h3 {
     font-size: 15px;
     color: #333;
     margin-top: 20px;
+}
+
+
+.quantity-table th, .quantity-table td {
+    padding: 8px; /* تقليل الحشو */
+    font-size: 0.9em; /* تصغير الحجم ليتناسب مع الخلايا */
+}
+
+.quantity-table td {
+    min-width: 100px; /* تحديد الحد الأدنى للعرض */
 }
