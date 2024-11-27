@@ -79,9 +79,9 @@ h2 {
 }
 
 
-label, p {
+label {
     display: block;
-    font-size: 14px;
+    font-size: 0.9em;
     color: #333;
     margin-top: 8px;
     font-weight: bold;
@@ -90,7 +90,7 @@ label, p {
 select,
 input[type="text"] {
     width: 100%;
-    padding: 4px;
+    padding: 8px;
     margin-bottom: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -244,16 +244,16 @@ body {
 
 /* Title Styling */
 .form-section h3 {
-    font-size: 1em;
+    font-size: 1.5em;
     color: #2c3e50;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     font-weight: 600;
 }
 
 /* Dropdown Styling */
 .material-selector select {
     width: 100%;
-    padding: 14px;
+    padding: 10px;
     margin: 10px 0;
     font-size: 0.9em;
     background-color: #f7f9fc;
@@ -271,9 +271,9 @@ body {
 /* Input Fields Styling */
 input[type="text"], select {
     width: 100%;
-    padding: 12px;
+    padding: 8px;
     margin: 10px 0;
-    font-size: 1em;
+    font-size: 0.9em;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
@@ -306,11 +306,15 @@ button:hover {
     overflow-x: scroll;
 }
 
+.quantity-table{
+    margin-bottom: 20px;
+}
+
 /* Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 table th, table td {
@@ -338,20 +342,20 @@ table tr:hover td {
     cursor: pointer;
 }
 
-.foundation th{
-    background: #007bff;
+.foundation th, .foundation button{
+    background: rgb(90, 172, 192);
 }
 
-.floor th{
-    background: #00c2ff;
+.floor th, .floor button{
+    background: rgb(149, 179, 215);
 }
 
-.walls th{
-    background: #6764a4;
+.walls th, .walls button{
+    background: rgb(184, 204, 228);
 }
 
-.window th{
-    background: #191477;
+.window th, .window button{
+    background: rgb(197, 217, 241);
 }
 
 
@@ -393,7 +397,7 @@ table .blankCell {
 
 
 h3 {
-    font-size: 14px;
+    font-size: 15px;
     color: #333;
     margin-top: 20px;
 }
