@@ -344,6 +344,18 @@ table tr:hover td {
     background: #1e81b0;
 }
 
+.floor th{
+    background: #abdbe3;
+}
+
+.walls th{
+    background: #1e81b0;
+}
+
+.window th{
+    background: #abdbe3;
+}
+
 
 /* Result Input Fields */
 input[disabled] {
