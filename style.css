@@ -14,6 +14,7 @@ body {
     max-width: 1200px;
     padding: 15px;
     box-sizing: border-box;
+    overflow-x: auto;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -30,12 +31,18 @@ body {
 }*/
 
 h2 {
-    font-size: 18px;
+    font-size: 24px;
     color: #007bff;
     margin-bottom: 20px;
 }
 
-.phase-one {
+h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
+
+form {
     margin-bottom: 40px;
 }
 
@@ -52,7 +59,7 @@ h2 {
 }
 
 .indicators h3 {
-    font-size: 15px;
+    font-size: 20px;
     color: #007bff;
     margin-bottom: 10px;
 }
@@ -69,7 +76,6 @@ h2 {
     border-radius: 4px;
     border: 1px solid #007bff;
     transition: background-color 0.2s;
-    font-size: 12px;
     /* Smooth transition for hover */
 }
 
@@ -81,34 +87,40 @@ h2 {
 
 label {
     display: block;
-    font-size: 0.9em;
+    font-size: 14px;
     color: #333;
-    margin-top: 8px;
-    font-weight: bold;
+    margin-bottom: 8px;
 }
 
 select,
 input[type="text"] {
     width: 100%;
     padding: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 12px;  /* تقليل حجم الخط */
 }
 
 table input[type="text"]:not(:has(+ select)) {
     text-align: center;
 }
 
-.quantity-table{
-    overflow-x: scroll;
-}
+/*.quantity-table {
+    margin: 20px 0;
+}*/
+
+
+
+/*.quantity-table th,
+.quantity-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}*/
 
 .quantity-table table {
     width: 100%;
-    /*margin-bottom: 20px;*/
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     border-collapse: collapse;
 }
 
@@ -171,6 +183,7 @@ table input[type="text"]:not(:has(+ select)) {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     background-color: #e6f7ff;
     border: 2px solid #007bff;
+    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -208,210 +221,4 @@ canvas {
         min-height: 300px;
         max-height: 500px; /* تقييد أقصى ارتفاع لمنع التمدد المفرط */
     }
-}
-
-/* Body and General Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f7fc;
-    color: #444;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Section Styling */
-.section-container {
-    background-color: #ffffff; /* خلفية بيضاء */
-    padding: 30px;
-    margin: 20px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Form and Select Styling */
-.form-section, .phase-one, .phase-two {
-    padding: 25px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    background-color: #ffffff;
-    border: 1px solid #e2e2e2;
-}
-
-/* Title Styling */
-.form-section h3 {
-    font-size: 1.5em;
-    color: #2c3e50;
-    margin-bottom: 35px;
-    font-weight: 600;
-}
-
-/* Dropdown Styling */
-.material-selector select {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 15px;
-    font-size: 0.9em;
-    background-color: #f7f9fc;
-    border: 1px solid #d1d8e3;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-}
-
-.material-selector select:hover,
-.material-selector select:focus {
-    border-color: #3498db;
-    background-color: #ffffff;
-}
-
-/* Input Fields Styling */
-input[type="text"], select {
-    width: 100%;
-    padding: 8px;
-    margin: 10px 0;
-    font-size: 0.9em;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    transition: all 0.3s ease;
-}
-
-input[type="text"]:focus, select:focus {
-    border-color: #3498db;
-    background-color: #ffffff;
-}
-
-/* Button Styling */
-button {
-    background-color: #3498db;
-    color: white;
-    padding: 14px 30px;
-    border-radius: 8px;
-    border: none;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-button:hover {
-    background-color: #2980b9;
-    transform: translateY(-2px);
-}
-
-.table-container{
-    overflow-x: scroll;
-}
-
-.quantity-table{
-    margin-bottom: 35px;
-}
-
-/* Table Styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 5px;
-}
-
-table th, table td {
-    padding: 10px; /* تقليل الحشو */
-    text-align: center;
-    border: 1px solid #ddd;
-    font-size: 1em; /* تعديل حجم الخط ليكون متوازن */
-    word-wrap: break-word; /* لمنع النص من الخروج من الخلية */
-}
-
-table th {
-    background-color: #3498db;
-    color: white;
-    font-weight: 600;
-    width: 15%; /* تحديد عرض الـ th بنسبة معينة إذا كانت البيانات ثابتة */
-}
-
-table td {
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-table tr:hover td {
-    background-color: #f1f8ff;
-    cursor: pointer;
-}
-
-.foundation th, .foundation button{
-    background: rgb(83, 170, 192);
-}
-
-.floor th, .floor button{
-    background: rgb(129, 162, 201);
-}
-
-.walls th, .walls button{
-    background: rgb(129, 166, 212);
-}
-
-.window th, .window button{
-    background: #7594ba;
-}
-
-
-/* Result Input Fields */
-input[disabled] {
-    background-color: #f0f0f0;
-    cursor: not-allowed;
-}
-
-/* Table Footer Styling */
-table .blankCell {
-    background-color: transparent;
-    border: none;
-}
-
-.contain-totalImpact{
-    overflow-x: scroll;
-}
-
-/* Responsive Styles for Mobile */
-@media (max-width: 768px) {
-    .form-section, .section-container {
-        padding: 15px;
-    }
-
-    table th, table td {
-        padding: 10px;
-        font-size: 0.9em;
-    }
-
-    button {
-        width: 100%;
-    }
-
-    .material-selector select {
-        padding: 10px;
-    }
-}
-
-
-h3 {
-    font-size: 15px;
-    color: #333;
-    margin-top: 20px;
-}
-
-
-.quantity-table th, .quantity-table td {
-    padding: 8px; /* تقليل الحشو */
-    font-size: 0.9em; /* تصغير الحجم ليتناسب مع الخلايا */
-}
-
-.quantity-table td {
-    min-width: 100px; /* تحديد الحد الأدنى للعرض */
-}
-
-.form-section button{
-    margin-top: 10px;
 }
