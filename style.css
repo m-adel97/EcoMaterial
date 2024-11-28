@@ -254,7 +254,7 @@ body {
 .material-selector select {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 5px 0 15px;
     font-size: 0.9em;
     background-color: #f7f9fc;
     border: 1px solid #d1d8e3;
@@ -307,7 +307,7 @@ button:hover {
 }
 
 .quantity-table{
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
 /* Table Styling */
@@ -343,19 +343,19 @@ table tr:hover td {
 }
 
 .foundation th, .foundation button{
-    background: rgb(90, 172, 192);
+    background: rgb(83, 170, 192);
 }
 
 .floor th, .floor button{
-    background: rgb(149, 179, 215);
+    background: rgb(129, 162, 201);
 }
 
 .walls th, .walls button{
-    background: rgb(184, 204, 228);
+    background: rgb(129, 166, 212);
 }
 
 .window th, .window button{
-    background: rgb(197, 217, 241);
+    background: #7594ba;
 }
 
 
@@ -410,4 +410,8 @@ h3 {
 
 .quantity-table td {
     min-width: 100px; /* تحديد الحد الأدنى للعرض */
+}
+
+.form-section button{
+    margin-top: 10px;
 }
